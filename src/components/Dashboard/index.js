@@ -30,15 +30,7 @@ class Dashboard extends Component {
           onToggleSidebar={this.handleToggleSidebar}
         />
         <div className={classes.wrapper}>
-          <Sidebar
-            showSidebar={showSidebar}
-            onToggleSidebar={this.handleToggleSidebar}
-          />
-          <div
-            className={cn(classes.wrapperContent, {
-              [classes.shiftLeft]: showSidebar === false,
-            })}
-          >
+          <div>
             {children}
           </div>
         </div>

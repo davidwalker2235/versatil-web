@@ -11,6 +11,9 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import styles from './styles';
 import classNames from 'classnames';
+import {ADMIN_ROUTES} from './../../../constants';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
 const menuId = 'primary-search-account-menu';
 
@@ -19,6 +22,7 @@ class Header extends Component {
     super(props);
     this.state = {
       anchorEl: null,
+      selectedItem: 'Inicio'
     };
   }
 
@@ -30,7 +34,7 @@ class Header extends Component {
 
   handleMenuClose = () => {
     this.setState({
-      anchorEl: null,
+      anchorEl: null
     });
   };
 
@@ -59,40 +63,29 @@ class Header extends Component {
     }
   };
 
+  renderLinks = () => (ADMIN_ROUTES.map((route, index)=>(
+    <Tab key={index} label={route.name} href={route.path}/>
+  ))
+  )
+
+  handleChange = (event, newValue) => {
+    this.state.setValue({selectedItem: newValue});
+  };
+
   render() {
     const { classes, name } = this.props;
     return (
       <div className={classNames(classes.grow)}>
         <AppBar position="static">
-          <Toolbar>
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="inherit"
-              aria-label="Open drawer"
-              onClick={this.handleToggleSidebar}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography className={classes.title} variant="h6" noWrap>
-              {name}
-            </Typography>
-            <div className={classes.grow} />
-            <div className={classes.sectionDesktop}>
-              <IconButton
-                edge="end"
-                aria-label="Account of current user"
-                aria-controls={menuId}
-                aria-haspopup="true"
-                onClick={this.handleProfileMenuOpen}
-                color="inherit"
-              >
-                <AccountCircle />
-              </IconButton>
-            </div>
-          </Toolbar>
-        </AppBar>
-        {this.renderMenu()}
+        <Tabs
+          variant="fullWidth"
+          value={this.state.selectedItem}
+          onChange={this.handleChange}
+          aria-label="nav tabs example"
+        >
+          {this.renderLinks()}
+        </Tabs>
+      </AppBar>
       </div>
     );
   }
