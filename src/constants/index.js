@@ -1,5 +1,4 @@
 import HomePage from '../containers/HomePage';
-import Taskboard from '../containers/Taskboard';
 import Servicios from '../containers/Servicios';
 import ProduccionesPropias from '../containers/ProduccionesPropias';
 import QuienesSomos from '../containers/QuienesSomos';
