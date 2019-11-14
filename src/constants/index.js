@@ -1,5 +1,9 @@
-import AdminHomePage from '../containers/AdminHomePage';
+import HomePage from '../containers/HomePage';
 import Taskboard from '../containers/Taskboard';
+import Servicios from '../containers/Servicios';
+import ProduccionesPropias from '../containers/ProduccionesPropias';
+import QuienesSomos from '../containers/QuienesSomos';
+import Contacto from '../containers/Contacto';
 
 export const API_ENDPOINT = 'http://localhost:3000';
 
@@ -26,14 +30,31 @@ export const STATUS_CODE = {
 
 export const ADMIN_ROUTES = [
   {
-    name: 'Trang quản trị',
+    name: 'Inicio',
     path: '/',
     exact: true,
-    component: AdminHomePage,
+    component: HomePage,
   },
   {
-    name: 'Quản lý công việc',
-    path: '/task-board',
-    component: Taskboard,
+    name: 'Servicios',
+    path: '/servicios',
+    component: Servicios,
   },
+  {
+    name: 'Producciones propias',
+    path: '/producciones-propias',
+    exact: true,
+    component: ProduccionesPropias,
+  },
+  {
+    name: 'Quienes somos',
+    path: '/quienes-somos',
+    component: QuienesSomos,
+  },
+  {
+    name: 'Contacto',
+    path: '/contacto',
+    exact: true,
+    component: Contacto,
+  }
 ];
