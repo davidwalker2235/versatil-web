@@ -1,8 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-import backgroundImage from "../../configuration/images/backgroundImage.gif";
+// import backgroundImage from "../../configuration/images/backgroundImage.gif";
 import { withRouter } from "react-router-dom";
 import "./index.css";
+import Carousel from "../Carousel";
 
 const mapStateToProps = state => ({
   titlePage: state.home.titlePage
@@ -12,12 +13,10 @@ const mapDispatchToProps = dispatch => ({});
 
 class Home extends React.Component {
   render() {
-    const { titlePage } = this.props;
     return (
       <div className="home-page">
-        {titlePage}
         <img
-          src={backgroundImage}
+          // src={backgroundImage}
           alt="background"
           className="backgroundImage"
         />

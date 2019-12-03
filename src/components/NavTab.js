@@ -4,7 +4,6 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import { Link } from "react-router-dom";
-import { withTheme } from "@material-ui/styles";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -43,10 +42,6 @@ function a11yProps(index) {
     id: `scrollable-force-tab-${index}`,
     "aria-controls": `scrollable-force-tabpanel-${index}`
   };
-}
-
-function getMenuColorText() {
-  return {};
 }
 
 function getTabs(props) {
