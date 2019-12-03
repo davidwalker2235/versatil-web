@@ -15,7 +15,7 @@ class Servicios extends React.Component {
 
   render() {
     const { titlePage } = this.props;
-    return <div className="auth-page">{titlePage}</div>;
+    return <div style={{color: 'white'}} className="auth-page">{titlePage}</div>;
   }
 }
 
