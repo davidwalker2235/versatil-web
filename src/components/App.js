@@ -11,6 +11,7 @@ import GlobalStyle from "../styles/Global";
 
 const rootStyle = {
   backgroundColor: "black",
+  overflow: "hidden",
   position: "absolute",
   height: "100%",
   width: "100%",

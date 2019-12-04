@@ -25,7 +25,7 @@ const Navbar = props => {
         <FlexContainer>
           <Brand />
           <NavLinks style={linkAnimation}>
-          <a href="/">Inicio</a>
+            <a href="/">Inicio</a>
             <a href="/servicios">Servicios</a>
             <a href="/producciones-propias">Producciones propias</a>
             <a href="/quienes-somos">Quienes somos</a>
@@ -75,12 +75,12 @@ const NavLinks = styled(animated.ul)`
   & a {
     color: #dfe6e9;
     text-transform: uppercase;
-    font-weight: 600;
     border-bottom: 1px solid transparent;
     margin: 0 1.5rem;
     transition: all 300ms linear 0s;
     text-decoration: none;
     cursor: pointer;
+    font-family: Montserrat, sans-serif;
 
     &:hover {
       color: #fdcb6e;
