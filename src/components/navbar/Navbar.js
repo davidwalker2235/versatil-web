@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { connect } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 import { useSpring, animated, config } from "react-spring";
 import Fab from "@material-ui/core/Fab";
@@ -10,110 +11,7 @@ import cataloniaFlag from "../../configuration/images/cataloniaFlag.png";
 import spanishFlag from "../../configuration/images/spanishFlag.png";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    backgroundColor: "transparent",
-    width: "30px",
-    height: "30px"
-  },
-  menu: {
-    backgroundColor: "rgba(50, 20, 105, 0.7)"
-  }
-}));
-
-const Navbar = props => {
-  const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const barAnimation = useSpring({
-    from: { transform: "translate3d(0, -10rem, 0)" },
-    transform: "translate3d(0, 0, 0)"
-  });
-
-  const linkAnimation = useSpring({
-    from: { transform: "translate3d(0, 30px, 0)", opacity: 0 },
-    to: { transform: "translate3d(0, 0, 0)", opacity: 1 },
-    delay: 800,
-    config: config.wobbly
-  });
-
-  return (
-    <div>
-      <NavBar style={barAnimation}>
-        <MenuContainer>
-          <FlexContainer>
-            <Brand />
-            <NavLinks style={linkAnimation}>
-              {props.data.map((elem, index) => (
-                <a key={index} href={elem.url}>
-                  {elem.title}
-                </a>
-              ))}
-            </NavLinks>
-            <BurgerWrapper>
-              <BurgerMenu
-                navbarState={props.navbarState}
-                handleNavbar={props.handleNavbar}
-              />
-            </BurgerWrapper>
-          </FlexContainer>
-        </MenuContainer>
-        <FlagContainer>
-          <Fab className={classes.root} aria-label="add" onClick={handleClick}>
-            <img
-              className={classes.root}
-              src={cataloniaFlag}
-              alt="Company Logo"
-            />
-          </Fab>
-          <Menu
-            id="simple-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-            classes={{
-              list: classes.menu
-            }}
-          >
-            <MenuItem onClick={handleClose}>
-              {" "}
-              <img
-                className={classes.root}
-                src={cataloniaFlag}
-                alt="Company Logo"
-              />
-            </MenuItem>
-            <MenuItem onClick={handleClose}>
-              {" "}
-              <img
-                className={classes.root}
-                src={spanishFlag}
-                alt="Company Logo"
-              />
-            </MenuItem>
-          </Menu>
-        </FlagContainer>
-      </NavBar>
-      <CollapseMenu
-        navbarState={props.navbarState}
-        handleNavbar={props.handleNavbar}
-        data={props.data}
-      />
-    </div>
-  );
-};
-
-export default Navbar;
+import { changeLanguaje } from "../../actions/navBarActions";
 
 const NavBar = styled(animated.nav)`
   width: 100%;
@@ -178,3 +76,103 @@ const BurgerWrapper = styled.div`
     display: none;
   }
 `;
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    backgroundColor: "transparent",
+    width: "30px",
+    height: "30px"
+  },
+  menu: {
+    backgroundColor: "rgba(50, 20, 105, 0.7)"
+  }
+}));
+
+const Navbar = props => {
+  const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = event => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = event => {
+    props.changeLanguaje(event.target.alt);
+    setAnchorEl(null);
+  };
+
+  const barAnimation = useSpring({
+    from: { transform: "translate3d(0, -10rem, 0)" },
+    transform: "translate3d(0, 0, 0)"
+  });
+
+  const linkAnimation = useSpring({
+    from: { transform: "translate3d(0, 30px, 0)", opacity: 0 },
+    to: { transform: "translate3d(0, 0, 0)", opacity: 1 },
+    delay: 800,
+    config: config.wobbly
+  });
+
+  return (
+    <div>
+      <NavBar style={barAnimation}>
+        <MenuContainer>
+          <FlexContainer>
+            <Brand />
+            <NavLinks style={linkAnimation}>
+              {props.data.map((elem, index) => (
+                <a key={index} href={elem.url}>
+                  {elem.title}
+                </a>
+              ))}
+            </NavLinks>
+            <BurgerWrapper>
+              <BurgerMenu
+                navbarState={props.navbarState}
+                handleNavbar={props.handleNavbar}
+              />
+            </BurgerWrapper>
+          </FlexContainer>
+        </MenuContainer>
+        <FlagContainer>
+          <Fab className={classes.root} aria-label="add" onClick={handleClick}>
+            <img className={classes.root} src={props.flag} alt="Company Logo" />
+          </Fab>
+          <Menu
+            id="simple-menu"
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+            classes={{
+              list: classes.menu
+            }}
+          >
+            <MenuItem id="catalan" onClick={handleClose}>
+              <img className={classes.root} src={cataloniaFlag} alt="catalan" />
+            </MenuItem>
+            <MenuItem id="spanish" onClick={handleClose}>
+              <img className={classes.root} src={spanishFlag} alt="spanish" />
+            </MenuItem>
+          </Menu>
+        </FlagContainer>
+      </NavBar>
+      <CollapseMenu
+        navbarState={props.navbarState}
+        handleNavbar={props.handleNavbar}
+        data={props.data}
+      />
+    </div>
+  );
+};
+
+const mapStateToProps = state => ({
+  languaje: state.common.languaje,
+  flag: state.common.flag
+});
+
+const mapDispatchToProps = dispatch => ({
+  changeLanguaje: value => dispatch(changeLanguaje(value))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);

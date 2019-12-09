@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
-import backgroundImage from "../../configuration/images/backgroundImage.gif";
 import versatilLogo from "../../configuration/images/versatilLogo.png";
 import { withRouter } from "react-router-dom";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import "./index.css";
-// import Carousel from "../Carousel";
 
 const mapStateToProps = state => ({
   titlePage: state.home.titlePage
@@ -51,7 +49,6 @@ const useStyles = makeStyles(theme => ({
 
 function Home(props) {
   const classes = useStyles();
-  const [count, setCount] = useState("banana");
 
   return (
     <div className="home-root">
