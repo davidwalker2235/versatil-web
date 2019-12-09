@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
     margin: "0"
   },
   versatilLogo: {
-    maxWidth: "400px",
+    maxWidth: "460px",
     marginTop: "60px",
     marginBottom: "60px"
   }
