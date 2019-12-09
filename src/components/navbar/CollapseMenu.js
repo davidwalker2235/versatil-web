@@ -19,31 +19,13 @@ const CollapseMenu = props => {
         }}
       >
         <NavLinks>
-          <li>
-            <a href="/" onClick={props.handleNavbar}>
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a href="/servicios" onClick={props.handleNavbar}>
-              Servicios
-            </a>
-          </li>
-          <li>
-            <a href="/producciones-propias" onClick={props.handleNavbar}>
-              Producciones propias
-            </a>
-          </li>
-          <li>
-            <a href="/quienes-somos" onClick={props.handleNavbar}>
-              Quienes somos
-            </a>
-          </li>
-          <li>
-            <a href="/contacto" onClick={props.handleNavbar}>
-              Contacto
-            </a>
-          </li>
+          {props.data.map((elem, index) => (
+            <li key={index}>
+              <a href={elem.url} onClick={props.handleNavbar}>
+                {elem.title}
+              </a>
+            </li>
+          ))}
         </NavLinks>
       </CollapseWrapper>
     );
@@ -54,7 +36,8 @@ const CollapseMenu = props => {
 export default CollapseMenu;
 
 const CollapseWrapper = styled(animated.div)`
-  background: #2d3436;
+  background: rgba(50, 20, 105, 0.7);
+  text-align: center;
   position: fixed;
   top: 4.5rem;
   left: 0;

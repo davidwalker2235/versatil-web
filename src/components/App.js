@@ -8,6 +8,7 @@ import Settings from "./Contacto";
 import QuienesSomos from "./QuienesSomos";
 import Navbar from "./navbar/Navbar";
 import GlobalStyle from "../styles/Global";
+import navBarConf from "../configuration/navBarConf.json";
 
 const rootStyle = {
   backgroundColor: "black",
@@ -41,6 +42,7 @@ class App extends React.Component {
         <Navbar
           navbarState={this.state.navbarOpen}
           handleNavbar={this.handleNavbar}
+          data={navBarConf}
         />
         <GlobalStyle />
         <Switch>
