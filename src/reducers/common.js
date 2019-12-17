@@ -4,7 +4,7 @@ import cataloniaFlag from "../configuration/images/cataloniaFlag.png";
 import spanishFlag from "../configuration/images/spanishFlag.png";
 
 const defaultState = {
-  languaje: "catalan",
+  languaje: "ca",
   flag: cataloniaFlag
 };
 

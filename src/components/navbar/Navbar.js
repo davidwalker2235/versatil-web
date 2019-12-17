@@ -11,7 +11,7 @@ import cataloniaFlag from "../../configuration/images/cataloniaFlag.png";
 import spanishFlag from "../../configuration/images/spanishFlag.png";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import { changeLanguaje } from "../../actions/navBarActions";
+import { changeLanguaje } from "../../actions/navBar/navBarActionsAsync";
 
 const NavBar = styled(animated.nav)`
   width: 100%;
@@ -97,6 +97,7 @@ const Navbar = props => {
   };
 
   const handleClose = event => {
+    debugger;
     props.changeLanguaje(event.target.alt);
     setAnchorEl(null);
   };
@@ -149,10 +150,10 @@ const Navbar = props => {
             }}
           >
             <MenuItem id="catalan" onClick={handleClose}>
-              <img className={classes.root} src={cataloniaFlag} alt="catalan" />
+              <img className={classes.root} src={cataloniaFlag} alt="ca" />
             </MenuItem>
             <MenuItem id="spanish" onClick={handleClose}>
-              <img className={classes.root} src={spanishFlag} alt="spanish" />
+              <img className={classes.root} src={spanishFlag} alt="es" />
             </MenuItem>
           </Menu>
         </FlagContainer>

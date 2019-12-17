@@ -1,2 +1,2 @@
-export const SPANISH = "spanish";
-export const CATALAN = "catalan";
+export const SPANISH = "es";
+export const CATALAN = "ca";

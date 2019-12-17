@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Translate } from "react-redux-i18n";
 
 const mapStateToProps = state => ({
   titlePage: state.servicios.titlePage
@@ -14,8 +15,11 @@ class Servicios extends React.Component {
   }
 
   render() {
-    const { titlePage } = this.props;
-    return <div style={{color: 'white'}} className="auth-page">{titlePage}</div>;
+    return (
+      <div style={{ color: "white" }} className="auth-page">
+        <Translate value="application.title" />
+      </div>
+    );
   }
 }
 
