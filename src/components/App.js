@@ -8,7 +8,6 @@ import Settings from "./Contacto";
 import QuienesSomos from "./QuienesSomos";
 import Navbar from "./navbar/Navbar";
 import GlobalStyle from "../styles/Global";
-import navBarConf from "../configuration/navBarConf.json";
 
 const rootStyle = {
   backgroundColor: "black",
@@ -18,10 +17,6 @@ const rootStyle = {
   width: "100%",
   zIndex: "0"
 };
-
-const mapStateToProps = state => ({});
-
-const mapDispatchToProps = dispatch => ({});
 
 class App extends React.Component {
   constructor() {
@@ -42,7 +37,7 @@ class App extends React.Component {
         <Navbar
           navbarState={this.state.navbarOpen}
           handleNavbar={this.handleNavbar}
-          data={navBarConf}
+          data={[]}
         />
         <GlobalStyle />
         <Switch>
@@ -57,4 +52,4 @@ class App extends React.Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

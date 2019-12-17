@@ -11,6 +11,7 @@ import cataloniaFlag from "../../configuration/images/cataloniaFlag.png";
 import spanishFlag from "../../configuration/images/spanishFlag.png";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
+import { Translate } from "react-redux-i18n";
 import { changeLanguaje } from "../../actions/navBar/navBarActionsAsync";
 
 const NavBar = styled(animated.nav)`
@@ -89,6 +90,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Navbar = props => {
+  debugger;
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -97,7 +99,6 @@ const Navbar = props => {
   };
 
   const handleClose = event => {
-    debugger;
     props.changeLanguaje(event.target.alt);
     setAnchorEl(null);
   };
@@ -121,11 +122,13 @@ const Navbar = props => {
           <FlexContainer>
             <Brand />
             <NavLinks style={linkAnimation}>
-              {props.data.map((elem, index) => (
-                <a key={index} href={elem.url}>
-                  {elem.title}
-                </a>
-              ))}
+              {props.navBarData &&
+                props.navBarData.map((elem, index) => (
+                  <a key={index} href={elem.url}>
+                    {console.log(elem.key)}
+                    <Translate value={`navBar.${elem.key}`} />
+                  </a>
+                ))}
             </NavLinks>
             <BurgerWrapper>
               <BurgerMenu
@@ -169,7 +172,8 @@ const Navbar = props => {
 
 const mapStateToProps = state => ({
   languaje: state.common.languaje,
-  flag: state.common.flag
+  flag: state.common.flag,
+  navBarData: state.common.navBarData
 });
 
 const mapDispatchToProps = dispatch => ({

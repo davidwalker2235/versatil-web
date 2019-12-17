@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Translate } from "react-redux-i18n";
 
 import { useSpring, animated } from "react-spring";
 
@@ -22,7 +23,7 @@ const CollapseMenu = props => {
           {props.data.map((elem, index) => (
             <li key={index}>
               <a href={elem.url} onClick={props.handleNavbar}>
-                {elem.title}
+                <Translate value={`navBar.${elem.key}`} />
               </a>
             </li>
           ))}

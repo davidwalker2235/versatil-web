@@ -4,6 +4,13 @@ const translationData = {
       title: "Catala",
       hello: "Hello"
     },
+    navBar: {
+      inicio: "Inici",
+      servicios: "Serveis",
+      produccionesPropias: "Produccions propies",
+      quienesSomos: "Qui som",
+      contacto: "Contacte"
+    },
     export: "Export %{count} items",
     export_0: "Nothing to export",
     export_1: "Export %{count} item",
@@ -11,8 +18,14 @@ const translationData = {
   },
   es: {
     application: {
-      title: "Castellano",
-      hello: "Hallo, %{name}!"
+      title: "Castellano"
+    },
+    navBar: {
+      inicio: "Inicio",
+      servicios: "Servicios",
+      produccionesPropias: "Producciones propias",
+      quienesSomos: "Quienes somos",
+      contacto: "Contacto"
     },
     date: {
       long: "D MMMM YYYY"

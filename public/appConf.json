@@ -1,0 +1,25 @@
+{
+  "navBar": [
+    {
+      "key": "inicio",
+      "url": "/"
+    },
+    {
+      "key": "servicios",
+      "url": "/servicios"
+    },
+    {
+      "key": "produccionesPropias",
+      "url": "/producciones-propias"
+    },
+    {
+      "key": "quienesSomos",
+      "url": "/quienes-somos"
+    },
+
+    {
+      "key": "contacto",
+      "url": "/contacto"
+    }
+  ]
+}
