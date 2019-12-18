@@ -18,7 +18,6 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(50, 20, 105, 0.7);
   z-index: 1;
   font-size: 1.4rem;
   display: flex;
@@ -58,13 +57,14 @@ const NavLinks = styled(animated.ul)`
     text-decoration: none;
     cursor: pointer;
     font-family: Montserrat, sans-serif;
+    font-size: 18px;
 
     &:hover {
       color: #fdcb6e;
       border-bottom: 1px solid #fdcb6e;
     }
 
-    @media (max-width: 810px) {
+    @media (max-width: 850px) {
       display: none;
     }
   }
@@ -73,7 +73,7 @@ const NavLinks = styled(animated.ul)`
 const BurgerWrapper = styled.div`
   margin: auto 0;
 
-  @media (min-width: 810px) {
+  @media (min-width: 850px) {
     display: none;
   }
 `;
@@ -81,8 +81,8 @@ const BurgerWrapper = styled.div`
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: "transparent",
-    width: "30px",
-    height: "30px"
+    width: "25px",
+    height: "25px"
   },
   menu: {
     backgroundColor: "rgba(50, 20, 105, 0.7)"
@@ -90,7 +90,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Navbar = props => {
-  debugger;
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -164,7 +163,7 @@ const Navbar = props => {
       <CollapseMenu
         navbarState={props.navbarState}
         handleNavbar={props.handleNavbar}
-        data={props.data}
+        data={props.navBarData}
       />
     </div>
   );
