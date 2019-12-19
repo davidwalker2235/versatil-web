@@ -11,6 +11,10 @@ const translationData = {
       quienesSomos: "Qui som",
       contacto: "Contacte"
     },
+    main: {
+      subtitle: "L'espectacle, la nostra ",
+      pasion: "pasión"
+    },
     export: "Export %{count} items",
     export_0: "Nothing to export",
     export_1: "Export %{count} item",
@@ -26,6 +30,10 @@ const translationData = {
       produccionesPropias: "Producciones propias",
       quienesSomos: "Quienes somos",
       contacto: "Contacto"
+    },
+    main: {
+      subtitle: "El espectáculo, nuestra ",
+      pasion: "Pasión"
     },
     date: {
       long: "D MMMM YYYY"

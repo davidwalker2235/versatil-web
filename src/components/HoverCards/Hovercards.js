@@ -5,16 +5,17 @@ import "./HoverCards.css";
 class Hovercard extends Component {
   render() {
     return (
-      <div style={{ width: "30%" }}>
+      <div>
         <HoverCard
-          maxWidth={400}
           animationSpeed={500}
-          height={300}
           margin={10}
+          borderRadius={0}
           front={
-            <div className="front">
+            <div className="front" style={{ width: "inherit" }}>
               <img
-                src="https://images.unsplash.com/photo-1498910265115-9fb541931cd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1089&q=80"
+                src={
+                  "https://scontent.fbcn1-1.fna.fbcdn.net/v/t1.0-9/p960x960/76183520_751409405377328_1132063773322903552_o.jpg?_nc_cat=100&_nc_ohc=MFvImdBVPpgAQm_Mv-O6Tqn5d2XBYEUmlWGk-H2nl_UbvKXl7daOLfzyQ&_nc_ht=scontent.fbcn1-1.fna&oh=a8e0e78efbe8314baeb76de20e275d5b&oe=5EB06F80"
+                }
                 alt=""
                 style={{ objectFit: "cover", width: "inherit" }}
               />

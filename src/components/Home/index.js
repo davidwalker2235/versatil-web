@@ -6,6 +6,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Hovercards from "../HoverCards/Hovercards";
 import { makeStyles } from "@material-ui/core/styles";
+import { Translate } from "react-redux-i18n";
 import "./index.css";
 
 const mapStateToProps = state => ({
@@ -35,7 +36,9 @@ const useStyles = makeStyles(theme => ({
     boxShadow: "none",
     backgroundColor: "transparent",
     display: "flex",
-    justifyContent: "center"
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center"
   },
   container: {
     height: "inherit",
@@ -44,7 +47,6 @@ const useStyles = makeStyles(theme => ({
   versatilLogo: {
     width: "100vw",
     marginTop: "60px",
-    marginBottom: "60px",
     maxWidth: "50vh",
     margin: "auto 0"
   }
@@ -69,19 +71,38 @@ function Home(props) {
           sm={12}
           lg={12}
         >
-          <Grid item xs={12} sm={12} lg={12}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            lg={12}
+            style={{ padding: "0px 0px 140px" }}
+          >
             <Paper className={classes.paper}>
               <img
                 src={versatilLogo}
                 alt="versatil-logo"
                 className={classes.versatilLogo}
               />
+              <div className="subtitle">
+                <Translate value="main.subtitle" />
+                <Translate style={{ color: "#E6057F" }} value="main.pasion" />
+              </div>
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={12} lg={2}>
-            <Paper className={classes.paper}>
+          <Grid container spacing={3} xs={12} sm={10} lg={10}>
+            <Grid item xs={12} sm={6}>
               <Hovercards />
-            </Paper>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Hovercards />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Hovercards />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Hovercards />
+            </Grid>
           </Grid>
         </Grid>
       </div>
