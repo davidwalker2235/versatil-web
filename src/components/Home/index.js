@@ -1,113 +1,74 @@
-import React from "react";
-import { connect } from "react-redux";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 import versatilLogo from "../../configuration/images/versatilLogo.png";
-import { withRouter } from "react-router-dom";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Hovercards from "../HoverCards/Hovercards";
-import { makeStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/styles";
 import { Translate } from "react-redux-i18n";
+import Styles from "./styles";
 import "./index.css";
 
-const mapStateToProps = state => ({
-  titlePage: state.home.titlePage
-});
-
-const mapDispatchToProps = dispatch => ({});
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1
-  },
-  backgroundLayer: {
-    position: "absolute",
-    top: "0",
-    left: "0",
-    width: "100%",
-    height: "100%",
-    zIndex: "-1",
-    backgroundColor: "rgba(50,20,105,0.8)"
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-    minHeight: "40vh",
-    boxShadow: "none",
-    backgroundColor: "transparent",
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-    alignItems: "center"
-  },
-  container: {
-    height: "inherit",
-    margin: "0"
-  },
-  versatilLogo: {
-    width: "100vw",
-    marginTop: "60px",
-    maxWidth: "50vh",
-    margin: "auto 0"
-  }
-}));
-
-function Home(props) {
-  const classes = useStyles();
-
-  return (
-    <div className="home-root">
-      <img alt="background" className="backgroundImage" />
-      <div className={classes.backgroundLayer} />
-      <div className={classes.root}>
-        <Grid
-          container
-          spacing={5}
-          className={classes.container}
-          direction="row"
-          justify="center"
-          alignItems="center"
-          xs={12}
-          sm={12}
-          lg={12}
-        >
+class Home extends Component {
+  render() {
+    const { classes } = this.props;
+    return (
+      <div className="home-root">
+        <img alt="background" className="backgroundImage" />
+        <div className={classes.backgroundLayer} />
+        <div className={classes.root}>
           <Grid
-            item
-            xs={12}
-            sm={12}
-            lg={12}
-            style={{ padding: "0px 0px 140px" }}
+            container
+            spacing={5}
+            className={classes.container}
+            direction="row"
+            justify="center"
+            alignItems="center"
           >
-            <Paper className={classes.paper}>
-              <img
-                src={versatilLogo}
-                alt="versatil-logo"
-                className={classes.versatilLogo}
-              />
-              <div className="subtitle">
-                <Translate value="main.subtitle" />
-                <Translate style={{ color: "#E6057F" }} value="main.pasion" />
+            <Grid item xs={12} sm={8} lg={8}>
+              <div className={classes.paper}>
+                <img
+                  src={versatilLogo}
+                  alt="versatil-logo"
+                  className={classes.versatilLogo}
+                />
+                <div className="subtitle">
+                  <Translate value="main.subtitle" />
+                  <Translate style={{ color: "#E6057F" }} value="main.pasion" />
+                </div>
               </div>
-            </Paper>
+            </Grid>
+            <Grid
+              container
+              className="hoverCardsContainer"
+              direction="row"
+              justify="center"
+              alignItems="center"
+            >
+              <Grid
+                container
+                spacing={6}
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                {this.props.hoverCards &&
+                  this.props.hoverCards.map((hoveCard, index) => (
+                    <Grid item key={index} xs={12} sm={5}>
+                      <Hovercards data={hoveCard} index={index} />
+                    </Grid>
+                  ))}
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid container spacing={3} xs={12} sm={10} lg={10}>
-            <Grid item xs={12} sm={6}>
-              <Hovercards />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Hovercards />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Hovercards />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Hovercards />
-            </Grid>
-          </Grid>
-        </Grid>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home));
+Home.propTypes = {
+  classes: PropTypes.object.isRequired,
+  hoverCards: PropTypes.array
+};
+
+export default withStyles(Styles)(Home);

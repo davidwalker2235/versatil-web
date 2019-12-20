@@ -1,7 +1,4 @@
-import {
-  CHANGE_LANGUAJE,
-  MAP_INITIAL_DATA_NAVBAR
-} from "../constants/actionTypes";
+import { CHANGE_LANGUAJE, MAP_INITIAL_DATA } from "../constants/actionTypes";
 import { SPANISH, CATALAN } from "../constants/languajeTypes";
 import cataloniaFlag from "../configuration/images/cataloniaFlag.png";
 import spanishFlag from "../configuration/images/spanishFlag.png";
@@ -9,7 +6,7 @@ import spanishFlag from "../configuration/images/spanishFlag.png";
 const defaultState = {
   languaje: "ca",
   flag: cataloniaFlag,
-  navBarData: []
+  data: []
 };
 
 export default (state = defaultState, action) => {
@@ -20,10 +17,10 @@ export default (state = defaultState, action) => {
         languaje: action.value,
         flag: getLanguajeFlag(action.value)
       };
-    case MAP_INITIAL_DATA_NAVBAR:
+    case `${MAP_INITIAL_DATA}_navBar`:
       return {
         ...state,
-        navBarData: action.value.navBar
+        data: action.value[action.key] || null
       };
     default:
       return state;

@@ -13,7 +13,21 @@ const translationData = {
     },
     main: {
       subtitle: "L'espectacle, la nostra ",
-      pasion: "pasión"
+      pasion: "pasión",
+      hoverCard: {
+        hoverCard0: {
+          backText: "Aquest es el text que va darrere de la HoverCard 1"
+        },
+        hoverCard1: {
+          backText: "Aquest es el text que va darrere de la HoverCard 2"
+        },
+        hoverCard2: {
+          backText: "Aquest es el text que va darrere de la HoverCard 3"
+        },
+        hoverCard3: {
+          backText: "Aquest es el text que va darrere de la HoverCard 4"
+        }
+      }
     },
     export: "Export %{count} items",
     export_0: "Nothing to export",
@@ -33,7 +47,21 @@ const translationData = {
     },
     main: {
       subtitle: "El espectáculo, nuestra ",
-      pasion: "Pasión"
+      pasion: "Pasión",
+      hoverCard: {
+        hoverCard0: {
+          backText: "Este es el texto que va detras de la HoverCard 1"
+        },
+        hoverCard1: {
+          backText: "Este es el texto que va detras de la HoverCard 2"
+        },
+        hoverCard2: {
+          backText: "Este es el texto que va detras de la HoverCard 3"
+        },
+        hoverCard3: {
+          backText: "Este es el texto que va detras de la HoverCard 4"
+        }
+      }
     },
     date: {
       long: "D MMMM YYYY"

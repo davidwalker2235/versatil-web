@@ -19,13 +19,13 @@
 }
 
 .subtitle {
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
-    AppleGothic, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 50px;
-  color: white;
-  font-size: 50px;
+  font-family: Quentin, sans-serif;
+  color: #8925ef;
+  line-height: 1;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.hoverCardsContainer {
+  background: rgba(0, 0, 0, 0.3);
 }

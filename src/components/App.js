@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Home from "../components/Home";
+import InicioView from "../containers/inicio/inicioView";
 import Servicios from "../components/Servicios";
 import ProduccionesPropias from "../components/ProduccionesPropias";
 import Settings from "./Contacto";
@@ -40,7 +40,7 @@ class App extends React.Component {
         />
         <GlobalStyle />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={InicioView} />
           <Route path="/servicios" component={Servicios} />
           <Route path="/producciones-propias" component={ProduccionesPropias} />
           <Route path="/quienes-somos" component={QuienesSomos} />

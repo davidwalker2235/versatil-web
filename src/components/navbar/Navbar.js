@@ -113,7 +113,6 @@ const Navbar = props => {
     delay: 800,
     config: config.wobbly
   });
-
   return (
     <div>
       <NavBar style={barAnimation}>
@@ -121,10 +120,10 @@ const Navbar = props => {
           <FlexContainer>
             <Brand />
             <NavLinks style={linkAnimation}>
-              {props.navBarData &&
-                props.navBarData.map((elem, index) => (
+              {props &&
+                props.data &&
+                props.data.map((elem, index) => (
                   <a key={index} href={elem.url}>
-                    {console.log(elem.key)}
                     <Translate value={`navBar.${elem.key}`} />
                   </a>
                 ))}
@@ -163,7 +162,7 @@ const Navbar = props => {
       <CollapseMenu
         navbarState={props.navbarState}
         handleNavbar={props.handleNavbar}
-        data={props.navBarData}
+        data={props.data}
       />
     </div>
   );
@@ -172,7 +171,7 @@ const Navbar = props => {
 const mapStateToProps = state => ({
   languaje: state.common.languaje,
   flag: state.common.flag,
-  navBarData: state.common.navBarData
+  data: state.common.data
 });
 
 const mapDispatchToProps = dispatch => ({
