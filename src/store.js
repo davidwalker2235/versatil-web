@@ -22,4 +22,17 @@ export const store = createStore(
 
 syncTranslationWithStore(store);
 store.dispatch(loadTranslations(translationData));
-store.dispatch(setLocale("ca"));
+
+const language = window.sessionStorage.getItem("lang");
+
+if (!language) {
+  console.log("para por no existe lenguaje y el lenguaje es:" + language)
+  window.sessionStorage.setItem("lang", "ca");
+  store.dispatch(setLocale("ca"));
+} else if (language !== 'ca') {
+  console.log("para por SI existe lenguaje y el lenguaje es:" + language)
+  store.dispatch(setLocale("es"));
+} else {
+  console.log("para por por el ELSE y el lenguaje es:" + language);
+  store.dispatch(setLocale("ca"));
+}
