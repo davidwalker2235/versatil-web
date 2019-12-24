@@ -19,13 +19,18 @@
 }
 
 .subtitle {
-  font-family: Quentin, sans-serif;
-  color: #8925ef;
+  font-family: inherit;
   line-height: 1;
   text-transform: none;
   font-weight: 400;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin-top: -36px;
+  margin-bottom: 60px;
 }
 
 .hoverCardsContainer {
   background: rgba(0, 0, 0, 0.3);
+  width: 100% !important;
 }

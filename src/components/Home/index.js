@@ -18,19 +18,22 @@ class Home extends Component {
         <div className={classes.root}>
           <Grid
             container
-            spacing={5}
             className={classes.container}
-            direction="row"
+            direction="column"
             justify="center"
             alignItems="center"
           >
-            <Grid item xs={12} sm={8} lg={8}>
+            <Grid item xs={12} sm={8} lg={6}>
               <div className={classes.paper}>
                 <img
                   src={versatilLogo}
                   alt="versatil-logo"
                   className={classes.versatilLogo}
                 />
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={6} lg={6}>
+              <div className={classes.paper}>
                 <div className="subtitle">
                   <Translate value="main.subtitle" />
                   <Translate style={{ color: "#E6057F" }} value="main.pasion" />
@@ -43,21 +46,14 @@ class Home extends Component {
               direction="row"
               justify="center"
               alignItems="center"
+              spacing={3}
             >
-              <Grid
-                container
-                spacing={6}
-                direction="row"
-                justify="center"
-                alignItems="center"
-              >
                 {this.props.hoverCards &&
                   this.props.hoverCards.map((hoveCard, index) => (
-                    <Grid item key={index} xs={12} sm={5}>
+                    <Grid item key={index} xs={11} sm={5}>
                       <Hovercards data={hoveCard} index={index} />
                     </Grid>
                   ))}
-              </Grid>
             </Grid>
           </Grid>
         </div>

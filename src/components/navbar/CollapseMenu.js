@@ -11,6 +11,7 @@ const CollapseMenu = props => {
     return (
       <CollapseWrapper
         style={{
+          zIndex: 1,
           transform: open
             .interpolate({
               range: [0, 0.2, 0.3, 1],

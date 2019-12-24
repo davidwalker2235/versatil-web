@@ -4,7 +4,6 @@ import cataloniaFlag from "../configuration/images/cataloniaFlag.png";
 import spanishFlag from "../configuration/images/spanishFlag.png";
 
 const getLanguajeFlag = () => {
-  debugger;
   switch (window.sessionStorage.getItem("lang")) {
     case CATALAN:
       return cataloniaFlag;

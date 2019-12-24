@@ -12,7 +12,6 @@ class Hovercard extends Component {
       <div>
         <HoverCard
           animationSpeed={500}
-          margin={10}
           borderRadius={0}
           front={
             <div className="front" style={{ width: "inherit" }}>

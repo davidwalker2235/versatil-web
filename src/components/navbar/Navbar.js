@@ -29,7 +29,7 @@ const FlexContainer = styled.div`
   margin: auto;
   padding: 0 2rem;
   justify-content: space-between;
-  height: 5rem;
+  height: auto;
 `;
 
 const MenuContainer = styled.div`
@@ -82,7 +82,11 @@ const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: "transparent",
     width: "25px",
-    height: "25px"
+    height: "25px",
+    boxShadow: "none",
+    "&:hover": {
+      backgroundColor: "transparent",
+    },
   },
   menu: {
     backgroundColor: "rgba(50, 20, 105, 0.7)"

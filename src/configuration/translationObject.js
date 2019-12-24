@@ -13,7 +13,7 @@ const translationData = {
     },
     main: {
       subtitle: "L'espectacle, la nostra ",
-      pasion: "pasión",
+      pasion: "Pasió",
       hoverCard: {
         hoverCard0: {
           backText: "Aquest es el text que va darrere de la HoverCard 1"
