@@ -12,20 +12,25 @@ const translationData = {
       contacto: "Contacte"
     },
     main: {
-      subtitle: "L'espectacle, la nostra ",
+      subtitle: "Els nostres serveis",
       pasion: "Pasió",
       hoverCard: {
         hoverCard0: {
-          backText: "Aquest es el text que va darrere de la HoverCard 1"
+          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          titleKey: "Can Mercader Festival",
         },
         hoverCard1: {
-          backText: "Aquest es el text que va darrere de la HoverCard 2"
+          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          titleKey: "Festa Fluor"
+
         },
         hoverCard2: {
-          backText: "Aquest es el text que va darrere de la HoverCard 3"
+          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          titleKey: "Festa de la escuma"
         },
         hoverCard3: {
-          backText: "Aquest es el text que va darrere de la HoverCard 4"
+          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          titleKey: "Festa del vi"
         }
       }
     },
@@ -46,20 +51,24 @@ const translationData = {
       contacto: "Contacto"
     },
     main: {
-      subtitle: "El espectáculo, nuestra ",
+      subtitle: "Nuestros servicios",
       pasion: "Pasión",
       hoverCard: {
         hoverCard0: {
-          backText: "Este es el texto que va detras de la HoverCard 1"
+          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          titleKey: "Festival Can Mercader"
         },
         hoverCard1: {
-          backText: "Este es el texto que va detras de la HoverCard 2"
+          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          titleKey: "Fiesta Fluor"
         },
         hoverCard2: {
-          backText: "Este es el texto que va detras de la HoverCard 3"
+          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          titleKey: "Fiesta de la espuma"
         },
         hoverCard3: {
-          backText: "Este es el texto que va detras de la HoverCard 4"
+          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          titleKey: "Fiesta del vino"
         }
       }
     },

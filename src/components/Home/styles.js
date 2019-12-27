@@ -22,6 +22,9 @@ const Styles = () => ({
     width: "100%",
     marginTop: "60px",
     margin: "auto 0"
+  },
+  subtitle: {
+    fontSize: "14px"
   }
 });
 

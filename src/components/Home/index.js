@@ -4,6 +4,7 @@ import versatilLogo from "../../configuration/images/versatilLogo.png";
 import Grid from "@material-ui/core/Grid";
 import Hovercards from "../HoverCards/Hovercards";
 import { withStyles } from "@material-ui/styles";
+import Button from '@material-ui/core/Button';
 import { Translate } from "react-redux-i18n";
 import Styles from "./styles";
 import "./index.css";
@@ -13,7 +14,7 @@ class Home extends Component {
     const { classes } = this.props;
     return (
       <div className="home-root">
-        <img alt="background" className="backgroundImage" />
+        <img alt="" className="backgroundImage" />
         <div className={classes.backgroundLayer} />
         <div className={classes.root}>
           <Grid
@@ -35,8 +36,9 @@ class Home extends Component {
             <Grid item xs={12} sm={6} lg={6}>
               <div className={classes.paper}>
                 <div className="subtitle">
-                  <Translate value="main.subtitle" />
-                  <Translate style={{ color: "#E6057F" }} value="main.pasion" />
+                  <Button variant="contained" color="secondary" href="/servicios">
+                    <Translate className={classes.subtitle} value="main.subtitle" />
+                  </Button>
                 </div>
               </div>
             </Grid>
