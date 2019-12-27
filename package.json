@@ -7,7 +7,7 @@
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
     "cross-env": "^5.1.4",
-    "react-scripts": "^3.3.0"
+    "react-scripts": "^2.1.5"
   },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
