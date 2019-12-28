@@ -3,10 +3,27 @@ import PropTypes from "prop-types";
 import { HoverCard } from "react-png-hovercard";
 import { Translate } from "react-redux-i18n";
 import Fab from '@material-ui/core/Fab';
-import NavigationIcon from '@material-ui/icons/Navigation';
+import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 import "./HoverCards.css";
 
 class Hovercard extends Component {
+
+  constructor () {
+    super()
+    this.state = {
+      isOpen: false
+    }
+    this.openModal = this.openModal.bind(this)
+  }
+
+  openModal () {
+    const { openVideo } = this.props;
+    if (typeof openVideo === "function") {
+      openVideo("");
+    }
+    
+  }
+
   render() {
     const { data, index } = this.props;
     const { src } = data;
@@ -28,9 +45,9 @@ class Hovercard extends Component {
           back={
             <div className="back">
               <Translate className="hoverCardSubtitle" value={`main.hoverCard.hoverCard${index}.backText`} />
-              <Fab variant="extended">
-                <NavigationIcon className="extendedIcon" />
-                Navigate
+              <Fab variant="extended" onClick={this.openModal}>
+                <PlayCircleOutlineIcon className="extendedIcon" />
+                <Translate value={`main.hoverCard.play`} />
               </Fab>
             </div>
           }
