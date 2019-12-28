@@ -31,7 +31,6 @@ class App extends React.Component {
   };
 
   render() {
-    debugger;
     return (
       <div style={rootStyle}>
         <Navbar

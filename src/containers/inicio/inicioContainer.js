@@ -5,7 +5,8 @@ import {openModalVideo, closeModalVideo} from "../../actions/modalVideo/modalVid
 const mapStateToProps = state => ({
   hoverCards: state.home.hoverCards,
   languaje: state.common.languaje,
-  isModalVideoOpen: state.modalVideo.isModalVideoOpen
+  isModalVideoOpen: state.modalVideo.isModalVideoOpen,
+  videoKey: state.modalVideo.videoKey
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -18,16 +18,16 @@ const translationData = {
         play: "Reproduir",
         hoverCard0: {
           backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          titleKey: "Can Mercader Festival"
+          titleKey: "Què fem"
         },
         hoverCard1: {
           backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          titleKey: "Festa Fluor"
+          titleKey: "Can Mercader Festival"
 
         },
         hoverCard2: {
           backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          titleKey: "Festa de la escuma"
+          titleKey: "Festa Fluor"
         },
         hoverCard3: {
           backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -58,15 +58,15 @@ const translationData = {
         play: "Reproducir",
         hoverCard0: {
           backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          titleKey: "Festival Can Mercader"
+          titleKey: "Qué hacemos"
         },
         hoverCard1: {
           backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          titleKey: "Fiesta Fluor"
+          titleKey: "Festival Can Mercader"
         },
         hoverCard2: {
           backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          titleKey: "Fiesta de la espuma"
+          titleKey: "Fiesta Fluor"
         },
         hoverCard3: {
           backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",

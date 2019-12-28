@@ -17,9 +17,9 @@ class Hovercard extends Component {
   }
 
   openModal () {
-    const { openVideo } = this.props;
+    const { openVideo, data } = this.props;
     if (typeof openVideo === "function") {
-      openVideo("");
+      openVideo(data.videoKey);
     }
     
   }

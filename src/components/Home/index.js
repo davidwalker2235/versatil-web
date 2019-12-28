@@ -13,10 +13,10 @@ import "./index.scss";
 class Home extends Component {
   render() {
     debugger;
-    const { classes, openModalVideo, closeModalVideo, isModalVideoOpen } = this.props;
+    const { classes, openModalVideo, closeModalVideo, isModalVideoOpen, videoKey } = this.props;
     return (
       <div className="home-root">
-        <ModalVideo channel='youtube' isOpen={isModalVideoOpen} videoId='L61p2uyiMSo' onClose={closeModalVideo} />
+        <ModalVideo channel='youtube' isOpen={isModalVideoOpen} videoId={videoKey} onClose={closeModalVideo} />
         <img alt="" className="backgroundImage" />
         <div className={classes.backgroundLayer} />
         <div className={classes.root}>
