@@ -12,7 +12,6 @@ import "./index.scss";
 
 class Home extends Component {
   render() {
-    debugger;
     const { classes, openModalVideo, closeModalVideo, isModalVideoOpen, videoKey } = this.props;
     return (
       <div className="home-root">
@@ -55,7 +54,7 @@ class Home extends Component {
             >
                 {this.props.hoverCards &&
                   this.props.hoverCards.map((hoveCard, index) => (
-                    <Grid item key={index} xs={11} sm={5}>
+                    <Grid item key={index} xs={11} sm={11}>
                       <Hovercards
                         data={hoveCard}
                         index={index}

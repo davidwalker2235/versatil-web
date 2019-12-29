@@ -1,8 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import InicioView from "../containers/inicio/inicioView";
-import Servicios from "../components/Servicios";
+import ServiciosView from "../containers/servicios/serviciosView";
 import ProduccionesPropias from "../components/ProduccionesPropias";
+import AlquilerEquiposView from "../containers/alquilerEquipos/alquilerEquiposView";
 import Settings from "./Contacto";
 import QuienesSomos from "./QuienesSomos";
 import Navbar from "./navbar/Navbar";
@@ -41,10 +42,11 @@ class App extends React.Component {
         <GlobalStyle />
         <Switch>
           <Route exact path="/" component={InicioView} />
-          <Route path="/servicios" component={Servicios} />
+          <Route path="/servicios" component={ServiciosView} />
           <Route path="/producciones-propias" component={ProduccionesPropias} />
           <Route path="/quienes-somos" component={QuienesSomos} />
           <Route path="/contacto" component={Settings} />
+          <Route path="/alquiler_equipos" component={AlquilerEquiposView} />
         </Switch>
       </div>
     );

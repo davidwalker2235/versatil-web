@@ -17,22 +17,25 @@ const translationData = {
       hoverCard: {
         play: "Reproduir",
         hoverCard0: {
-          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          backText: "EL EQUIPO VERSATIL está experimentado en el sector de los eventos, conoce el entorno y sabe que el éxito final recae en empezar escuchando y ejecuta sin perder la visión del cliente",
           titleKey: "Què fem"
         },
         hoverCard1: {
-          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          backText: "Festival de Rock de carácter gratuito que se celebra el segundo sábado del mes Julio en el parque de Can Mercader de Cornellá de Llobregat.",
           titleKey: "Can Mercader Festival"
 
-        },
-        hoverCard2: {
-          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          titleKey: "Festa Fluor"
-        },
-        hoverCard3: {
-          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          titleKey: "Festa del vi"
         }
+      }
+    },
+    services: {
+      serviceCards: {
+        alquilerEquipos: "Lloguer d'equips",
+        gruposMusicales: "Grups musicals, DJ's i artistes",
+        carpas: "Carpes",
+        catering: "Catering",
+        decoraciones: "Decoracions i mobiliari per events",
+        gestionEspacios: "Gestió d'espais",
+        recordingStudio: "Versatil Recording Studio",
       }
     },
     export: "Export %{count} items",
@@ -57,21 +60,24 @@ const translationData = {
       hoverCard: {
         play: "Reproducir",
         hoverCard0: {
-          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          backText: "EL EQUIPO VERSATIL está experimentado en el sector de los eventos, conoce el entorno y sabe que el éxito final recae en empezar escuchando y ejecuta sin perder la visión del cliente",
           titleKey: "Qué hacemos"
         },
         hoverCard1: {
-          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          backText: "Festival de Rock de carácter gratuito que se celebra el segundo sábado del mes Julio en el parque de Can Mercader de Cornellá de Llobregat.",
           titleKey: "Festival Can Mercader"
-        },
-        hoverCard2: {
-          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          titleKey: "Fiesta Fluor"
-        },
-        hoverCard3: {
-          backText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-          titleKey: "Fiesta del vino"
         }
+      }
+    },
+    services: {
+      serviceCards: {
+        alquilerEquipos: "Alquiler de equipos",
+        gruposMusicales: "Grupos musicales, DJ's y artistas",
+        carpas: "Carpas",
+        catering: "Catering",
+        decoraciones: "Decoraciones y mobiliario para eventos",
+        gestionEspacios: "Gestión de espacios",
+        recordingStudio: "Versatil Recording Studio",
       }
     },
     date: {
