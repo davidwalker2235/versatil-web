@@ -25,11 +25,29 @@
   "inicio": {
     "hoverCards": [
       {
-        "src": "https://scontent.fbcn1-1.fna.fbcdn.net/v/t1.0-9/p960x960/76183520_751409405377328_1132063773322903552_o.jpg?_nc_cat=100&_nc_ohc=MFvImdBVPpgAQm_Mv-O6Tqn5d2XBYEUmlWGk-H2nl_UbvKXl7daOLfzyQ&_nc_ht=scontent.fbcn1-1.fna&oh=a8e0e78efbe8314baeb76de20e275d5b&oe=5EB06F80",
+        "images": [
+          {
+            "image": "https://scontent.fbcn1-1.fna.fbcdn.net/v/t1.0-9/p960x960/76183520_751409405377328_1132063773322903552_o.jpg?_nc_cat=100&_nc_ohc=MFvImdBVPpgAQm_Mv-O6Tqn5d2XBYEUmlWGk-H2nl_UbvKXl7daOLfzyQ&_nc_ht=scontent.fbcn1-1.fna&oh=a8e0e78efbe8314baeb76de20e275d5b&oe=5EB06F80",
+            "description": "Probably the most random thing you have ever seen!"
+          },
+          {
+            "image": "https://scontent.fbcn8-1.fna.fbcdn.net/v/t1.0-9/67970611_870878436629221_2103315406918778880_o.jpg?_nc_cat=107&_nc_ohc=n5oM74VhIxQAQlpcmO6eAZ2j2Omt5oq121vcOyngiVInUTsBdYBqHPJIA&_nc_ht=scontent.fbcn8-1.fna&oh=9b666401fcf9c10023b796a693d2e216&oe=5E6E8BBF",
+            "description": "Probably the most random thing you have ever seen!"
+          }
+        ],
         "videoKey":"4yeJ30fKycI"
       },
       {
-        "src": "https://scontent.fbcn8-1.fna.fbcdn.net/v/t1.0-9/67970611_870878436629221_2103315406918778880_o.jpg?_nc_cat=107&_nc_ohc=n5oM74VhIxQAQlpcmO6eAZ2j2Omt5oq121vcOyngiVInUTsBdYBqHPJIA&_nc_ht=scontent.fbcn8-1.fna&oh=9b666401fcf9c10023b796a693d2e216&oe=5E6E8BBF",
+        "images": [
+          {
+            "image": "https://scontent.fbcn8-1.fna.fbcdn.net/v/t1.0-9/67970611_870878436629221_2103315406918778880_o.jpg?_nc_cat=107&_nc_ohc=n5oM74VhIxQAQlpcmO6eAZ2j2Omt5oq121vcOyngiVInUTsBdYBqHPJIA&_nc_ht=scontent.fbcn8-1.fna&oh=9b666401fcf9c10023b796a693d2e216&oe=5E6E8BBF",
+            "description": "Probably the most random thing you have ever seen!"
+          },
+          {
+            "image": "https://scontent.fbcn8-1.fna.fbcdn.net/v/t1.0-9/67970611_870878436629221_2103315406918778880_o.jpg?_nc_cat=107&_nc_ohc=n5oM74VhIxQAQlpcmO6eAZ2j2Omt5oq121vcOyngiVInUTsBdYBqHPJIA&_nc_ht=scontent.fbcn8-1.fna&oh=9b666401fcf9c10023b796a693d2e216&oe=5E6E8BBF",
+            "description": "Probably the most random thing you have ever seen!"
+          }
+        ],
         "videoKey":"hZAUp5YCd4I"
       }
     ]
@@ -65,5 +83,8 @@
         "image": "./images/servicios_versatil_studio.jpg"
       }
     ]
+  },
+  "alquilerEquipos": {
+    
   }
 }

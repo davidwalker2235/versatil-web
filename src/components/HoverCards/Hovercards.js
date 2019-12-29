@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import CarouselSlider from "../common/carouselSlider/carouselSlider";
 import { HoverCard } from "react-png-hovercard";
 import { Translate } from "react-redux-i18n";
 import Fab from '@material-ui/core/Fab';
@@ -26,7 +27,7 @@ class Hovercard extends Component {
 
   render() {
     const { data, index } = this.props;
-    const { src } = data;
+    const {images} = data;
     return (
       <div>
         <HoverCard
@@ -35,11 +36,7 @@ class Hovercard extends Component {
           front={
             <div className="front" style={{ width: "inherit" }}>
               <Translate  className="hoverCardTitle" value={`main.hoverCard.hoverCard${index}.titleKey`} />
-              <img
-                src={src}
-                alt=""
-                style={{ objectFit: "cover", width: "inherit" }}
-              />
+              <CarouselSlider images={images}/>
             </div>
           }
           back={
