@@ -6,12 +6,12 @@ import "./carouselSlider.scss";
 
 class CarouselSlider extends Component {
   render() {
-    const {images} = this.props;
+    const {images, animation, fit} = this.props;
     return (
-        <Carousel animation="slide">
+        <Carousel animation={animation}>
             {images.map( (item, index) => (
-                <Paper key={index}>
-                    <img style={{backgroundSize: "cover", width: "100%"}} src={item.image} alt="versatil-logo" />
+                <Paper className={fit ? "carousel-paper" : ""} key={index}>
+                    <img className={fit ? "carousel-image-fit" : "carousel-image-cover"} src={item.image} alt="versatil-logo" />
                     <p>{item.description || null}</p>
                 </Paper>
             ))}
@@ -21,7 +21,9 @@ class CarouselSlider extends Component {
 }
 
 CarouselSlider.propTypes = {
-    images: PropTypes.array
+    images: PropTypes.array.isRequired,
+    animation: PropTypes.string,
+    fit: PropTypes.bool
 };
 
 export default CarouselSlider;

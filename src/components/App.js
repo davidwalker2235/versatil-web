@@ -8,6 +8,12 @@ import Settings from "./Contacto";
 import QuienesSomos from "./QuienesSomos";
 import Navbar from "./navbar/Navbar";
 import GlobalStyle from "../styles/Global";
+import GruposMusicalesView from "../containers/gruposMusicales/gruposMusicalesView";
+import CarpasView from "../containers/carpas/carpasView";
+import DecoracionesView from "../containers/decoraciones/decoracionesView";
+import GestionEspaciosView from "../containers/gestionEspacios/gestionEspaciosView";
+import VersatilRecordingView from "../containers/versatilRecording/versatilRecordingView";
+import CateringView from "../containers/catering/cateringView";
 
 const rootStyle = {
   backgroundColor: "black",
@@ -47,6 +53,12 @@ class App extends React.Component {
           <Route path="/quienes-somos" component={QuienesSomos} />
           <Route path="/contacto" component={Settings} />
           <Route path="/alquiler_equipos" component={AlquilerEquiposView} />
+          <Route path="/grupos_musicales" component={GruposMusicalesView} />
+          <Route path="/carpas" component={CarpasView} />
+          <Route path="/decoraciones" component={DecoracionesView} />
+          <Route path="/catering" component={CateringView} />
+          <Route path="/gestion_espacios" component={GestionEspaciosView} />
+          <Route path="/versatil_recording" component={VersatilRecordingView} />
         </Switch>
       </div>
     );

@@ -37,7 +37,7 @@ class Servicios extends Component {
                 {services.map((service, index)=> (
                   <Grid item xs={12} sm={6} lg={4} key={index}>
                     <NewsHeaderCard 
-                      href='/alquiler_equipos'
+                      href={service.uri}
                       thumbnail={service.image}
                       title={<Translate value={`services.serviceCards.${service.titleKey}`} />}
                       className="newsCard" />

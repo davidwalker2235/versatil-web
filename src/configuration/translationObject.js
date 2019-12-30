@@ -35,7 +35,10 @@ const translationData = {
         catering: "Catering",
         decoraciones: "Decoracions i mobiliari per events",
         gestionEspacios: "Gestió d'espais",
-        recordingStudio: "Versatil Recording Studio",
+        versatilRecording: "Versatil Recording Studio",
+      },
+      text: {
+        alquilerEquipos: "Oferim servei de lloguer d'equips de so i llums amb personal tècnic. L'alta qualitat del nostre material i l'experiència dels nostres tècnics proporcionen als nostres esdeveniments i espectacles elegància i professionalitat."
       }
     },
     export: "Export %{count} items",
@@ -77,7 +80,10 @@ const translationData = {
         catering: "Catering",
         decoraciones: "Decoraciones y mobiliario para eventos",
         gestionEspacios: "Gestión de espacios",
-        recordingStudio: "Versatil Recording Studio",
+        versatilRecording: "Versatil Recording Studio",
+      },
+      text: {
+        alquilerEquipos: "Ofrecemos servicio de alquiler de equipos de sonido y luces con personal técnico. La alta calidad de nuestro material y la experiencia de nuestros técnicos proporcionan a nuestros eventos y espectáculos elegancia y profesionalidad."
       }
     },
     date: {

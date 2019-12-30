@@ -17,7 +17,8 @@ const Styles = () => ({
   container: {
     height: "inherit",
     margin: "0",
-    width: "100%"
+    width: "100%",
+    padding: "30px"
   },
   versatilLogo: {
     width: "100%",

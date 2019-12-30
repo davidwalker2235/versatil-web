@@ -14,6 +14,6 @@ const mapDispatchToProps = dispatch => ({
   closeModalVideo: () => dispatch(closeModalVideo())
 });
 
-const AlquilerEquiposContainer = connect(mapStateToProps, mapDispatchToProps)(ServicesDetails);
+const GruposMusicalesContainer = connect(mapStateToProps, mapDispatchToProps)(ServicesDetails);
 
-export default AlquilerEquiposContainer;
+export default GruposMusicalesContainer;
