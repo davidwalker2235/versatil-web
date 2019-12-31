@@ -27,6 +27,13 @@ const Styles = () => ({
   },
   subtitle: {
     fontSize: "14px"
+  },
+  serviceVideo: {
+    display: "flex",
+    justifyContent: "center"
+  },
+  buttonContainer: {
+    paddingTop: "50px"
   }
 });
 

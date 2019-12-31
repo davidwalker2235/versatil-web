@@ -56,69 +56,187 @@
     "serviciosAry": [
       {
         "titleKey": "alquilerEquipos",
-        "image": "./images/servicios_alquiler_equipos.jpg",
+        "image": "./images/servicios_alquiler_equipos1.jpg",
         "uri": "/alquiler_equipos"
       },
       {
         "titleKey": "gruposMusicales",
-        "image": "./images/servicios_grupos_musicales.jpg",
+        "image": "./images/servicios_grupos_musicales1.jpg",
         "uri": "/grupos_musicales"
       },
       {
         "titleKey": "carpas",
-        "image": "./images/servicios_carpas.jpg",
+        "image": "./images/servicios_carpas1.jpg",
         "uri": "/carpas"
       },
       {
         "titleKey": "decoraciones",
-        "image": "./images/servicios_decoraciones.jpg",
+        "image": "./images/servicios_decoraciones1.jpg",
         "uri": "/decoraciones"
       },
       {
         "titleKey": "catering",
-        "image": "./images/servicios_catering.jpg",
+        "image": "./images/servicios_catering1.jpg",
         "uri": "/catering"
       },
       {
         "titleKey": "gestionEspacios",
-        "image": "./images/servicios_gestion_espacios.jpg",
+        "image": "./images/servicios_gestion_espacios1.jpg",
         "uri": "/gestion_espacios"
       },
       {
         "titleKey": "versatilRecording",
-        "image": "./images/servicios_versatil_studio.jpg",
+        "image": "./images/servicios_versatil_recording1.jpg",
         "uri": "/versatil_recording"
       }
     ]
   },
   "alquilerEquipos": {
     "title": "alquilerEquipos",
-    "images": [
+    "dataAry":[
       {
-        "image": "https://scontent.fbcn1-1.fna.fbcdn.net/v/t1.0-9/p960x960/76183520_751409405377328_1132063773322903552_o.jpg?_nc_cat=100&_nc_ohc=MFvImdBVPpgAQm_Mv-O6Tqn5d2XBYEUmlWGk-H2nl_UbvKXl7daOLfzyQ&_nc_ht=scontent.fbcn1-1.fna&oh=a8e0e78efbe8314baeb76de20e275d5b&oe=5EB06F80"
-      },
-      {
-        "image": "https://scontent.fbcn8-1.fna.fbcdn.net/v/t1.0-9/67970611_870878436629221_2103315406918778880_o.jpg?_nc_cat=107&_nc_ohc=n5oM74VhIxQAQlpcmO6eAZ2j2Omt5oq121vcOyngiVInUTsBdYBqHPJIA&_nc_ht=scontent.fbcn8-1.fna&oh=9b666401fcf9c10023b796a693d2e216&oe=5E6E8BBF"
+        "images": [
+          {
+            "image": "./images/servicios_alquiler_equipos1.jpg"
+          }
+        ],
+        "hasVideo": true,
+        "videoUri": "https://youtu.be/4yeJ30fKycI",
+        "hasCatalogo": true
       }
-    ],
-    "textKey": "alquilerEquiposText"
+    ]
   },
   "gruposMusicales": {
-    "title": "gruposMusicales"
+    "title": "gruposMusicales",
+    "dataAry":[
+      {
+        "images": [
+          {
+            "image": "./images/servicios_grupos_musicales1.jpg"
+          }
+        ],
+        "hasVideo": false,
+        "videoUri": "",
+        "hasCatalogo": true
+      }
+    ]
   },
   "carpas": {
-    "title": "carpas"
+    "title": "carpas",
+    "dataAry":[
+      {
+        "images": [
+          {
+            "image": "./images/carpas1.jpg"
+          },
+          {
+            "image": "./images/carpas2.jpg"
+          },
+          {
+            "image": "./images/carpas3.jpg"
+          },
+          {
+            "image": "./images/carpas4.jpg"
+          }
+        ],
+        "hasVideo": false,
+        "videoUri": "",
+        "hasCatalogo": true
+      }
+    ]
   },
   "decoraciones": {
-    "title": "decoraciones"
+    "title": "decoraciones",
+    "dataAry":[
+      {
+        "images": [
+          {
+            "image": "./images/servicios_decoraciones1.jpg"
+          }
+        ],
+        "hasVideo": false,
+        "videoUri": "",
+        "hasCatalogo": true
+      }
+    ]
   },
   "catering": {
-    "title": "catering"
+    "title": "catering",
+    "dataAry":[
+      {
+        "images": [
+          {
+            "image": "./images/catering1.jpg"
+          },
+          {
+            "image": "./images/catering2.jpg"
+          },
+          {
+            "image": "./images/catering3.jpg"
+          },
+          {
+            "image": "./images/catering4.jpg"
+          },
+          {
+            "image": "./images/catering5.jpg"
+          },
+          {
+            "image": "./images/catering6.jpg"
+          }
+        ],
+        "hasVideo": false,
+        "videoUri": "",
+        "hasCatalogo": false
+      }
+    ]
   },
   "gestionEspacios": {
-    "title": "gestionEspacios"
+    "title": "gestionEspacios",
+    "dataAry":[
+      {
+        "images": [
+          {
+            "image": "./images/factoria_musical1.jpg"
+          },
+          {
+            "image": "./images/factoria_musical2.jpg"
+          },
+          {
+            "image": "./images/factoria_musical3.jpg"
+          }
+        ],
+        "hasVideo": false,
+        "videoUri": "",
+        "hasCatalogo": true
+      },
+      {
+        "images": [
+          {
+            "image": "./images/ramon_romagosa1.jpg"
+          },
+          {
+            "image": "./images/ramon_romagosa2.jpg"
+          }
+        ],
+        "hasVideo": false,
+        "videoUri": "",
+        "hasCatalogo": true
+      }
+    ]
   },
   "versatilRecording": {
-    "title": "versatilRecording"
+    "title": "versatilRecording",
+    "dataAry":[
+      {
+        "images": [
+          {
+            "image": "./images/servicios_versatil_recording1.jpg"
+          }
+        ],
+        "hasVideo": false,
+        "videoUri": "",
+        "hasCatalogo": true
+      }
+    ]
   }
 }

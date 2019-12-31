@@ -84,3 +84,17 @@
   line-height: 1.66em;
   word-wrap: break-word;
 }
+
+.service-button-text {
+  font-family: "Share Tech Mono";
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.66em;
+  word-wrap: break-word;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -24,6 +24,7 @@
     "react-items-carousel": "^2.8.0",
     "react-material-ui-carousel": "^1.0.0",
     "react-modal-video": "^1.2.3",
+    "react-player": "^1.14.2",
     "react-png-hovercard": "^1.0.3",
     "react-redux": "^5.0.7",
     "react-redux-i18n": "^1.9.3",

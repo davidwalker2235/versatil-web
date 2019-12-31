@@ -54,7 +54,7 @@ class Home extends Component {
             >
                 {this.props.hoverCards &&
                   this.props.hoverCards.map((hoveCard, index) => (
-                    <Grid item key={index} xs={11} sm={11}>
+                    <Grid item key={index} xs={11} sm={11} lg={8}>
                       <Hovercards
                         data={hoveCard}
                         index={index}

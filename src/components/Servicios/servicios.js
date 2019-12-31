@@ -26,7 +26,6 @@ class Servicios extends Component {
             xs={10}
             sm={10}
             lg={10}
-            direction="column"
             justify="center">
             <Grid 
               container
