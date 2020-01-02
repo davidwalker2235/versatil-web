@@ -9,7 +9,7 @@ const Styles = () => ({
     width: "100%",
     height: "100%",
     zIndex: "-1",
-    backgroundColor: "rgba(50,20,105,0.8)"
+    backgroundColor: "rgba(50,20,105,0.7)"
   },
   paper: {
     width: "100%"

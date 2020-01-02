@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import InicioView from "../containers/inicio/inicioView";
 import ServiciosView from "../containers/servicios/serviciosView";
-import ProduccionesPropias from "../components/ProduccionesPropias";
+import ProduccionesPropiasView from "../containers/produccionesPropias/produccionesPropiasView";
 import AlquilerEquiposView from "../containers/alquilerEquipos/alquilerEquiposView";
 import Settings from "./Contacto";
 import QuienesSomos from "./QuienesSomos";
@@ -49,7 +49,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={InicioView} />
           <Route path="/servicios" component={ServiciosView} />
-          <Route path="/producciones-propias" component={ProduccionesPropias} />
+          <Route path="/producciones-propias" component={ProduccionesPropiasView} />
           <Route path="/quienes-somos" component={QuienesSomos} />
           <Route path="/contacto" component={Settings} />
           <Route path="/alquiler_equipos" component={AlquilerEquiposView} />

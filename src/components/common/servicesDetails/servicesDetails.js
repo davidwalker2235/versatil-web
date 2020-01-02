@@ -45,18 +45,26 @@ class ServicesDetails extends Component {
             </Grid>
             <Grid item lg={6} sm={6} xs={12}>
               <Grid container>
-                <Grid>
+                <Grid item lg={12} sm={12} xs={12}>
                   <Translate className="service-text" value={`services.text.${serviceData.title}${serviceData.dataAry.length > 1 ? `${index + 1}` : ''}`} />
                 </Grid>
                 <Grid container>
                   <Grid item lg={5} xs={12} sm={10} className={classes.buttonContainer}>
                     <div className="button-container">
-                      <Button size="large" variant="contained" color="secondary">
-                        <Translate className="service-button-text" value="services.pidaPresupuesto" />
-                      </Button>
-                      {data && data.hasCatalogo && <Button size="large" variant="outlined" color="secondary">
-                        <Translate className="service-button-text" value="services.verCatalogo" />
-                      </Button>}
+                      {
+                        data &&
+                        data.hasPresupuesto &&
+                        <Button size="large" variant="contained" color="secondary">
+                          <Translate className="service-button-text" value="services.pidaPresupuesto" />
+                        </Button>
+                      }
+                      {
+                        data &&
+                        data.hasCatalogo &&
+                        <Button size="large" variant="outlined" color="secondary" href={data.catalogoUri} target="_blank">
+                          <Translate className="service-button-text" value="services.verCatalogo" />
+                        </Button>
+                      }
                     </div>
                   </Grid>
                 </Grid>

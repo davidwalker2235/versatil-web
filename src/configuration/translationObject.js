@@ -50,6 +50,9 @@ const translationData = {
       pidaPresupuesto: "Demani presupost",
       verCatalogo: "Veure catàleg"
     },
+    produccionesPropias: {
+      title: "Produccions propies"
+    },
     export: "Export %{count} items",
     export_0: "Nothing to export",
     export_1: "Export %{count} item",
@@ -103,6 +106,9 @@ const translationData = {
       },
       pidaPresupuesto: "Pida presupuesto",
       verCatalogo: "Ver catálogo"
+    },
+    produccionesPropias: {
+      title: "Producciones propias"
     },
     date: {
       long: "D MMMM YYYY"

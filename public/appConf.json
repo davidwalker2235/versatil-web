@@ -102,7 +102,10 @@
         ],
         "hasVideo": true,
         "videoUri": "https://youtu.be/4yeJ30fKycI",
-        "hasCatalogo": true
+        "hasCatalogo": true,
+        "hasPresupuesto": true,
+        "catalogoUri": "./documents/catalogo.pdf",
+        "catalogoUri": "./documents/catalogo.pdf"
       }
     ]
   },
@@ -117,7 +120,10 @@
         ],
         "hasVideo": false,
         "videoUri": "",
-        "hasCatalogo": true
+        "hasCatalogo": true,
+        "hasPresupuesto": true,
+        "catalogoUri": "./documents/catalogo.pdf",
+        "catalogoUri": "./documents/catalogo.pdf"
       }
     ]
   },
@@ -141,7 +147,9 @@
         ],
         "hasVideo": false,
         "videoUri": "",
-        "hasCatalogo": true
+        "hasCatalogo": true,
+        "hasPresupuesto": true,
+        "catalogoUri": "./documents/catalogo.pdf"
       }
     ]
   },
@@ -156,7 +164,9 @@
         ],
         "hasVideo": false,
         "videoUri": "",
-        "hasCatalogo": true
+        "hasCatalogo": true,
+        "hasPresupuesto": true,
+        "catalogoUri": "./documents/catalogo.pdf"
       }
     ]
   },
@@ -186,7 +196,9 @@
         ],
         "hasVideo": false,
         "videoUri": "",
-        "hasCatalogo": false
+        "hasCatalogo": false,
+        "hasPresupuesto": true,
+        "catalogoUri": "./documents/catalogo.pdf"
       }
     ]
   },
@@ -207,7 +219,9 @@
         ],
         "hasVideo": false,
         "videoUri": "",
-        "hasCatalogo": true
+        "hasCatalogo": true,
+        "hasPresupuesto": true,
+        "catalogoUri": "./documents/catalogo.pdf"
       },
       {
         "images": [
@@ -220,7 +234,9 @@
         ],
         "hasVideo": false,
         "videoUri": "",
-        "hasCatalogo": true
+        "hasCatalogo": true,
+        "hasPresupuesto": true,
+        "catalogoUri": "./documents/catalogo.pdf"
       }
     ]
   },
@@ -235,7 +251,69 @@
         ],
         "hasVideo": false,
         "videoUri": "",
-        "hasCatalogo": true
+        "hasCatalogo": true,
+        "hasPresupuesto": true,
+        "catalogoUri": "./documents/catalogo.pdf"
+      }
+    ]
+  },
+  "produccionesPropias": {
+    "produccionesPropiasAry": [
+      {
+        "title": "Discussions",
+        "discussions": [
+          {
+            "id": 1,
+            "date": "3 days ago",
+            "author": {
+              "image": "./images/youtube_play.png",
+              "name": "John Doe",
+              "url": "#"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Discussions",
+        "discussions": [
+          {
+            "id": 1,
+            "date": "3 days ago",
+            "author": {
+              "image": "./images/youtube_play.png",
+              "name": "John Doe",
+              "url": "#"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Discussions",
+        "discussions": [
+          {
+            "id": 1,
+            "date": "3 days ago",
+            "author": {
+              "image": "./images/youtube_play.png",
+              "name": "John Doe",
+              "url": "#"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Discussions",
+        "discussions": [
+          {
+            "id": 1,
+            "date": "3 days ago",
+            "author": {
+              "image": "./images/youtube_play.png",
+              "name": "John Doe",
+              "url": "#"
+            }
+          }
+        ]
       }
     ]
   }
