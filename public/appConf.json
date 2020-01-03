@@ -260,60 +260,28 @@
   "produccionesPropias": {
     "produccionesPropiasAry": [
       {
-        "title": "Discussions",
-        "discussions": [
-          {
-            "id": 1,
-            "date": "3 days ago",
-            "author": {
-              "image": "./images/youtube_play.png",
-              "name": "John Doe",
-              "url": "#"
-            }
-          }
-        ]
+        "titleKey": "canMercader",
+        "textKey": "canMercaderText",
+        "image": "./images/pp_can_mercader_20.jpg",
+        "video": "hZAUp5YCd4I"
       },
       {
-        "title": "Discussions",
-        "discussions": [
-          {
-            "id": 1,
-            "date": "3 days ago",
-            "author": {
-              "image": "./images/youtube_play.png",
-              "name": "John Doe",
-              "url": "#"
-            }
-          }
-        ]
+        "titleKey": "fiestaFluor",
+        "textKey": "fiestaFluorText",
+        "image": "./images/pp_fiesta_fluor.jpeg",
+        "video": "cZIl23TgH-U"
       },
       {
-        "title": "Discussions",
-        "discussions": [
-          {
-            "id": 1,
-            "date": "3 days ago",
-            "author": {
-              "image": "./images/youtube_play.png",
-              "name": "John Doe",
-              "url": "#"
-            }
-          }
-        ]
+        "titleKey": "feriaVinos",
+        "textKey": "feriaVinosText",
+        "image": "./images/pp_fira_vins.jpg",
+        "video": "L01Ml_OvVKY"
       },
       {
-        "title": "Discussions",
-        "discussions": [
-          {
-            "id": 1,
-            "date": "3 days ago",
-            "author": {
-              "image": "./images/youtube_play.png",
-              "name": "John Doe",
-              "url": "#"
-            }
-          }
-        ]
+        "titleKey": "randomKieb",
+        "textKey": "randomKiebText",
+        "image": "./images/pp_random_kieb.jpg",
+        "video": "4yeJ30fKycI"
       }
     ]
   }

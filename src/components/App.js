@@ -14,6 +14,8 @@ import DecoracionesView from "../containers/decoraciones/decoracionesView";
 import GestionEspaciosView from "../containers/gestionEspacios/gestionEspaciosView";
 import VersatilRecordingView from "../containers/versatilRecording/versatilRecordingView";
 import CateringView from "../containers/catering/cateringView";
+import ModalVideo from 'react-modal-video';
+import "./App.scss";
 
 const rootStyle = {
   backgroundColor: "black",
@@ -38,8 +40,10 @@ class App extends React.Component {
   };
 
   render() {
+    const {isModalVideoOpen, closeModalVideo, videoKey} = this.props;
     return (
       <div style={rootStyle}>
+        <ModalVideo channel='youtube' isOpen={isModalVideoOpen} videoId={videoKey} onClose={closeModalVideo} />
         <Navbar
           navbarState={this.state.navbarOpen}
           handleNavbar={this.handleNavbar}

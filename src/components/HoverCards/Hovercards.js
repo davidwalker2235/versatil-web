@@ -22,7 +22,6 @@ class Hovercard extends Component {
     if (typeof openVideo === "function") {
       openVideo(data.videoKey);
     }
-    
   }
 
   render() {

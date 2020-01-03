@@ -5,17 +5,15 @@ import Grid from "@material-ui/core/Grid";
 import Hovercards from "../HoverCards/Hovercards";
 import { withStyles } from "@material-ui/styles";
 import Button from '@material-ui/core/Button';
-import ModalVideo from 'react-modal-video';
 import { Translate } from "react-redux-i18n";
 import Styles from "./styles";
 import "./index.scss";
 
 class Home extends Component {
   render() {
-    const { classes, openModalVideo, closeModalVideo, isModalVideoOpen, videoKey } = this.props;
+    const { classes, openModalVideo, closeModalVideo } = this.props;
     return (
       <div className="home-root">
-        <ModalVideo channel='youtube' isOpen={isModalVideoOpen} videoId={videoKey} onClose={closeModalVideo} />
         <img alt="" className="backgroundImage" />
         <div className={classes.backgroundLayer} />
         <div className={classes.root}>

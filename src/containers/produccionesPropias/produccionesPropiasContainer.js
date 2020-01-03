@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import ProduccionesPropias from "../../components/produccionesPropias/ProduccionesPropias";
+import {openModalVideo, closeModalVideo} from "../../actions/modalVideo/modalVideoActions";
 
 const mapStateToProps = state => ({
   produccionesPropias: state.produccionesPropias.produccionesPropias,
@@ -8,6 +9,11 @@ const mapStateToProps = state => ({
   videoKey: state.modalVideo.videoKey
 });
 
-const ProduccionesPropiasContainer = connect(mapStateToProps, null)(ProduccionesPropias);
+const mapDispatchToProps = dispatch => ({
+  openModalVideo: (key) => dispatch(openModalVideo(key)),
+  closeModalVideo: () => dispatch(closeModalVideo())
+});
+
+const ProduccionesPropiasContainer = connect(mapStateToProps, mapDispatchToProps)(ProduccionesPropias);
 
 export default ProduccionesPropiasContainer;

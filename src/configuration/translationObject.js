@@ -51,7 +51,25 @@ const translationData = {
       verCatalogo: "Veure catàleg"
     },
     produccionesPropias: {
-      title: "Produccions propies"
+      title: "Produccions propies",
+      cards: {
+        canMercader: {
+          title: "Can Mercader Festival",
+          text: "Festival gratuït de Rock i Metal, organitzat per l’Ajuntament de Cornellà, en el qual ens encarreguem de la producció tècnica i artística des de l’any 2015."
+        },
+        feriaVinos: {
+          title: "Fira de vins de Cornellà",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+        },
+        fiestaFluor: {
+          title: "Festa Fluor",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+        },
+        randomKieb: {
+          title: "The Random Kieb Show",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+        },
+      }
     },
     export: "Export %{count} items",
     export_0: "Nothing to export",
@@ -108,7 +126,25 @@ const translationData = {
       verCatalogo: "Ver catálogo"
     },
     produccionesPropias: {
-      title: "Producciones propias"
+      title: "Producciones propias",
+      cards: {
+        canMercader: {
+          title: "Can Mercader Festival",
+          text: "Festival gratuito de Rock y Metal, organizado por el Ayuntamiento de Cornellá, en el cual llevamos a cabo la producción técnica y artística desde el año 2015."
+        },
+        feriaVinos: {
+          title: "Feria de vinos de Cornellà",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+        },
+        fiestaFluor: {
+          title: "Fiesta Fluor",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+        },
+        randomKieb: {
+          title: "The Random Kieb show",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+        },
+      }
     },
     date: {
       long: "D MMMM YYYY"

@@ -1,9 +1,15 @@
 import { connect } from "react-redux";
 import App from "../../components/App";
+import {closeModalVideo} from "../../actions/modalVideo/modalVideoActions";
 
-const mapStateToProps = () => ({});
+const mapStateToProps = (state) => ({
+    isModalVideoOpen: state.modalVideo.isModalVideoOpen,
+    videoKey: state.modalVideo.videoKey
+});
 
-const mapDispatchToProps = () => ({});
+const mapDispatchToProps = (dispatch) => ({
+    closeModalVideo: () => dispatch(closeModalVideo())
+});
 
 const AppContainer = connect(mapStateToProps, mapDispatchToProps)(App);
 

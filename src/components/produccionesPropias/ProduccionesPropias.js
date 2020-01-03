@@ -11,7 +11,7 @@ class ProduccionesPropias extends React.Component {
   }
 
   render() {
-    const { produccionesPropias } = this.props;
+    const { produccionesPropias, openModalVideo, closeModalVideo, isModalVideoOpen } = this.props;
     return (
       <div>
       <div className="servicesBackgroundImage" />
@@ -50,9 +50,13 @@ class ProduccionesPropias extends React.Component {
               justify="center"
               alignItems="center"
               spacing={3}>
-                {produccionesPropias.map((service, index)=> (
+                {produccionesPropias.map((production, index)=> (
                   <Grid item xs={12} sm={6} lg={6} key={index}>
-                    <CardComponent />
+                    <CardComponent
+                      production={production}
+                      openModalVideo={openModalVideo}
+                      closeModalVideo={closeModalVideo}
+                      isModalVideoOpen={isModalVideoOpen}/>
                 </Grid>
                 ))}
             </Grid>
