@@ -8,7 +8,7 @@ class CarouselSlider extends Component {
   render() {
     const {images, animation, fit} = this.props;
     return (
-        <Carousel animation={animation}>
+        <Carousel animation={animation} interval={2000}>
             {images.map( (item, index) => (
                 <Paper className={fit ? "carousel-paper" : ""} key={index}>
                     <img className={fit ? "carousel-image-fit" : "carousel-image-cover"} src={item.image} alt="versatil-logo" />

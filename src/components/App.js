@@ -4,8 +4,8 @@ import InicioView from "../containers/inicio/inicioView";
 import ServiciosView from "../containers/servicios/serviciosView";
 import ProduccionesPropiasView from "../containers/produccionesPropias/produccionesPropiasView";
 import AlquilerEquiposView from "../containers/alquilerEquipos/alquilerEquiposView";
-import Settings from "./Contacto";
-import QuienesSomos from "./QuienesSomos";
+import ContactoView from "../containers/contacto/contactoView";
+import QuienesSomosView from "../containers/quienesSomos/quienesSomosView";
 import Navbar from "./navbar/Navbar";
 import GlobalStyle from "../styles/Global";
 import GruposMusicalesView from "../containers/gruposMusicales/gruposMusicalesView";
@@ -54,8 +54,8 @@ class App extends React.Component {
           <Route exact path="/" component={InicioView} />
           <Route path="/servicios" component={ServiciosView} />
           <Route path="/producciones-propias" component={ProduccionesPropiasView} />
-          <Route path="/quienes-somos" component={QuienesSomos} />
-          <Route path="/contacto" component={Settings} />
+          <Route path="/quienes-somos" component={QuienesSomosView} />
+          <Route path="/contacto" component={ContactoView} />
           <Route path="/alquiler_equipos" component={AlquilerEquiposView} />
           <Route path="/grupos_musicales" component={GruposMusicalesView} />
           <Route path="/carpas" component={CarpasView} />

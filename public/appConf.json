@@ -98,13 +98,54 @@
         "images": [
           {
             "image": "./images/servicios_alquiler_equipos1.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos2.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos3.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos4.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos5.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos6.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos7.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos8.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos9.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos10.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos11.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos12.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos13.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos14.jpg"
+          },
+          {
+            "image": "./images/servicios_alquiler_equipos15.jpeg"
           }
         ],
         "hasVideo": true,
         "videoUri": "https://youtu.be/4yeJ30fKycI",
         "hasCatalogo": true,
         "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogo.pdf",
         "catalogoUri": "./documents/catalogo.pdf"
       }
     ]
@@ -122,7 +163,6 @@
         "videoUri": "",
         "hasCatalogo": true,
         "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogo.pdf",
         "catalogoUri": "./documents/catalogo.pdf"
       }
     ]
@@ -246,7 +286,79 @@
       {
         "images": [
           {
-            "image": "./images/servicios_versatil_recording1.jpg"
+            "image": "./images/servicios_versatil_recording1.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording2.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording3.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording4.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording5.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording6.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording7.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording8.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording9.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording10.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording11.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording12.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording13.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording14.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording15.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording16.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording17.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording18.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording19.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording20.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording21.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording22.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording23.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording24.jpeg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording25.jpeg"
           }
         ],
         "hasVideo": false,
@@ -295,23 +407,28 @@
         ]
       },
       {
-        "titleKey": "fiestaFluor",
-        "textKey": "fiestaFluorText",
-        "video": "cZIl23TgH-U",
-        "images": [
-          {
-            "image": "./images/pp_fiesta_fluor1.jpeg",
-            "description": ""
-          }
-        ]
-      },
-      {
         "titleKey": "feriaVinos",
         "textKey": "feriaVinosText",
         "video": "L01Ml_OvVKY",
         "images": [
           {
-            "image": "./images/pp_fira_vins1.jpg",
+            "image": "./images/pp_fira_vins1.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fira_vins2.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fira_vins3.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fira_vins4.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fira_vins5.jpeg",
             "description": ""
           }
         ]
@@ -325,9 +442,67 @@
           {
             "image": "./images/pp_random_kieb1.jpg",
             "description": ""
+          },
+          {
+            "image": "./images/pp_random_kieb1.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_random_kieb2.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_random_kieb3.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_random_kieb4.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_random_kieb5.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_random_kieb6.jpeg",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "titleKey": "fiestaFluor",
+        "textKey": "fiestaFluorText",
+        "video": "cZIl23TgH-U",
+        "images": [
+          {
+            "image": "./images/pp_fiesta_fluor1.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor2.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor3.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor4.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor5.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor6.jpg",
+            "description": ""
           }
         ]
       }
     ]
+  },
+  "quienesSomos": {
+    "image": "./images/xavi_y_javi.jpg"
   }
 }

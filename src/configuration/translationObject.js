@@ -39,7 +39,7 @@ const translationData = {
       },
       text: {
         alquilerEquipos: "Oferim servei de lloguer d'equips de so i llums amb personal tècnic. L'alta qualitat del nostre material i l'experiència dels nostres tècnics proporcionen als nostres esdeveniments i espectacles elegància i professionalitat.",
-        gruposMusicales: "Disposem d'un gran ventall de bandes de versions, orquestres, grups tribut, grups de cançons pròpies de tots els estils, DJ i tot tipus d'artistes relacionats amb el món de l'espectacle.",
+        gruposMusicales: "Disposem d’un gran ventall de bandes de versions, orquestres, grups tribut, grups de cançons pròpies de tots els estils, DJ’s i tot tipus d’artistes relacionats  amb el món de l’espectacle.",
         carpas: "El muntatge de carpes per a esdeveniments és una de les nostres especialitats. Disposem d'una gran varietat de models que s'adaptaran a les necessitats de l'espai.",
         catering: "Catering a mida per a empreses, particulars, esdeveniments i rodatges.",
         decoraciones: "Ofrecemos servicios de decoración de espacios tanto en interior como en exterior. Disponemos de mobiliario exclusivo adecuado para todo tipo de eventos.",
@@ -51,7 +51,7 @@ const translationData = {
       verCatalogo: "Veure catàleg"
     },
     produccionesPropias: {
-      title: "Produccions propies",
+      title: "Produccions pròpies",
       cards: {
         canMercader: {
           title: "Can Mercader Festival",
@@ -71,10 +71,13 @@ const translationData = {
         },
       }
     },
-    export: "Export %{count} items",
-    export_0: "Nothing to export",
-    export_1: "Export %{count} item",
-    two_lines: "Line 1<br />Line 2"
+    quienesSomos: {
+      title: "Qui som",
+      text: "Xavi Alloza i Javier Rodriguez creen Versatil Produccions per dissenyar, produir i gestionar espectacles i activitats lúdiques de qualitat. L'EQUIP VERSATIL està experimentat en el sector dels esdeveniments, coneix l'entorn i sap que l'èxit final recau en començar escoltant i executa sense perdre la visió de client."
+    },
+    contacto: {
+      title: "Contacte"
+    }
   },
   es: {
     application: {
@@ -146,13 +149,13 @@ const translationData = {
         },
       }
     },
-    date: {
-      long: "D MMMM YYYY"
+    quienesSomos: {
+      title: "Quienes somos",
+      text: "Xavi Alloza y Javier Rodriguez crean Versatil Produccions para diseñar, producir y gestionar espectáculos y actividades lúdicas de calidad. EL EQUIPO VERSATIL está experimentado en el sector de los eventos, conoce el entorno y sabe que el éxito final recae en empezar escuchando y ejecuta sin perder la visión del cliente."
     },
-    export: "Exporteer %{count} dingen",
-    export_0: "Niks te exporteren",
-    export_1: "Exporteer %{count} ding",
-    two_lines: "Regel 1<br />Regel 2"
+    contacto: {
+      title: "Contacto"
+    }
   }
 };
 

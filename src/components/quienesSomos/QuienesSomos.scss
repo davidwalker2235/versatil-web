@@ -1,0 +1,25 @@
+.servicesBackgroundImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../configuration/images/servicesBackground.jpg") !important;
+  }
+
+  .blurBackgroundImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.5);
+  }
