@@ -90,3 +90,32 @@
 .pp-title {
   padding-left: 30px;
 }
+
+.frontCardRoot {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  align-items: center;
+  width: 60%;
+}
+
+.backCardRoot {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  align-items: center;
+  width: 60%;
+}
+
+.colorOne{
+  background: rgba(229,0,125,0.3);
+}
+.colorTwo{
+  background: rgba(228,80,73,0.3);
+}
+.colorThree{
+  background: rgba(227,130,40,0.3);
+}
+.colorFour{
+  background: rgba(226,188,3,0.3);
+}

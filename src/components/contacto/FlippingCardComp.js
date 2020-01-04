@@ -10,16 +10,16 @@ import Styles from "./styles";
 class FlippingCardComp extends React.Component {
 
   render() {
-    const { classes, contacto } = this.props;
+    const { classes, contacto, colorClass } = this.props;
     return (
         <FlippingCard>
             <FlippingCardBack>
-              <div className={classes.backCardRoot}>
+              <div className="backCardRoot">
                 <Translate value="contacto.title" />
               </div>
             </FlippingCardBack>
             <FlippingCardFront>
-              <div className={classes.frontCardRoot}>
+              <div className={`frontCardRoot ${colorClass}`}>
                 <LocationOnIcon className={classes.icon} />
               </div>
             </FlippingCardFront>

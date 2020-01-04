@@ -4,7 +4,9 @@ import styled from "styled-components";
 import logo from "../../assets/logo-min.png";
 
 const Brand = () => {
-  return <Image src={logo} alt="Company Logo" />;
+  return <a href="\">
+  <Image src={logo} alt="Company Logo" href="/" />
+</a>
 };
 
 export default Brand;

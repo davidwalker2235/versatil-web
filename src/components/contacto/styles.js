@@ -25,7 +25,7 @@ const Styles = () => ({
     backgroundColor: "white"
   },
   frontCardRoot: {
-    backgroundColor: "transparent",
+    background: "-webkit-linear-gradient(left, rgba(229,0,125,0.3), rgba(229,0,125,0.3))",
     display: "flex",
     justifyContent: "center",
     height: "100%",

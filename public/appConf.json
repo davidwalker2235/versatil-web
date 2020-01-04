@@ -444,10 +444,6 @@
             "description": ""
           },
           {
-            "image": "./images/pp_random_kieb1.jpeg",
-            "description": ""
-          },
-          {
             "image": "./images/pp_random_kieb2.jpeg",
             "description": ""
           },
@@ -465,6 +461,10 @@
           },
           {
             "image": "./images/pp_random_kieb6.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_random_kieb7.jpg",
             "description": ""
           }
         ]

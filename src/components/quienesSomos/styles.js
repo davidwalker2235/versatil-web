@@ -11,7 +11,7 @@ const Styles = () => ({
   },
   subtitleText: {
     color: "white",
-    fontSize: "18px",
+    fontSize: "24px",
   },
   mediaRoot: {
     minHeight: "400px"

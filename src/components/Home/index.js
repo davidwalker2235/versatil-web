@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import versatilLogo from "../../configuration/images/versatilLogo.png";
 import Grid from "@material-ui/core/Grid";
-import Hovercards from "../HoverCards/Hovercards";
 import { withStyles } from "@material-ui/styles";
 import Button from '@material-ui/core/Button';
 import { Translate } from "react-redux-i18n";
@@ -10,6 +9,13 @@ import Styles from "./styles";
 import "./index.scss";
 
 class Home extends Component {
+
+  showVideoPromo = () => {
+    const { openModalVideo } = this.props;
+    if (typeof openModalVideo === 'function') {
+      openModalVideo('4yeJ30fKycI');
+    }
+  }
   render() {
     const { classes, openModalVideo, closeModalVideo } = this.props;
     return (
@@ -38,6 +44,11 @@ class Home extends Component {
                 <div className="subtitle">
                   <Button variant="contained" color="secondary" href="/servicios">
                     <Translate className={classes.subtitle} value="main.subtitle" />
+                  </Button>
+                </div>
+                <div className="subtitle">
+                  <Button variant="contained" onClick={this.showVideoPromo}>
+                    <Translate className={classes.subtitle} value="main.videoButton" />
                   </Button>
                 </div>
               </div>

@@ -43,20 +43,20 @@ class QuienesSomos extends React.Component {
           </Grid>
           <Grid
             item
-            xs={10}
-            sm={10}
-            lg={10}>
+            xs={8}
+            sm={8}
+            lg={8}>
           <Card className={classes.card}>
             <CardActionArea className={classes.mediaRoot}>
-              <CardMedia
-                className={classes.media}
-                image={quienesSomos.image}
-              />
-              <CardContent>
+            <CardContent>
                 <Typography gutterBottom variant="h5" component="span" className={classes.subtitleText}>
                   <Translate value="quienesSomos.text" />
                 </Typography>
               </CardContent>
+              <CardMedia
+                className={classes.media}
+                image={quienesSomos.image}
+              />
             </CardActionArea>
           </Card>
           </Grid>

@@ -12,6 +12,8 @@ import "./Contacto.scss";
 
 class Contacto extends React.Component {
 
+  flippingCards = ['colorOne', 'colorTwo', 'colorThree', 'colorFour']
+
   render() {
     const { classes, contacto } = this.props;
     return (
@@ -40,37 +42,29 @@ class Contacto extends React.Component {
                   <Translate className="pp-color-gradient" value="contacto.title" />
                 </h2>
             </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={3}
-              lg={3}
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={8}
+            lg={8}
+          >
+          <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
             >
-              <FlippingCardComp />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={3}
-              lg={3}
-            >
-              <FlippingCardComp />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={3}
-              lg={3}
-            >
-              <FlippingCardComp />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={3}
-              lg={3}
-            >
-              <FlippingCardComp />
+              {this.flippingCards.map((color) => (
+                <Grid
+                  item
+                  xs={6}
+                  sm={3}
+                  lg={3}
+                >
+                  <FlippingCardComp colorClass={color}/>
+                </Grid>
+              ))}
             </Grid>
           </Grid>
         </Grid>
