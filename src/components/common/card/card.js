@@ -10,6 +10,7 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import { Translate } from "react-redux-i18n";
 import Fab from '@material-ui/core/Fab';
 import Styles from "./styles";
+import CarouselSlider from "../../common/carouselSlider/carouselSlider";
 import "./card.scss"
 
 class CardComponent extends Component {
@@ -34,9 +35,10 @@ class CardComponent extends Component {
           <CardActionArea className={classes.mediaRoot}>
             <CardMedia
               className={classes.media}
-              image={production.image}
               title="Contemplative Reptile"
-            />
+            >
+              <CarouselSlider images={production.images || []} fit/>
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2" className={classes.titleText}>
                 <Translate value={`produccionesPropias.cards.${production.titleKey}.title`} />

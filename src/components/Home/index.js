@@ -42,26 +42,6 @@ class Home extends Component {
                 </div>
               </div>
             </Grid>
-            <Grid
-              container
-              className="hoverCardsContainer"
-              direction="row"
-              justify="center"
-              alignItems="center"
-              spacing={3}
-            >
-                {this.props.hoverCards &&
-                  this.props.hoverCards.map((hoveCard, index) => (
-                    <Grid item key={index} xs={11} sm={11} lg={8}>
-                      <Hovercards
-                        data={hoveCard}
-                        index={index}
-                        openVideo={openModalVideo}
-                        closeVideo={closeModalVideo}
-                      />
-                    </Grid>
-                  ))}
-            </Grid>
           </Grid>
         </div>
       </div>

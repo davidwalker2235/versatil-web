@@ -262,26 +262,71 @@
       {
         "titleKey": "canMercader",
         "textKey": "canMercaderText",
-        "image": "./images/pp_can_mercader_20.jpg",
-        "video": "hZAUp5YCd4I"
+        "video": "hZAUp5YCd4I",
+        "images": [
+          {
+            "image": "./images/pp_can_mercader1.jpeg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_can_mercader2.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_can_mercader3.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_can_mercader4.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_can_mercader5.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_can_mercader6.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_can_mercader7.jpg",
+            "description": ""
+          }
+        ]
       },
       {
         "titleKey": "fiestaFluor",
         "textKey": "fiestaFluorText",
-        "image": "./images/pp_fiesta_fluor.jpeg",
-        "video": "cZIl23TgH-U"
+        "video": "cZIl23TgH-U",
+        "images": [
+          {
+            "image": "./images/pp_fiesta_fluor1.jpeg",
+            "description": ""
+          }
+        ]
       },
       {
         "titleKey": "feriaVinos",
         "textKey": "feriaVinosText",
-        "image": "./images/pp_fira_vins.jpg",
-        "video": "L01Ml_OvVKY"
+        "video": "L01Ml_OvVKY",
+        "images": [
+          {
+            "image": "./images/pp_fira_vins1.jpg",
+            "description": ""
+          }
+        ]
       },
       {
         "titleKey": "randomKieb",
         "textKey": "randomKiebText",
         "image": "./images/pp_random_kieb.jpg",
-        "video": "4yeJ30fKycI"
+        "video": "4yeJ30fKycI",
+        "images": [
+          {
+            "image": "./images/pp_random_kieb1.jpg",
+            "description": ""
+          }
+        ]
       }
     ]
   }

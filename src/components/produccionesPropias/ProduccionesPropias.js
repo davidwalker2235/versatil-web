@@ -28,7 +28,7 @@ class ProduccionesPropias extends React.Component {
           xs={12}
           sm={12}
           lg={12}>
-            <h2 className="fancy-title-8 mk-fancy-title mk-animate-element">
+            <h2 className="fancy-title-8 mk-fancy-title mk-animate-element pp-title">
               <Translate className="pp-color-gradient" value="produccionesPropias.title" />
             </h2>
         </Grid>
