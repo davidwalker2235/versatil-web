@@ -10,7 +10,7 @@ import { routerMiddleware } from "react-router-redux";
 import createHistory from "history/createBrowserHistory";
 import translationData from "./configuration/translationObject";
 
-export const history = createHistory();
+export const history = createHistory({ basename: '/' });
 
 // Build the middleware for intercepting and dispatching navigation actions
 const myRouterMiddleware = routerMiddleware(history);

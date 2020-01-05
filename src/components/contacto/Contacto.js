@@ -2,10 +2,6 @@ import React from "react";
 import { withStyles } from "@material-ui/styles";
 import Grid from "@material-ui/core/Grid";
 import { Translate } from "react-redux-i18n";
-import {FlippingCard} from "react-ui-cards";
-import {FlippingCardBack} from "react-ui-cards";
-import {FlippingCardFront} from "react-ui-cards";
-import LocationOnIcon from '@material-ui/icons/LocationOn';
 import FlippingCardComp from "./FlippingCardComp";
 import Styles from "./styles";
 import "./Contacto.scss";
@@ -15,7 +11,6 @@ class Contacto extends React.Component {
   flippingCards = ['colorOne', 'colorTwo', 'colorThree', 'colorFour']
 
   render() {
-    const { classes, contacto } = this.props;
     return (
       <div>
         <div className="servicesBackgroundImage" />
@@ -46,7 +41,7 @@ class Contacto extends React.Component {
           <Grid
             item
             xs={12}
-            sm={8}
+            sm={12}
             lg={8}
           >
           <Grid
@@ -54,11 +49,12 @@ class Contacto extends React.Component {
               direction="row"
               justify="center"
               alignItems="center"
+              spacing={3}
             >
               {this.flippingCards.map((color) => (
                 <Grid
                   item
-                  xs={6}
+                  xs={5}
                   sm={3}
                   lg={3}
                 >

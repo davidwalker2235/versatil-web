@@ -10,9 +10,9 @@ import Styles from "./styles";
 class FlippingCardComp extends React.Component {
 
   render() {
-    const { classes, contacto, colorClass } = this.props;
+    const { classes, colorClass } = this.props;
     return (
-        <FlippingCard>
+        <FlippingCard className="flippingCardRoot">
             <FlippingCardBack>
               <div className="backCardRoot">
                 <Translate value="contacto.title" />
