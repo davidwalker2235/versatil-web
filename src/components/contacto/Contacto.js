@@ -14,7 +14,7 @@ class Contacto extends React.Component {
     const {contactoData} = contacto;
 
     return (
-      <div>
+      <div className="contactoRoot">
         <div className="servicesBackgroundImage" />
         <div className="blurBackgroundImage" />
         <Grid
@@ -58,7 +58,7 @@ class Contacto extends React.Component {
                 <Grid
                   key={index}
                   item
-                  xs={5}
+                  xs={6}
                   sm={3}
                   lg={3}
                 >
