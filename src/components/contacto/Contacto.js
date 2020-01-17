@@ -2,22 +2,19 @@ import React from "react";
 import { withStyles } from "@material-ui/styles";
 import Grid from "@material-ui/core/Grid";
 import { Translate } from "react-redux-i18n";
-import {FlippingCard} from "react-ui-cards";
-import {FlippingCardBack} from "react-ui-cards";
-import {FlippingCardFront} from "react-ui-cards";
-import LocationOnIcon from '@material-ui/icons/LocationOn';
 import FlippingCardComp from "./FlippingCardComp";
 import Styles from "./styles";
+import MapComponent from "../common/mapComponent/mapComponent";
 import "./Contacto.scss";
 
 class Contacto extends React.Component {
 
-  flippingCards = ['colorOne', 'colorTwo', 'colorThree', 'colorFour']
-
   render() {
-    const { classes, contacto } = this.props;
-       (
-      <div>
+    const {contacto} = this.props;
+    const {contactoData} = contacto;
+
+    return (
+      <div className="contactoRoot">
         <div className="servicesBackgroundImage" />
         <div className="blurBackgroundImage" />
         <Grid
@@ -25,6 +22,7 @@ class Contacto extends React.Component {
           direction="column"
           justify="center"
           alignItems="center"
+          spacing={9}
         >
           <Grid
             container
@@ -46,7 +44,7 @@ class Contacto extends React.Component {
           <Grid
             item
             xs={12}
-            sm={8}
+            sm={12}
             lg={8}
           >
           <Grid
@@ -54,19 +52,46 @@ class Contacto extends React.Component {
               direction="row"
               justify="center"
               alignItems="center"
+              spacing={3}
             >
-              {this.flippingCards.map((color) => (
+              {contactoData && contactoData.map((contactoElem, index) => (
                 <Grid
+                  key={index}
                   item
                   xs={6}
                   sm={3}
                   lg={3}
                 >
-                  <FlippingCardComp colorClass={color}/>
+                  <FlippingCardComp colorClass={contactoElem.color} icon={contactoElem.id}/>
                 </Grid>
               ))}
             </Grid>
           </Grid>
+          <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={3}
+            >
+          <Grid
+            item
+            xs={10}
+            sm={10}
+            lg={7}
+            style={{height: "400px"}}
+          >
+            <div style={{width: "100%", height: "100%"}}>
+              <MapComponent
+                width="400px"
+                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv7hTkfNIjSZ36H1H0giYugj4MdiYjaks&v=3.exp&libraries=geometry,drawing,places"
+                loadingElement={<div style={{ height: `100%` }} />}
+                containerElement={<div style={{ position: "relative", height: "100%", width: "100%" }} />}
+                mapElement={<div style={{ height: `100%` }} />}
+              />
+            </div>
+          </Grid>
+            </Grid>
         </Grid>
       </div>
     );

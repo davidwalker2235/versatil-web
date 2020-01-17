@@ -17,7 +17,7 @@ class Home extends Component {
     }
   }
   render() {
-    const { classes, openModalVideo, closeModalVideo } = this.props;
+    const { classes } = this.props;
     return (
       <div className="home-root">
         <img alt="" className="backgroundImage" />
@@ -47,7 +47,7 @@ class Home extends Component {
                   </Button>
                 </div>
                 <div className="subtitle">
-                  <Button variant="contained" onClick={this.showVideoPromo}>
+                  <Button variant="outlined" color="secondary" onClick={this.showVideoPromo}>
                     <Translate className={classes.subtitle} value="main.videoButton" />
                   </Button>
                 </div>

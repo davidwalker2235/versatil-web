@@ -13,7 +13,7 @@ const translationData = {
     },
     main: {
       subtitle: "Els nostres serveis",
-      videoButton: "Veure video promocional",
+      videoButton: "Veure video promo",
       pasion: "Pasió",
       hoverCard: {
         play: "Reproduir",

@@ -504,5 +504,33 @@
   },
   "quienesSomos": {
     "image": "./images/xavi_y_javi.jpg"
+  },
+  "contacto": {
+    "contactoData": [
+      {
+        "id": "direccion",
+        "color": "colorOne",
+        "instagramLink": "",
+        "facebookLink": ""
+      },
+      {
+        "id": "telefono",
+        "color": "colorTwo",
+        "instagramLink": "",
+        "facebookLink": ""
+      },
+      {
+        "id": "email",
+        "color": "colorThree",
+        "instagramLink": "",
+        "facebookLink": ""
+      },
+      {
+        "id": "media",
+        "color": "colorFour",
+        "instagramLink": "",
+        "facebookLink": ""
+      }
+    ]
   }
 }

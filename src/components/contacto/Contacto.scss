@@ -1,5 +1,9 @@
 @import '../../../node_modules/react-modal-video/scss/modal-video.scss';
 
+.contactoRoot {
+  padding: 36px;
+}
+
 .servicesBackgroundImage {
     position: fixed;
     top: 0;
@@ -91,20 +95,26 @@
   padding-left: 30px;
 }
 
+.flippingCardRoot {
+  min-width: fit-content;
+  min-height: 200px;
+  margin: 0;
+}
+
 .frontCardRoot {
   display: flex;
   justify-content: center;
-  height: 50%;
+  height: 100%;
   align-items: center;
-  width: 60%;
+  width: 100%;
 }
 
 .backCardRoot {
   display: flex;
   justify-content: center;
-  height: 50%;
+  height: 100%;
   align-items: center;
-  width: 60%;
+  width: 100%;
 }
 
 .colorOne{

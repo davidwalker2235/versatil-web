@@ -21,7 +21,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-google-maps": "^9.4.5",
     "react-items-carousel": "^2.8.0",
+    "react-map-gl": "^5.2.0",
     "react-material-ui-carousel": "^1.0.0",
     "react-modal-video": "^1.2.3",
     "react-player": "^1.14.2",
@@ -49,7 +51,6 @@
     "test": "cross-env PORT=5000 react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://localhost/versatil-web/",
   "browserslist": {
     "development": [
       "last 2 chrome versions",
