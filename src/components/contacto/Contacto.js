@@ -16,7 +16,7 @@ class Contacto extends React.Component {
 
   render() {
     const { classes, contacto } = this.props;
-    return (
+       (
       <div>
         <div className="servicesBackgroundImage" />
         <div className="blurBackgroundImage" />
