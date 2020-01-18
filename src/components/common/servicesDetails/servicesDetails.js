@@ -9,8 +9,14 @@ import Styles from "./styles";
 import ReactPlayer from 'react-player';
 
 class ServicesDetails extends Component {
+
+  openDialog = () => {
+    const {openDialog} = this.props;
+    if (typeof openDialog === 'function') openDialog()
+  }
+
   render() {
-    const {classes, serviceData} = this.props;
+    const {classes, serviceData, openDialog} = this.props;
     return (
       <div>
         <div className="servicesBackgroundImage" ></div>
@@ -54,7 +60,7 @@ class ServicesDetails extends Component {
                       {
                         data &&
                         data.hasPresupuesto &&
-                        <Button size="large" variant="contained" color="secondary">
+                        <Button onClick={openDialog} size="large" variant="contained" color="secondary">
                           <Translate className="service-button-text" value="services.pidaPresupuesto" />
                         </Button>
                       }
@@ -77,7 +83,5 @@ class ServicesDetails extends Component {
     );   
   }
 }
-
-ServicesDetails.propTypes = {};
 
 export default withStyles(Styles)(ServicesDetails);

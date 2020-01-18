@@ -77,7 +77,10 @@ const translationData = {
       text: "Xavi Alloza i Javier Rodriguez creen Versatil Produccions per dissenyar, produir i gestionar espectacles i activitats lúdiques de qualitat. L'EQUIP VERSATIL està experimentat en el sector dels esdeveniments, coneix l'entorn i sap que l'èxit final recau en començar escoltant i executa sense perdre la visió de client."
     },
     contacto: {
-      title: "Contacte"
+      title: "Contacte",
+      enviar: "Enviar",
+      formText: "Intrudueixi el seu nom i el seu E-mail i ens posarem en contacte amb vosté lo mes aviat posible ",
+      nombre: 'Nom'
     }
   },
   es: {
@@ -156,7 +159,10 @@ const translationData = {
       text: "Xavi Alloza y Javier Rodriguez crean Versatil Produccions para diseñar, producir y gestionar espectáculos y actividades lúdicas de calidad. EL EQUIPO VERSATIL está experimentado en el sector de los eventos, conoce el entorno y sabe que el éxito final recae en empezar escuchando y ejecuta sin perder la visión del cliente."
     },
     contacto: {
-      title: "Contacto"
+      title: "Contacto",
+      enviar: "Enviar",
+      formText: "Indique su nombre y su E-mail y nos pondremos en contacto con usted lo antes posible",
+      nombre: 'Nombre'
     }
   }
 };
