@@ -79,8 +79,9 @@ const translationData = {
     contacto: {
       title: "Contacte",
       enviar: "Enviar",
-      formText: "Intrudueixi el seu nom i el seu E-mail i ens posarem en contacte amb vosté lo mes aviat posible ",
-      nombre: 'Nom'
+      formText: "Indiqui el seu nom i el seu E-mail i ens posarem en contacte amb vostè el més aviat possible.",
+      nombre: 'Nom',
+      mensaje: 'Missatge'
     }
   },
   es: {
@@ -162,7 +163,8 @@ const translationData = {
       title: "Contacto",
       enviar: "Enviar",
       formText: "Indique su nombre y su E-mail y nos pondremos en contacto con usted lo antes posible",
-      nombre: 'Nombre'
+      nombre: 'Nombre',
+      mensaje: 'Mensaje'
     }
   }
 };

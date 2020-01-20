@@ -18,13 +18,26 @@ class DialogComponent extends Component {
       super();
       this.state = {
           name: '',
-          email: ''
+          email: '',
+          message: ''
       }
   }
 
   handleClose = () => {
     this.props.closeDialog();
   };
+
+  handleName = (event) => {
+    this.setState({...this.state, name: event.target.value})
+  }
+
+  handleEmail = (event) => {
+    this.setState({...this.state, email: event.target.value})
+  }
+
+  handleMessage = (event) => {
+    this.setState({...this.state, message: event.target.value})
+  }
 
   isDisabled = () => {
     return false;
@@ -35,30 +48,41 @@ class DialogComponent extends Component {
     return (
         <Dialog open={this.props.isOpen} onClose={this.handleClose}>
             <DialogTitle className={classes.root} id="form-dialog-title">
-                <Translate value={'services.pidaPresupuesto'} />
+              <Translate value={'services.pidaPresupuesto'} />
             </DialogTitle>
             <DialogContent >
-                <DialogContentText className={classes.root} >
-                    <Translate value={'contacto.formText'} />
-                </DialogContentText>
+              <DialogContentText className={classes.root} >
+                <Translate value={'contacto.formText'} />
+              </DialogContentText>
+              <form className={classes.textField} noValidate autoComplete="off">
                 <TextField
-                    className={classes.root}
-                    autoFocus
-                    margin="dense"
-                    id="name"
-                    label={<Translate value={'contacto.nombre'} />}
-                    type="email"
-                    fullWidth
+                  onChange={this.handleName}
+                  id="nombre"
+                  label="Nombre"
+                  variant="outlined"
+                  fullWidth
+                  value={this.state.name}
                 />
                 <TextField
-                    className={classes.root}
-                    autoFocus
-                    margin="dense"
-                    id="name"
-                    label="Email"
-                    type="email"
-                    fullWidth
+                  onChange={this.handleEmail}
+                  id="email"
+                  label="Email"
+                  variant="outlined"
+                  fullWidth
+                  value={this.state.email}
                 />
+                <TextField
+                  onChange={this.handleMessage}
+                  id="mensaje"
+                  label="Mensaje"
+                  variant="outlined"
+                  fullWidth
+                  multiline
+                  rowsMax="15"
+                  inputProps={{ 'font-size': '24px' }}
+                  value={this.state.message}  
+                />
+              </form>
             </DialogContent>
             <DialogActions>
                 <Button
