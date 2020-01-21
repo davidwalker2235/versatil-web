@@ -7,6 +7,7 @@ import quienesSomos from "./reducers/quienesSomos";
 import contacto from "./reducers/contacto"
 import modalVideo from "./reducers/modalVideo";
 import dialog from './reducers/dialog';
+import loading from './reducers/loading';
 import { routerReducer } from "react-router-redux";
 import { i18nReducer } from "react-redux-i18n";
 
@@ -19,6 +20,7 @@ export default combineReducers({
   common,
   modalVideo,
   dialog,
+  loading,
   i18n: i18nReducer,
   router: routerReducer
 });

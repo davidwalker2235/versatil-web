@@ -4,3 +4,5 @@ export const OPEN_MODAL_VIDEO = "OPEN_MODAL_VIDEO";
 export const CLOSE_MODAL_VIDEO = "CLOSE_MODAL_VIDEO";
 export const OPEN_DIALOG = "OPEN_DIALOG";
 export const CLOSE_DIALOG = "CLOSE_DIALOG";
+export const OPEN_LOADING = "OPEN_LOADING";
+export const CLOSE_LOADING = "CLOSE_LOADING";

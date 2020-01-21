@@ -9,6 +9,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import {closeDialog} from '../../../actions/dialog/dialogActions';
+import {sendEmail} from "../../../actions/emailServiceActions/emailService";
 import { Translate } from "react-redux-i18n";
 import Styles from "./styles";
 import "./dialog.scss"  
@@ -19,12 +20,23 @@ class DialogComponent extends Component {
       this.state = {
           name: '',
           email: '',
-          message: ''
+          mensaje: ''
       }
   }
 
+  handleSendEmail = () => {
+    const {closeDialog, sendEmail} = this.props;
+    const {name, email, mensaje} = this.state;
+    if (typeof closeDialog === 'function' && typeof sendEmail === 'function') {
+      sendEmail({name, email, mensaje})
+      closeDialog()
+    }
+  };
+
   handleClose = () => {
-    this.props.closeDialog();
+    const {closeDialog} = this.props;
+    if (typeof closeDialog === 'function') closeDialog()
+
   };
 
   handleName = (event) => {
@@ -36,7 +48,7 @@ class DialogComponent extends Component {
   }
 
   handleMessage = (event) => {
-    this.setState({...this.state, message: event.target.value})
+    this.setState({...this.state, mensaje: event.target.value})
   }
 
   isDisabled = () => {
@@ -58,7 +70,7 @@ class DialogComponent extends Component {
                 <TextField
                   onChange={this.handleName}
                   id="nombre"
-                  label="Nombre"
+                  label={<Translate value={'contacto.nombre'} />}
                   variant="outlined"
                   fullWidth
                   value={this.state.name}
@@ -74,13 +86,13 @@ class DialogComponent extends Component {
                 <TextField
                   onChange={this.handleMessage}
                   id="mensaje"
-                  label="Mensaje"
+                  label={<Translate value={'contacto.mensaje'} />}
                   variant="outlined"
                   fullWidth
                   multiline
                   rowsMax="15"
-                  inputProps={{ 'font-size': '24px' }}
-                  value={this.state.message}  
+                  inputProps={{ 'fontSize': '24px' }}
+                  value={this.state.mensaje}  
                 />
               </form>
             </DialogContent>
@@ -88,7 +100,7 @@ class DialogComponent extends Component {
                 <Button
                     className={classes.root}
                     disabled={this.isDisabled()}
-                    onClick={this.handleClose}
+                    onClick={this.handleSendEmail}
                     color="primary">
                     <Translate value={'contacto.enviar'} />
                 </Button>
@@ -103,7 +115,8 @@ const mapStateToProps = (store) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    closeDialog: () => dispatch(closeDialog())
+    closeDialog: () => dispatch(closeDialog()),
+    sendEmail: (data) => dispatch(sendEmail(data))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(withStyles(Styles)(DialogComponent));

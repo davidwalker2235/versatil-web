@@ -16,6 +16,7 @@ import VersatilRecordingView from "../containers/versatilRecording/versatilRecor
 import CateringView from "../containers/catering/cateringView";
 import ModalVideo from 'react-modal-video';
 import DialogComponent from '../components/common/dialog/dialog';
+import LoadingComponent from '../components/common/loading/loading';
 import "./App.scss";
 
 const rootStyle = {
@@ -44,6 +45,7 @@ class App extends React.Component {
     const {isModalVideoOpen, closeModalVideo, videoKey} = this.props;
     return (
       <div style={rootStyle}>
+        <LoadingComponent />
         <DialogComponent />
         <ModalVideo channel='youtube' isOpen={isModalVideoOpen} videoId={videoKey} onClose={closeModalVideo} />
         <Navbar

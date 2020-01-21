@@ -20,7 +20,7 @@ class Contacto extends React.Component {
     this.state = {
         name: '',
         email: '',
-        message: ''
+        mensaje: ''
     }
   }
 
@@ -33,7 +33,15 @@ class Contacto extends React.Component {
   }
 
   handleMessage = (event) => {
-    this.setState({...this.state, message: event.target.value})
+    this.setState({...this.state, mensaje: event.target.value})
+  }
+
+  handleSendEmail = () => {
+    const {sendEmail} =  this.props;
+    const {name, email, mensaje} = this.state;
+    if (typeof sendEmail === 'function') {
+      sendEmail({name, email, mensaje})
+    }
   }
 
   render() {
@@ -158,13 +166,13 @@ class Contacto extends React.Component {
                       fullWidth
                       multiline
                       rowsMax="15"
-                      inputProps={{ 'font-size': '24px' }}
-                      value={this.state.message}  
+                      inputProps={{ 'fontSize': '24px' }}
+                      value={this.state.mensaje}  
                     />
                   </form>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">
+                  <Button size="small" onClick={this.handleSendEmail}>
                     <Translate value={'contacto.enviar'} />
                   </Button>
                 </CardActions>
