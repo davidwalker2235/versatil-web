@@ -82,6 +82,10 @@ const translationData = {
       formText: "Indiqui el seu nom i el seu E-mail i ens posarem en contacte amb vostè el més aviat possible.",
       nombre: 'Nom',
       mensaje: 'Missatge'
+    },
+    snackbar: {
+      success: 'Missatge enviat correctament',
+      error: 'Error enviant missatge. Intenteu-ho de nou'
     }
   },
   es: {
@@ -165,6 +169,10 @@ const translationData = {
       formText: "Indique su nombre y su E-mail y nos pondremos en contacto con usted lo antes posible",
       nombre: 'Nombre',
       mensaje: 'Mensaje'
+    },
+    snackbar: {
+      success: 'Mensaje enviado correctamente',
+      error: 'Error enviando mensaje. Inténtelo de nuevo'
     }
   }
 };

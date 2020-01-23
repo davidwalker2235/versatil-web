@@ -52,7 +52,7 @@ class DialogComponent extends Component {
   }
 
   isDisabled = () => {
-    return false;
+    return this.state.name === '' || this.state.email === '' || this.state.mensaje === '' ;
   };
 
   render() {

@@ -16,7 +16,7 @@ class ServicesDetails extends Component {
   }
 
   render() {
-    const {classes, serviceData, openDialog} = this.props;
+    const {classes, serviceData} = this.props;
     return (
       <div>
         <div className="servicesBackgroundImage" ></div>
@@ -60,7 +60,7 @@ class ServicesDetails extends Component {
                       {
                         data &&
                         data.hasPresupuesto &&
-                        <Button onClick={openDialog} size="large" variant="contained" color="secondary">
+                        <Button onClick={this.openDialog} size="large" variant="contained" color="secondary">
                           <Translate className="service-button-text" value="services.pidaPresupuesto" />
                         </Button>
                       }

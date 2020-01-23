@@ -8,6 +8,7 @@ import contacto from "./reducers/contacto"
 import modalVideo from "./reducers/modalVideo";
 import dialog from './reducers/dialog';
 import loading from './reducers/loading';
+import snackbar from './reducers/snackbar';
 import { routerReducer } from "react-router-redux";
 import { i18nReducer } from "react-redux-i18n";
 
@@ -21,6 +22,7 @@ export default combineReducers({
   modalVideo,
   dialog,
   loading,
+  snackbar,
   i18n: i18nReducer,
   router: routerReducer
 });

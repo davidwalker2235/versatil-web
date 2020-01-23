@@ -44,6 +44,10 @@ class Contacto extends React.Component {
     }
   }
 
+  isDisabled = () => {
+    return this.state.name === '' || this.state.email === '' || this.state.mensaje === '' ;
+  };
+
   render() {
     const {contacto, classes} = this.props;
     const {contactoData} = contacto;
@@ -172,7 +176,7 @@ class Contacto extends React.Component {
                   </form>
                 </CardContent>
                 <CardActions>
-                  <Button size="small" onClick={this.handleSendEmail}>
+                  <Button size="small" onClick={this.handleSendEmail} disabled={this.isDisabled()}>
                     <Translate value={'contacto.enviar'} />
                   </Button>
                 </CardActions>
