@@ -5,10 +5,20 @@ import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/styles";
 import Button from '@material-ui/core/Button';
 import { Translate } from "react-redux-i18n";
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import Snackbar from '@material-ui/core/Snackbar';
+import Slide from '@material-ui/core/Slide';
 import Styles from "./styles";
+import Paper from '@material-ui/core/Paper';
 import "./index.scss";
 
 class Home extends Component {
+
+  TransitionLeft(props) {
+    return <Slide {...props} direction="left" />;
+  }
 
   showVideoPromo = () => {
     const { openModalVideo } = this.props;
@@ -20,6 +30,17 @@ class Home extends Component {
     const { classes } = this.props;
     return (
       <div className="home-root">
+        <div className="social-root">
+          <a href="http://www.facebook.com/versatilproduccions" target='_blank'>
+            <FacebookIcon className="social-icon"/>
+          </a>
+          <a href="http://www.instagram.com/versatilproduccions" target='_blank'>
+            <InstagramIcon className="social-icon"/>
+          </a>
+          <a href="http://www.youtube.com/channel/UCLkKbPAwTfwwn-p_bkt3jSg" target='_blank'>
+            <YouTubeIcon className="social-icon"/>
+          </a>
+        </div>
         <img alt="" className="backgroundImage" />
         <div className={classes.backgroundLayer} />
         <div className={classes.root}>
@@ -39,7 +60,7 @@ class Home extends Component {
                 />
               </div>
             </Grid>
-            <Grid item xs={12} sm={6} lg={6}>
+            <Grid item xs={12} sm={6} lg={6} className="index-bottons-container">
               <div className={classes.paper}>
                 <div className="subtitle">
                   <Button variant="contained" color="secondary" href="/servicios">

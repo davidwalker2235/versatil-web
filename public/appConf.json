@@ -183,13 +183,28 @@
           },
           {
             "image": "./images/carpas4.jpg"
+          },
+          {
+            "image": "./images/carpas5.jpg"
+          },
+          {
+            "image": "./images/carpas6.jpg"
+          },
+          {
+            "image": "./images/carpas7.png"
+          },
+          {
+            "image": "./images/carpas8.jpg"
+          },
+          {
+            "image": "./images/carpas9.jpg"
           }
         ],
         "hasVideo": false,
         "videoUri": "",
         "hasCatalogo": true,
         "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogo.pdf"
+        "catalogoUri": "./documents/catalogoCarpas2020.pdf"
       }
     ]
   },

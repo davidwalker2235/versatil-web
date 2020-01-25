@@ -5,11 +5,9 @@ export const sendEmail = (data) => dispatch => {
   data && dispatch(openLoading());
   data && emailjs.send('gmail', 'email_template', data, 'user_wLa2Yhs2UKzBH3eS2Av2R')
     .then(function(response) {
-      debugger;
       dispatch(closeLoading());
       dispatch({type: 'OPEN_SNACKBAR_SUCCESS'})
     }, function(err) {
-      debugger;
       dispatch(closeLoading());
       dispatch({type: 'OPEN_SNACKBAR_ERROR'})
     });

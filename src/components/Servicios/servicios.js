@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
 import HeadsetIcon from '@material-ui/icons/Headset';
 import HomeIcon from '@material-ui/icons/Home';
-import SpeakerIcon from '@material-ui/icons/Speaker';
+import EventSeatIcon from '@material-ui/icons/EventSeat';
 import RestaurantIcon from '@material-ui/icons/Restaurant';
 import HomeWorkIcon from '@material-ui/icons/HomeWork';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
@@ -12,6 +12,7 @@ import "./servicios.scss";
 import Styles from "./styles";
 import {NewsHeaderCard} from "react-ui-cards";
 import { Translate } from "react-redux-i18n";
+import {I18n} from 'react-redux-i18n';
 
 class Servicios extends Component {
 
@@ -24,7 +25,7 @@ class Servicios extends Component {
       case 'carpas':
         return <HomeIcon className="cardIcon" />
       case 'decoraciones':
-        return <SpeakerIcon className="cardIcon" />
+        return <EventSeatIcon className="cardIcon" />
       case 'catering':
         return <RestaurantIcon className="cardIcon" />
       case 'gestionEspacios':
@@ -70,7 +71,9 @@ class Servicios extends Component {
                             <div className="cardTitleRoot">
                               {this.getIcon(service.titleKey)}
                             </div>
-                            <Translate value={`services.serviceCards.${service.titleKey}`} />
+                            <div style={{display: 'block'}}>
+                              {I18n.t(`services.serviceCards.${service.titleKey}`)}
+                            </div>
                           </div>
                         }
                       className="newsCard" />

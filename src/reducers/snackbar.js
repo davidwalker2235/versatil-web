@@ -6,7 +6,6 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  debugger;
   switch (action.type) {
     case OPEN_SNACKBAR_SUCCESS:
         return {
