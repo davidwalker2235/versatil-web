@@ -145,8 +145,13 @@
         "hasVideo": true,
         "videoUri": "https://youtu.be/4yeJ30fKycI",
         "hasCatalogo": true,
+        "catalogoButtonTitle": "verCatalogo",
+        "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogo.pdf"
+        "catalogoUries": "./documents/listadoMaterialCast.pdf",
+        "catalogoUricat": "./documents/listadoMaterialCat.pdf",
+        "hasSocialLinks": false,
+        "socialLinks": []
       }
     ]
   },
@@ -157,13 +162,54 @@
         "images": [
           {
             "image": "./images/servicios_grupos_musicales1.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales2.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales3.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales4.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales5.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales6.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales7.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales8.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales9.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales10.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales11.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales12.jpg"
+          },
+          {
+            "image": "./images/servicios_grupos_musicales13.jpg"
           }
         ],
         "hasVideo": false,
         "videoUri": "",
-        "hasCatalogo": true,
+        "hasCatalogo": false,
+        "catalogoButtonTitle": "verCatalogo",
+        "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogo.pdf"
+        "catalogoUries": "./documents/catalogo.pdf",
+        "catalogoUricat": "./documents/catalogo.pdf",
+        "hasSocialLinks": false,
+        "socialLinks": []
       }
     ]
   },
@@ -203,8 +249,13 @@
         "hasVideo": false,
         "videoUri": "",
         "hasCatalogo": true,
+        "catalogoButtonTitle": "verCatalogo",
+        "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogoCarpas2020.pdf"
+        "catalogoUries": "./documents/catalogoCarpas2020.pdf",
+        "catalogoUricat": "./documents/catalogoCarpas2020.pdf",
+        "hasSocialLinks": false,
+        "socialLinks": []
       }
     ]
   },
@@ -215,13 +266,51 @@
         "images": [
           {
             "image": "./images/servicios_decoraciones1.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones2.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones3.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones4.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones5.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones6.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones7.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones8.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones9.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones10.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones11.jpg"
+          },
+          {
+            "image": "./images/servicios_decoraciones12.jpg"
           }
         ],
         "hasVideo": false,
         "videoUri": "",
         "hasCatalogo": true,
+        "catalogoButtonTitle": "verCatalogo",
+        "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogo.pdf"
+        "catalogoUries": "./documents/catalogoDecoraciones2020.pdf",
+        "catalogoUricat": "./documents/catalogoDecoraciones2020.pdf",
+        "hasSocialLinks": false,
+        "socialLinks": []
       }
     ]
   },
@@ -252,8 +341,13 @@
         "hasVideo": false,
         "videoUri": "",
         "hasCatalogo": false,
+        "catalogoButtonTitle": "verCatalogo",
+        "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogo.pdf"
+        "catalogoUries": "./documents/catalogo.pdf",
+        "catalogoUricat": "./documents/catalogo.pdf",
+        "hasSocialLinks": false,
+        "socialLinks": []
       }
     ]
   },
@@ -261,6 +355,7 @@
     "title": "gestionEspacios",
     "dataAry":[
       {
+        "title": "Factoría musical",
         "images": [
           {
             "image": "./images/factoria_musical1.jpg"
@@ -270,15 +365,39 @@
           },
           {
             "image": "./images/factoria_musical3.jpg"
+          },
+          {
+            "image": "./images/factoria_musical4.jpg"
+          },
+          {
+            "image": "./images/factoria_musical5.jpg"
+          },
+          {
+            "image": "./images/factoria_musical6.jpg"
           }
         ],
         "hasVideo": false,
-        "videoUri": "",
+        "vidi": "",
         "hasCatalogo": true,
-        "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogo.pdf"
+        "catalogoButtonTitle": "actividadesFactoria",
+        "presupuestoButtonTitle": "pidaPresupuesto",
+        "hasPresupuesto": false,
+        "catalogoUries": "./documents/catalogoFactoriaMusical2019.pdf",
+        "catalogoUricat": "./documents/catalogoFactoriaMusical2019.pdf",
+        "hasSocialLinks": true,
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://www.facebook.com/bucsassaigcornella/"
+          },
+          {
+            "type": "instagram",
+            "url": "https://www.instagram.com/lafactoriamusical.oficial/"
+          }
+        ]
       },
       {
+        "title": "Sala Ramón Romagosa",
         "images": [
           {
             "image": "./images/ramon_romagosa1.jpg"
@@ -289,9 +408,19 @@
         ],
         "hasVideo": false,
         "videoUri": "",
-        "hasCatalogo": true,
-        "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogo.pdf"
+        "hasCatalogo": false,
+        "catalogoButtonTitle": "verCatalogo",
+        "presupuestoButtonTitle": "pidaPresupuesto",
+        "hasPresupuesto": false,
+        "catalogoUries": "",
+        "catalogoUricat": "",
+        "hasSocialLinks": true,
+        "socialLinks": [
+          {
+            "type": "web",
+            "url": "http://www.pcr.cat"
+          }
+        ]
       }
     ]
   },
@@ -374,13 +503,36 @@
           },
           {
             "image": "./images/servicios_versatil_recording25.jpg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording26.jpg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording27.jpg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording28.jpg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording29.jpg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording30.jpg"
+          },
+          {
+            "image": "./images/servicios_versatil_recording31.jpg"
           }
         ],
         "hasVideo": false,
         "videoUri": "",
         "hasCatalogo": true,
+        "catalogoButtonTitle": "listadoMaterial",
+        "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
-        "catalogoUri": "./documents/catalogo.pdf"
+        "catalogoUries": "./documents/listadoMaterialCast.pdf",
+        "catalogoUricat": "./documents/listadoMaterialCat.pdf",
+        "hasSocialLinks": false,
+        "socialLinks": []
       }
     ]
   },

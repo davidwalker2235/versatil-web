@@ -11,7 +11,6 @@ import Grid from "@material-ui/core/Grid";
 import "./servicios.scss";
 import Styles from "./styles";
 import {NewsHeaderCard} from "react-ui-cards";
-import { Translate } from "react-redux-i18n";
 import {I18n} from 'react-redux-i18n';
 
 class Servicios extends Component {

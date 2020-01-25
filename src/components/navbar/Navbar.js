@@ -64,7 +64,7 @@ const NavLinks = styled(animated.ul)`
       border-bottom: 1px solid #fdcb6e;
     }
 
-    @media (max-width: 1050px) {
+    @media (max-width: 1100px) {
       display: none;
     }
   }
@@ -73,7 +73,7 @@ const NavLinks = styled(animated.ul)`
 const BurgerWrapper = styled.div`
   margin: auto 0;
 
-  @media (min-width: 1050px) {
+  @media (min-width: 1100px) {
     display: none;
   }
 `;

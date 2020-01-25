@@ -135,7 +135,7 @@ class Contacto extends React.Component {
               xs={10}
               sm={10}
               lg={7}
-              style={{height: "400px"}}
+              className={classes.root}
             >
               <Card className={classes.card}>
                 <CardContent>

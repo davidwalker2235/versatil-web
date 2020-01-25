@@ -39,17 +39,32 @@ const translationData = {
         versatilRecording: "Versatil Recording Studio",
       },
       text: {
-        alquilerEquipos: "Oferim servei de lloguer d'equips de so i llums amb personal tècnic. L'alta qualitat del nostre material i l'experiència dels nostres tècnics proporcionen als nostres esdeveniments i espectacles elegància i professionalitat.",
-        gruposMusicales: "Disposem d’un gran ventall de bandes de versions, orquestres, grups tribut, grups de cançons pròpies de tots els estils, DJ’s i tot tipus d’artistes relacionats  amb el món de l’espectacle.",
-        carpas: "El muntatge de carpes per a esdeveniments és una de les nostres especialitats. Disposem d'una gran varietat de models que s'adaptaran a les necessitats de l'espai.",
+        alquilerEquipos: "Oferim servei de lloguer d’equips de so i llums amb personal tècnic. L’alta qualitat del nostre material i l’experiència dels nostres tècnics proporcionen als nostres esdeveniments i espectacles elegància i professionalitat.",
+        gruposMusicales: "Disposem d’un gran ventall de bandes de versions, orquestres, grups tribut, grups de cançons pròpies de tots els estils, DJ’s i tot tipus d’artistes relacionats amb el món de l’espectacle.",
+        carpas: "El muntatge de carpes per a esdeveniments és una de les nostres especialitats. Disposem d’un gran ventall de models que s’adapten a les necessitats de cada espai. Els nostres professionals li assessoraran sobre el tipus de muntatge i model més adequats pel seu esdeveniment.",
         catering: "Catering a mida per a empreses, particulars, esdeveniments i rodatges.",
-        decoraciones: "Ofrecemos servicios de decoración de espacios tanto en interior como en exterior. Disponemos de mobiliario exclusivo adecuado para todo tipo de eventos.",
+        decoraciones: "Oferim serveis de decoració d’espais tant per a interiors com per a exteriors. Disposem de mobiliari exclusiu adequat per a tot tipus d’esdeveniments, així com professionals en decoració llumínica per a esdeveniments nocturns.",
         gestionEspacios1: "La Factoria Musical és un complex municipal de Cornellà. Disposa de locals d'assaig, sala de concerts estudi de gravació. Més info a: http://www.cornella.cat/es/LaFactoriaMusical.asp",
         gestionEspacios2: "La sala Ramon Romagosa és el teatre del 'Patronat Cultural i Recreatiu de Cornellà'. Ens encarreguem de la producció tècnica, regidories, gestió de personal tècnic i manteniment de la sala. Més info a: https://pcr.cat",
-        versatilRecording: "Estudi de gravació d'àudio i producció musical.",
+        versatilRecording: `Estudio de sonido profesional ubicado en Cornellà de Llobregat, dedicado a la grabación de bandas musicales (en directo o sesiones), grabación de locuciones, bandas sonoras, foleys, diseño de sonidos, postproducción, edición, mezcla y mástering.
+        Consta de 3 salas perfectamente aisladas, acondicionadas acústicamente y climatizadas para tener unas condiciones de trabajo idóneas.
+        
+        Personal
+        Personal formado por la American World University y con certificado Protools Operator, con años de experiencia en el sector.
+        
+        Trabajos realizados:
+        Bandas grabadas:
+        Bunker, Suspiria, Impostores, David Yepes, Bisonte vs Bufalo, Döria, Ferranea, Daeria, Deceleratrix, Sense nom, V&B, “flamenco”.
+        Postproducción de sonido:
+        Brutal gadtget, Tenemos visita, Garra charrúa, chavalas, súper chavalas, Camilo
+        Bandas sonoras:
+        A Little taste, Tenemos visita, diferentes jingles para publicidad (oreo, mastercard, león)
+        `,
       },
-      pidaPresupuesto: "Demani presupost",
-      verCatalogo: "Veure catàleg"
+      pidaPresupuesto: "Demani pressupost",
+      actividadesFactoria: "Activitats 2019",
+      verCatalogo: "Veure catàleg",
+      listadoMaterial: "Llistat de material"
     },
     produccionesPropias: {
       title: "Produccions pròpies",
@@ -127,16 +142,18 @@ const translationData = {
       },
       text: {
         alquilerEquipos: "Ofrecemos servicio de alquiler de equipos de sonido y luces con personal técnico. La alta calidad de nuestro material y la experiencia de nuestros técnicos proporcionan a nuestros eventos y espectáculos elegancia y profesionalidad.",
-        gruposMusicales: "Disponemos de un gran abanico de bandas de versiones, orquestas,  grupos tributo, grupos de canciones propias de todos los estilos, DJ’s y todo tipo de artistas relacionados con el mundo del espectáculo.",
-        carpas: "El montaje de carpas para eventos es una de nuestras especialidades. Disponemos de una gran variedad de modelos que se adaptaran a las necesidades del espacio.",
+        gruposMusicales: "Disponemos de un gran abanico de bandas de versiones, orquestas, grupos tributo, grupos de canciones propias de todos los estilos, DJ’s y todo tipo de artistas relacionados con el mundo del espectáculo.",
+        carpas: "El montaje de carpas para eventos es una de nuestras especialidades. Disponemos de una gran variedad de modelos que se adaptan a las necesidades de cada espacio. Nuestros profesionales le asesorarán sobre el tipo de montaje y los modelos más adecuados para su evento.",
         catering: "Catering a medida para empresas, particulares, eventos y rodajes.",
-        decoraciones: "Ofrecemos servicios de decoración de espacios tanto en interior como en exterior. Disponemos de mobiliario exclusivo adecuado para todo tipo de eventos.",
+        decoraciones: "Ofrecemos servicios de decoración de espacios tanto en interior como en exterior. Disponemos de mobiliario exclusivo adecuado para todo tipo de eventos, así como profesionales en decoración lumínica para eventos nocturnos.",
         gestionEspacios1: "La Factoria Musical  es un complejo municipal de Cornellá. Dispone de locales de ensayo, sala de conciertos estudio de grabación. Mas info en: http://www.cornella.cat/es/LaFactoriaMusical.asp",
         gestionEspacios2: "La sala Ramon Romagosa es el teatro del “Patronat Cultural i Recreatiu de Cornellà”. Nos encargamos de la producción técnica, regidurías, gestión del personal técnico y mantenimiento de la sala. Mas info en: https://pcr.cat",
         versatilRecording: "Estudio de grabación de audio y producción musical.",
       },
       pidaPresupuesto: "Pida presupuesto",
-      verCatalogo: "Ver catálogo"
+      actividadesFactoria: "Actividades 2019",
+      verCatalogo: "Ver catálogo",
+      listadoMaterial: "Listado de materiales"
     },
     produccionesPropias: {
       title: "Producciones propias",

@@ -98,3 +98,21 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.section-title {
+  color: rgb(255, 1, 130);
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.social-services-root {
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  & > a {
+    color: lightgray;
+    display: flex;
+  }
+}
