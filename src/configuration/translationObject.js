@@ -46,20 +46,7 @@ const translationData = {
         decoraciones: "Oferim serveis de decoració d’espais tant per a interiors com per a exteriors. Disposem de mobiliari exclusiu adequat per a tot tipus d’esdeveniments, així com professionals en decoració llumínica per a esdeveniments nocturns.",
         gestionEspacios1: "La Factoria Musical és un complex municipal de Cornellà. Disposa de locals d'assaig, sala de concerts estudi de gravació. Més info a: http://www.cornella.cat/es/LaFactoriaMusical.asp",
         gestionEspacios2: "La sala Ramon Romagosa és el teatre del 'Patronat Cultural i Recreatiu de Cornellà'. Ens encarreguem de la producció tècnica, regidories, gestió de personal tècnic i manteniment de la sala. Més info a: https://pcr.cat",
-        versatilRecording: `Estudio de sonido profesional ubicado en Cornellà de Llobregat, dedicado a la grabación de bandas musicales (en directo o sesiones), grabación de locuciones, bandas sonoras, foleys, diseño de sonidos, postproducción, edición, mezcla y mástering.
-        Consta de 3 salas perfectamente aisladas, acondicionadas acústicamente y climatizadas para tener unas condiciones de trabajo idóneas.
-        
-        Personal
-        Personal formado por la American World University y con certificado Protools Operator, con años de experiencia en el sector.
-        
-        Trabajos realizados:
-        Bandas grabadas:
-        Bunker, Suspiria, Impostores, David Yepes, Bisonte vs Bufalo, Döria, Ferranea, Daeria, Deceleratrix, Sense nom, V&B, “flamenco”.
-        Postproducción de sonido:
-        Brutal gadtget, Tenemos visita, Garra charrúa, chavalas, súper chavalas, Camilo
-        Bandas sonoras:
-        A Little taste, Tenemos visita, diferentes jingles para publicidad (oreo, mastercard, león)
-        `,
+        versatilRecording: "Estudi de gravació d'àudio i producció musical.",
       },
       pidaPresupuesto: "Demani pressupost",
       actividadesFactoria: "Activitats 2019",
