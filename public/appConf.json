@@ -86,7 +86,7 @@
       },
       {
         "titleKey": "versatilRecording",
-        "image": "./images/servicios_versatil_recording1.jpg",
+        "image": "./images/servicios_versatil_recording22.jpg",
         "uri": "/versatil_recording"
       }
     ]
@@ -144,7 +144,7 @@
         ],
         "hasVideo": true,
         "videoUri": "https://youtu.be/4yeJ30fKycI",
-        "hasCatalogo": true,
+        "hasCatalogo": false,
         "catalogoButtonTitle": "verCatalogo",
         "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
@@ -160,9 +160,6 @@
     "dataAry":[
       {
         "images": [
-          {
-            "image": "./images/servicios_grupos_musicales1.jpg"
-          },
           {
             "image": "./images/servicios_grupos_musicales2.jpg"
           },
@@ -455,16 +452,7 @@
             "image": "./images/servicios_versatil_recording7.jpg"
           },
           {
-            "image": "./images/servicios_versatil_recording8.jpg"
-          },
-          {
-            "image": "./images/servicios_versatil_recording9.jpg"
-          },
-          {
             "image": "./images/servicios_versatil_recording10.jpg"
-          },
-          {
-            "image": "./images/servicios_versatil_recording11.jpg"
           },
           {
             "image": "./images/servicios_versatil_recording12.jpg"
@@ -626,7 +614,7 @@
         "titleKey": "randomKieb",
         "textKey": "randomKiebText",
         "image": "./images/pp_random_kieb.jpg",
-        "video": "4yeJ30fKycI",
+        "video": "f_oKAWUEi3s",
         "hasSocialLinks": false,
         "socialLinks": [
           {

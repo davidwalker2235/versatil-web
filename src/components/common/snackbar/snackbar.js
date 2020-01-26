@@ -16,6 +16,7 @@ class SnackbarComponent extends Component {
         anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
         key={'top,right'}
         open={isOpen}
+        autoHideDuration={3000}
         onClose={this.props.closeSnackbar}
         message={this.props.isError ? <Translate value='snackbar.error' /> : <Translate value='snackbar.success' />}
       />

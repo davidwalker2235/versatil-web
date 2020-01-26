@@ -69,7 +69,7 @@ const translationData = {
           text: "La combinació de música, pintures fluorescents i objectes lluminosos, junt amb la llum negra són el resultat d'una festa fluor. A VERSÀTIL us proporcionem tots els elements artístics, tècnics i decoratius que el client pugui imaginar per tal de fer de la seva Festa Fluor un espectacle que marqui tendència."
         },
         randomKieb: {
-          title: "The Random Kieb Show",
+          title: "Random Kieb Show",
           text: "Dj Jon Kieb presenta el seu nou espectacle 'Random Kieb Show', un show musical pensat per a entretenir a tots els públics. La mescla d'estils variada, la contínua aparició de cantants i artistes així com tots els elements de joc que intervenen en el seu directe, no deixaran a ningú indiferent. La interacció amb el públic en clau de concurs és un dels principals al·licients d'aquest espectacle, acompanyat d'un espai d'ambientació disco i centenars d'obsequis per a tots els participants."
         },
       }

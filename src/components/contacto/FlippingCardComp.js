@@ -1,13 +1,12 @@
 import React from "react";
 import { withStyles } from "@material-ui/styles";
-import { Translate } from "react-redux-i18n";
 import {FlippingCard} from "react-ui-cards";
 import {FlippingCardBack} from "react-ui-cards";
 import {FlippingCardFront} from "react-ui-cards";
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import GroupIcon from '@material-ui/icons/Group';
 import Styles from "./styles";
 
 class FlippingCardComp extends React.Component {
@@ -23,7 +22,7 @@ class FlippingCardComp extends React.Component {
       case "email":
         return <MailIcon className={classes.icon} />
       case "media":
-        return <InstagramIcon className={classes.icon} />
+        return <GroupIcon className={classes.icon} />
       default:
         break;
     }
