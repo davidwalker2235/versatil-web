@@ -28,14 +28,18 @@ class FlippingCardComp extends React.Component {
         break;
     }
   }
-
+  
+  getText = (text) => {
+    if (typeof text === 'string') return text
+    return null; 
+  }
   render() {
-    const { colorClass, icon } = this.props;
+    const { colorClass, icon, text } = this.props;
     return (
         <FlippingCard className="flippingCardRoot">
             <FlippingCardBack>
               <div className="backCardRoot">
-                <Translate value="contacto.title" />
+                {this.getText(text)}
               </div>
             </FlippingCardBack>
             <FlippingCardFront>

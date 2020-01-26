@@ -6,9 +6,11 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import LanguageIcon from '@material-ui/icons/Language';
 import { Translate } from "react-redux-i18n";
-import Fab from '@material-ui/core/Fab';
 import Styles from "./styles";
 import CarouselSlider from "../../common/carouselSlider/carouselSlider";
 import "./card.scss"
@@ -25,6 +27,31 @@ class CardComponent extends Component {
     if (typeof openModalVideo === "function") {
       openModalVideo(production.video);
     }
+  }
+
+  getSocialIcon = (social) => {
+    debugger;
+    switch (social.type) {
+      case 'facebook':
+        return <a href={social.url} color="secondary" aria-label="edit" target='_blank'>
+                <FacebookIcon fontSize="large" style={{fontSize:"36px", color: "white", fontSize: '50px'}}/>
+              </a>
+      case 'instagram':
+          return <a href={social.url} color="secondary" aria-label="edit" target='_blank'>
+                  <InstagramIcon style={{fontSize:"36px", color: "white", fontSize: '50px'}}/>
+                </a>
+      case 'youtube':
+          return <div color="secondary" aria-label="edit" onClick={this.openModal} style={{cursor: 'pointer'}}>
+                  <YouTubeIcon style={{fontSize:"36px", color: "white", fontSize: '50px'}}/>
+                </div>
+      case 'web':
+          return <a href={social.url} color="secondary" aria-label="edit" target='_blank'>
+                  <LanguageIcon style={{fontSize:"36px", color: "white", fontSize: '50px'}}/>
+                </a>
+      default:
+        break;
+    }
+  
   }
 
   render() {
@@ -49,9 +76,7 @@ class CardComponent extends Component {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Fab color="secondary" aria-label="edit" onClick={this.openModal}>
-              <YouTubeIcon style={{fontSize:"36px"}}/>
-            </Fab>
+            {production.socialLinks && production.socialLinks.map((socialLink) => this.getSocialIcon(socialLink))}
           </CardActions>
         </Card>
       </div>

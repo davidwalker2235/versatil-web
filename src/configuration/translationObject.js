@@ -58,25 +58,25 @@ const translationData = {
       cards: {
         canMercader: {
           title: "Can Mercader Festival",
-          text: "Festival gratuït de Rock i Metal, organitzat per l’Ajuntament de Cornellà, en el qual ens encarreguem de la producció tècnica i artística des de l’any 2015."
+          text: "Actualment, és un dels festivals gratuïts de Rock i Metal més populars a nivell estatal. Està organitzat per l’Ajuntament de Cornellà, i des de l’any 2015, estem portant a terme la seva direcció i producció, tant a nivell tècnic com artístic."
         },
         feriaVinos: {
-          title: "Fira de vins de Cornellà",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam pp_random_kieb"
+          title: "Fira de vins",
+          text: "La producció i muntatge de fires gastronòmiques és una de les nostres especialitats. Oferim serveis d’il·luminació arquitectònica, instal·lació de sistemas de so per fil musical, muntatge de carpes i garlandes, així com shows musicals que s’adapten a les necessitats de l’espai creant un ambient festiu i vanguardista."
         },
         fiestaFluor: {
           title: "Festa Fluor",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam pp_random_kieb"
+          text: "La combinació de música, pintures fluorescents i objectes lluminosos, junt amb la llum negra són el resultat d'una festa fluor. A VERSÀTIL us proporcionem tots els elements artístics, tècnics i decoratius que el client pugui imaginar per tal de fer de la seva Festa Fluor un espectacle que marqui tendència."
         },
         randomKieb: {
           title: "The Random Kieb Show",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam pp_random_kieb"
+          text: "Dj Jon Kieb presenta el seu nou espectacle 'Random Kieb Show', un show musical pensat per a entretenir a tots els públics. La mescla d'estils variada, la contínua aparició de cantants i artistes així com tots els elements de joc que intervenen en el seu directe, no deixaran a ningú indiferent. La interacció amb el públic en clau de concurs és un dels principals al·licients d'aquest espectacle, acompanyat d'un espai d'ambientació disco i centenars d'obsequis per a tots els participants."
         },
       }
     },
     quienesSomos: {
       title: "Qui som",
-      text: "Xavi Alloza i Javier Rodriguez creen Versatil Produccions per dissenyar, produir i gestionar espectacles i activitats lúdiques de qualitat. L'EQUIP VERSATIL està experimentat en el sector dels esdeveniments, coneix l'entorn i sap que l'èxit final recau en començar escoltant i executa sense perdre la visió de client."
+      text: "En Xavi Alloza i en Javier Rodríguez vàrem crear Versàtil Produccions l’any 2016 per diseñar, produïr i gestionar espectacles, esdeveniments i activitats lúdiques de qualitat. Actualment, l’EQUIP VERSÀTIL està format per professionals amb més de 10 anys d’experiència en el sector dels esdeveniments. Aquest equip coneix el sector i sap que la clau de l’èxit recau en escoltar el client i duur a terme les seves idees respectant sempre la seva visió inicial. Per aquest motiu, posem els cincs sentits a les necessitats dels nostres clients i les tenim en compte des del primer contacte fins a la culminació de la nostra feina."
     },
     contacto: {
       title: "Contacte",
@@ -147,25 +147,25 @@ const translationData = {
       cards: {
         canMercader: {
           title: "Can Mercader Festival",
-          text: "Festival gratuito de Rock y Metal, organizado por el Ayuntamiento de Cornellá, en el cual llevamos a cabo la producción técnica y artística desde el año 2015."
+          text: "Actualmente, es uno de los festivales gratuitos de Rock y Metal más populares a nivel estatal. Está organizado por el Ayuntamiento de Cornellá, y desde el año 2015, llevamos a cabo su dirección y producción, tanto a nivel técnico como artístico."
         },
         feriaVinos: {
-          title: "Feria de vinos de Cornellà",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam pp_random_kieb"
+          title: "Feria de vinos",
+          text: "La producción y montaje de ferias gastronómicas es una de nuestras especialidades. Ofrecemos servicios de iluminación arquitectónica, instalación de sistemas de sonido para hilo musical, montaje de carpas y guirnaldas, así como shows musicales que se adaptan a las necesidades del espacio creando un ambiente festivo y vanguardista."
         },
         fiestaFluor: {
           title: "Fiesta Fluor",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam pp_random_kieb"
+          text: "La combinación de música, pinturas fluorescentes y objetos luminosos unido a la luz negra son el resultado de una fiesta flúor. En VERSÁTIL proporcionamos todos los elementos artísticos, técnicos y decorativos que el cliente pueda imaginar para hacer de su Fiesta Flúor un espectáculo que marque tendencia."
         },
         randomKieb: {
-          title: "The Random Kieb show",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam pp_random_kieb"
+          title: "Random Kieb show",
+          text: "Dj Jon Kieb presenta su nuevo espectáculo 'Random Kieb Show', un show musical pensado para entretener a todos los públicos. La mezcla de estilos variada, la continua aparición de cantantes y artistas, así como todos los elementos de juego que intervienen en su directo, no dejarán a nadie indiferente. La interacción con el público en clave de concurso es uno de los principales alicientes de este espectáculo, acompañado de un espacio de ambientación disco y cientos de obsequios para todos los participantes."
         },
       }
     },
     quienesSomos: {
       title: "Quienes somos",
-      text: "Xavi Alloza y Javier Rodriguez crean Versatil Produccions para diseñar, producir y gestionar espectáculos y actividades lúdicas de calidad. EL EQUIPO VERSATIL está experimentado en el sector de los eventos, conoce el entorno y sabe que el éxito final recae en empezar escuchando y ejecuta sin perder la visión del cliente."
+      text: "Xavi Alloza y Javier Rodríguez creamos Versàtil Produccions en el año 2016 para diseñar, producir y gestionar espectáculos, eventos y actividades lúdicas de calidad. Actualmente el EQUIPO VERSÁTIL está formado por profesionales con más de 10 años de experiencia en el sector de los eventos. Este equipo conoce el sector y sabe que la clave del éxito recae en escuchar al cliente y ejecutar sus ideas sin perder su enfoque. Por este motivo, ponemos los cinco sentidos en las necesidades del cliente y las tenemos en cuenta desde el primer contacto hasta la culminación de nuestro trabajo."
     },
     contacto: {
       title: "Contacto",

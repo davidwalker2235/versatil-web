@@ -387,6 +387,10 @@
         "hasSocialLinks": true,
         "socialLinks": [
           {
+            "type": "web",
+            "url": "http://www.cornella.cat/es/LaFactoriaMusical.asp"
+          },
+          {
             "type": "facebook",
             "url": "https://www.facebook.com/bucsassaigcornella/"
           },
@@ -542,6 +546,17 @@
         "titleKey": "canMercader",
         "textKey": "canMercaderText",
         "video": "hZAUp5YCd4I",
+        "hasSocialLinks": true,
+        "socialLinks": [
+          {
+            "type": "youtube",
+            "url": ""
+          },
+          {
+            "type": "facebook",
+            "url": "https://www.facebook.com/CanMercaderFestival"
+          }
+        ],
         "images": [
           {
             "image": "./images/pp_can_mercader1.jpg",
@@ -577,6 +592,13 @@
         "titleKey": "feriaVinos",
         "textKey": "feriaVinosText",
         "video": "L01Ml_OvVKY",
+        "hasSocialLinks": false,
+        "socialLinks": [
+          {
+            "type": "youtube",
+            "url": "https://www.facebook.com/CanMercaderFestival"
+          }
+        ],
         "images": [
           {
             "image": "./images/pp_fira_vins1.jpg",
@@ -605,6 +627,13 @@
         "textKey": "randomKiebText",
         "image": "./images/pp_random_kieb.jpg",
         "video": "4yeJ30fKycI",
+        "hasSocialLinks": false,
+        "socialLinks": [
+          {
+            "type": "youtube",
+            "url": "https://www.facebook.com/CanMercaderFestival"
+          }
+        ],
         "images": [
           {
             "image": "./images/pp_random_kieb1.jpg",
@@ -633,6 +662,10 @@
           {
             "image": "./images/pp_random_kieb7.jpg",
             "description": ""
+          },
+          {
+            "image": "./images/pp_random_kieb8.jpg",
+            "description": ""
           }
         ]
       },
@@ -640,6 +673,13 @@
         "titleKey": "fiestaFluor",
         "textKey": "fiestaFluorText",
         "video": "cZIl23TgH-U",
+        "hasSocialLinks": false,
+        "socialLinks": [
+          {
+            "type": "youtube",
+            "url": "https://www.facebook.com/CanMercaderFestival"
+          }
+        ],
         "images": [
           {
             "image": "./images/pp_fiesta_fluor1.jpg",
@@ -664,6 +704,34 @@
           {
             "image": "./images/pp_fiesta_fluor6.jpg",
             "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor7.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor8.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor9.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor10.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor11.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor12.jpg",
+            "description": ""
+          },
+          {
+            "image": "./images/pp_fiesta_fluor13.jpg",
+            "description": ""
           }
         ]
       }
@@ -677,26 +745,35 @@
       {
         "id": "direccion",
         "color": "colorOne",
-        "instagramLink": "",
-        "facebookLink": ""
+        "text": "Calle Tirso de Molina 36 Nave 3B, 08940 Cornellá de Llobregat"
       },
       {
         "id": "telefono",
         "color": "colorTwo",
-        "instagramLink": "",
-        "facebookLink": ""
+        "text": [
+          {
+            "textKey": "telefonoFijo",
+            "value": ""
+          },
+          {
+            "textKey": "movilXavi",
+            "value": ""
+          },
+          {
+            "textKey": "movilJavi",
+            "value": ""
+          }
+        ]
       },
       {
         "id": "email",
         "color": "colorThree",
-        "instagramLink": "",
-        "facebookLink": ""
+        "text": ""
       },
       {
         "id": "media",
         "color": "colorFour",
-        "instagramLink": "",
-        "facebookLink": ""
+        "text": ""
       }
     ]
   }

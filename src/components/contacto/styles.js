@@ -7,6 +7,10 @@ const Styles = () => ({
   root: {
     marginBottom: '100px',
     height: '400px'
+  },
+  icon: {
+    color: 'white',
+    fontSize: '75px'
   }
 });
 

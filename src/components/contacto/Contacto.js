@@ -101,7 +101,7 @@ class Contacto extends React.Component {
                     sm={3}
                     lg={3}
                   >
-                    <FlippingCardComp colorClass={contactoElem.color} icon={contactoElem.id}/>
+                    <FlippingCardComp colorClass={contactoElem.color} icon={contactoElem.id} text={contactoElem.text} />
                   </Grid>
                 ))}
               </Grid>

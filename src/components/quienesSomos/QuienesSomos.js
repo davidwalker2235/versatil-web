@@ -53,10 +53,7 @@ class QuienesSomos extends React.Component {
                   <Translate value="quienesSomos.text" />
                 </Typography>
               </CardContent>
-              <CardMedia
-                className={classes.media}
-                image={quienesSomos.image}
-              />
+              <img src={quienesSomos.image} style={{width: '67vw'}}/>
             </CardActionArea>
           </Card>
           </Grid>
