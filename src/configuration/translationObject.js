@@ -46,7 +46,21 @@ const translationData = {
         decoraciones: "Oferim serveis de decoració d’espais tant per a interiors com per a exteriors. Disposem de mobiliari exclusiu adequat per a tot tipus d’esdeveniments, així com professionals en decoració llumínica per a esdeveniments nocturns.",
         gestionEspacios1: "La Factoria Musical és un complex municipal de Cornellà. Disposa de locals d'assaig, sala de concerts estudi de gravació. Més info a: http://www.cornella.cat/es/LaFactoriaMusical.asp",
         gestionEspacios2: "La sala Ramon Romagosa és el teatre del 'Patronat Cultural i Recreatiu de Cornellà'. Ens encarreguem de la producció tècnica, regidories, gestió de personal tècnic i manteniment de la sala. Més info a: https://pcr.cat",
-        versatilRecording: "Estudi de gravació d'àudio i producció musical.",
+        versatilRecording: {
+          estudioGrabacionTitle: "ESTUDI DE GRAVACIÓ",
+          estudioGrabacionText1: "Estudi de so professional ubicat a Cornellà de Llobregat, dedicat a la gravació de grups musicals (en directe o sessions), gravació de locucions, bandes sonores, foleys, diseny de sons, postproducció, edició, mescal i mastering.",
+          estudioGrabacionText2: "Consta de 3 sales perfectament aïllades, acondicionades acústicament I climatitzades per tenir unes condicions de treball idònees.",
+          personalTitle: "PERSONAL",
+          personalText: "Personal format per l’American World University i amb certificat Protools Operator, amb anys d’experiència en el sector.",
+          trabajosRealizadosTitle: "TREBALLS REALITZATS:",
+          gruposRegistradosTitle: "Grups enregistrats:",
+          gruposRegistradosText: "Bunker, Suspiria, Impostores, David Yepes, Bisonte vs Bufalo, Döria, Ferranea, Daeria, Deceleratrix, Sense nom, V&B, 'flamenc'.",
+          postProduccionTitle: "Postproducció de so:",
+          postProduccionText: "Brutal gadtget, Tenemos visita, Garra charrúa, chavalas, súper chavalas, Camilo",
+          bandasSonorasTitle: "Bandes sonores:",
+          bandasSonorasText: "A Little taste, Tenemos visita, diferentes jingles para publicidad (oreo, mastercard, león)"
+        },
+        soundCloudText: "Escolta les nostres grabacions en"
       },
       pidaPresupuesto: "Demani pressupost",
       actividadesFactoria: "Activitats 2019",
@@ -125,7 +139,7 @@ const translationData = {
         catering: "Catering",
         decoraciones: "Decoraciones y mobiliario para eventos",
         gestionEspacios: "Gestión de espacios",
-        versatilRecording: "Versatil Recording Studio",
+        versatilRecording: "Versatil Recording Studio"
       },
       text: {
         alquilerEquipos: "Ofrecemos servicio de alquiler de equipos de sonido y luces con personal técnico. La alta calidad de nuestro material y la experiencia de nuestros técnicos proporcionan a nuestros eventos y espectáculos elegancia y profesionalidad.",
@@ -135,7 +149,21 @@ const translationData = {
         decoraciones: "Ofrecemos servicios de decoración de espacios tanto en interior como en exterior. Disponemos de mobiliario exclusivo adecuado para todo tipo de eventos, así como profesionales en decoración lumínica para eventos nocturnos.",
         gestionEspacios1: "La Factoria Musical  es un complejo municipal de Cornellá. Dispone de locales de ensayo, sala de conciertos estudio de grabación. Mas info en: http://www.cornella.cat/es/LaFactoriaMusical.asp",
         gestionEspacios2: "La sala Ramon Romagosa es el teatro del “Patronat Cultural i Recreatiu de Cornellà”. Nos encargamos de la producción técnica, regidurías, gestión del personal técnico y mantenimiento de la sala. Mas info en: https://pcr.cat",
-        versatilRecording: "Estudio de grabación de audio y producción musical.",
+        versatilRecording: {
+          estudioGrabacionTitle: "ESTUDIO DE GRAVACIÓN",
+          estudioGrabacionText1: "Estudio de sonido profesional ubicado en Cornellà de Llobregat, dedicado a la grabación de bandas musicales (en directo o sesiones), grabación de locuciones, bandas sonoras, foleys, diseño de sonidos, postproducción, edición, mezcla y mástering.",
+          estudioGrabacionText2: "Consta de 3 salas perfectamente aisladas, acondicionadas acústicamente y climatizadas para tener unas condiciones de trabajo idóneas.",
+          personalTitle: "PERSONAL",
+          personalText: "Personal formado por la American World University y con certificado Protools Operator, con años de experiencia en el sector.",
+          trabajosRealizadosTitle: "TRABAJOS REALIZADOS:",
+          gruposRegistradosTitle: "Bandas grabadas:",
+          gruposRegistradosText: "Bunker, Suspiria, Impostores, David Yepes, Bisonte vs Bufalo, Döria, Ferranea, Daeria, Deceleratrix, Sense nom, V&B, 'flamenc'.",
+          postProduccionTitle: "Postproducción de sonido:",
+          postProduccionText: "Brutal gadtget, Tenemos visita, Garra charrúa, chavalas, súper chavalas, Camilo",
+          bandasSonorasTitle: "Bandas sonoras:",
+          bandasSonorasText: "A Little taste, Tenemos visita, diferentes jingles para publicidad (oreo, mastercard, león)"
+        },
+        soundCloudText: "Escucha nuestras grabaciones en"
       },
       pidaPresupuesto: "Pida presupuesto",
       actividadesFactoria: "Actividades 2019",

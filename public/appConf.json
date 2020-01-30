@@ -144,12 +144,13 @@
         ],
         "hasVideo": true,
         "videoUri": "https://youtu.be/4yeJ30fKycI",
-        "hasCatalogo": false,
+        "hasCatalogo": true,
         "catalogoButtonTitle": "verCatalogo",
         "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
-        "catalogoUries": "./documents/listadoMaterialCast.pdf",
-        "catalogoUricat": "./documents/listadoMaterialCat.pdf",
+        "catalogoUries": "./documents/catalogoMaterialCast.pdf",
+        "isVersatilStudio": false,
+        "catalogoUricat": "./documents/catalogoMaterialCat.pdf",
         "hasSocialLinks": false,
         "socialLinks": []
       }
@@ -199,12 +200,13 @@
         ],
         "hasVideo": false,
         "videoUri": "",
-        "hasCatalogo": false,
+        "hasCatalogo": true,
         "catalogoButtonTitle": "verCatalogo",
         "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
-        "catalogoUries": "./documents/catalogo.pdf",
-        "catalogoUricat": "./documents/catalogo.pdf",
+        "catalogoUries": "./documents/catalogoArtistasCast.pdf",
+        "isVersatilStudio": false,
+        "catalogoUricat": "./documents/catalogoArtistasCat.pdf",
         "hasSocialLinks": false,
         "socialLinks": []
       }
@@ -249,8 +251,9 @@
         "catalogoButtonTitle": "verCatalogo",
         "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
-        "catalogoUries": "./documents/catalogoCarpas2020.pdf",
-        "catalogoUricat": "./documents/catalogoCarpas2020.pdf",
+        "catalogoUries": "./documents/catalogoCarpasCast.pdf",
+        "isVersatilStudio": false,
+        "catalogoUricat": "./documents/catalogoCarpasCat.pdf",
         "hasSocialLinks": false,
         "socialLinks": []
       }
@@ -304,8 +307,9 @@
         "catalogoButtonTitle": "verCatalogo",
         "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
-        "catalogoUries": "./documents/catalogoDecoraciones2020.pdf",
-        "catalogoUricat": "./documents/catalogoDecoraciones2020.pdf",
+        "catalogoUries": "./documents/catalogoDecoracionesCast.pdf",
+        "isVersatilStudio": false,
+        "catalogoUricat": "./documents/catalogoDecoracionesCat.pdf",
         "hasSocialLinks": false,
         "socialLinks": []
       }
@@ -342,6 +346,7 @@
         "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
         "catalogoUries": "./documents/catalogo.pdf",
+        "isVersatilStudio": false,
         "catalogoUricat": "./documents/catalogo.pdf",
         "hasSocialLinks": false,
         "socialLinks": []
@@ -371,6 +376,24 @@
           },
           {
             "image": "./images/factoria_musical6.jpg"
+          },
+          {
+            "image": "./images/factoria_musical7.jpg"
+          },
+          {
+            "image": "./images/factoria_musical8.jpg"
+          },
+          {
+            "image": "./images/factoria_musical9.jpg"
+          },
+          {
+            "image": "./images/factoria_musical10.jpg"
+          },
+          {
+            "image": "./images/factoria_musical11.jpg"
+          },
+          {
+            "image": "./images/factoria_musical12.jpg"
           }
         ],
         "hasVideo": false,
@@ -379,8 +402,9 @@
         "catalogoButtonTitle": "actividadesFactoria",
         "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": false,
-        "catalogoUries": "./documents/catalogoFactoriaMusical2019.pdf",
-        "catalogoUricat": "./documents/catalogoFactoriaMusical2019.pdf",
+        "catalogoUries": "./documents/catalogoFactoriaMusicalCat.pdf",
+        "isVersatilStudio": false,
+        "catalogoUricat": "./documents/catalogoFactoriaMusicalCat.pdf",
         "hasSocialLinks": true,
         "socialLinks": [
           {
@@ -405,6 +429,18 @@
           },
           {
             "image": "./images/ramon_romagosa2.jpg"
+          },
+          {
+            "image": "./images/ramon_romagosa3.jpg"
+          },
+          {
+            "image": "./images/ramon_romagosa4.jpg"
+          },
+          {
+            "image": "./images/ramon_romagosa5.jpg"
+          },
+          {
+            "image": "./images/ramon_romagosa6.jpg"
           }
         ],
         "hasVideo": false,
@@ -414,6 +450,7 @@
         "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": false,
         "catalogoUries": "",
+        "isVersatilStudio": false,
         "catalogoUricat": "",
         "hasSocialLinks": true,
         "socialLinks": [
@@ -522,6 +559,7 @@
         "presupuestoButtonTitle": "pidaPresupuesto",
         "hasPresupuesto": true,
         "catalogoUries": "./documents/listadoMaterialCast.pdf",
+        "isVersatilStudio": true,
         "catalogoUricat": "./documents/listadoMaterialCat.pdf",
         "hasSocialLinks": false,
         "socialLinks": []

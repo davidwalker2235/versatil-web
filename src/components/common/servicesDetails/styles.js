@@ -34,6 +34,11 @@ const Styles = () => ({
   },
   buttonContainer: {
     paddingTop: "50px"
+  },
+  soundCloudLogo: {
+    width: "9%",
+    margin: "auto 0",
+    marginLeft: "11px"
   }
 });
 

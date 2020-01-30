@@ -11,6 +11,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import LanguageIcon from '@material-ui/icons/Language';
+import soundCloudIcon from '../../../configuration/images/soundCloudIcon.png';
 
 class ServicesDetails extends Component {
 
@@ -44,8 +45,30 @@ class ServicesDetails extends Component {
       default:
         break;
     }
-  
   }
+
+  getVersatilRecordingText = () => (
+    <div className="recording-text-root" >
+      <Translate className="section-title" value="services.text.versatilRecording.estudioGrabacionTitle" />
+      <Translate className="service-text" value="services.text.versatilRecording.estudioGrabacionText1" />
+      <br />
+      <Translate className="service-text" value="services.text.versatilRecording.estudioGrabacionText2" />
+      <br />
+      <Translate className="section-title" value="services.text.versatilRecording.personalTitle" />
+      <Translate className="service-text" value="services.text.versatilRecording.personalText" />
+      <br />
+      <Translate className="section-title" value="services.text.versatilRecording.trabajosRealizadosTitle" />
+      <Translate style={{textDecoration: 'underline'}} className="service-text" value="services.text.versatilRecording.gruposRegistradosTitle" />
+      <Translate className="service-text" value="services.text.versatilRecording.gruposRegistradosText" />
+      <br />
+      <Translate style={{textDecoration: 'underline'}} className="service-text" value="services.text.versatilRecording.postProduccionTitle" />
+      <Translate className="service-text" value="services.text.versatilRecording.postProduccionText" />
+      <br />
+      <Translate style={{textDecoration: 'underline'}} className="service-text" value="services.text.versatilRecording.bandasSonorasTitle" />
+      <Translate className="service-text" value="services.text.versatilRecording.bandasSonorasText" />
+      <br />
+    </div>
+  )
 
   render() {
     const {classes, serviceData} = this.props;
@@ -90,8 +113,20 @@ class ServicesDetails extends Component {
                   {}
                 </Grid>
                 <Grid item lg={12} sm={12} xs={12}>
-                  <Translate className="service-text" value={`services.text.${serviceData.title}${serviceData.dataAry.length > 1 ? `${index + 1}` : ''}`} />
+                  {data.isVersatilStudio ? 
+                    this.getVersatilRecordingText() :
+                    <Translate className="service-text" value={`services.text.${serviceData.title}${serviceData.dataAry.length > 1 ? `${index + 1}` : ''}`} />}
                 </Grid>
+                {data.isVersatilStudio && <div>
+                  <Translate className="service-text" value="services.text.soundCloudText" />
+                  <a href="https://soundcloud.com/user-888069420-951487892/tracks" target='_blank'>
+                    <img
+                      src={soundCloudIcon}
+                      alt="soundCloud-logo"
+                      className={classes.soundCloudLogo}
+                    />
+                  </a>
+                </div>}
                 {data.hasSocialLinks && <Grid item lg={12} sm={12} xs={12}>
                   <div className="social-services-root">
                     {
