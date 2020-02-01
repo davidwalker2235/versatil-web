@@ -7,7 +7,9 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
 import GroupIcon from '@material-ui/icons/Group';
+import { Translate } from "react-redux-i18n";
 import Styles from "./styles";
+import "./Contacto.scss";
 
 class FlippingCardComp extends React.Component {
 
@@ -28,9 +30,40 @@ class FlippingCardComp extends React.Component {
     }
   }
   
-  getText = (text) => {
-    if (typeof text === 'string') return text
-    return null; 
+  getText = (text, icon) => {
+    switch (icon) {
+      case "direccion":
+        return text
+      case "telefono":
+        return (
+          <div style={{display: 'flex', flexDirection: 'column'}}>
+            {text.map((elem, index) => {
+              debugger;
+              return (
+              <div key={index}>
+                <Translate value={`contacto.${elem.textKey}`} />
+                <div>{elem.value}</div>
+              </div>
+            )})}
+          </div>
+        );
+      case "email":
+        return (
+          <div style={{display: 'flex', flexDirection: 'column'}}>
+            {text.map((elem, index) => {
+              debugger;
+              return (
+              <div key={index}>
+            <a href={`mailto:${elem.value}`}>{elem.textKey}</a>
+              </div>
+            )})}
+          </div>
+        );
+      case "media":
+        return text
+      default:
+        return null
+    }
   }
   render() {
     const { colorClass, icon, text } = this.props;
@@ -38,7 +71,7 @@ class FlippingCardComp extends React.Component {
         <FlippingCard className="flippingCardRoot">
             <FlippingCardBack>
               <div className="backCardRoot">
-                {this.getText(text)}
+                {this.getText(text, icon)}
               </div>
             </FlippingCardBack>
             <FlippingCardFront>

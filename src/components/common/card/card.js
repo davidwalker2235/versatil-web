@@ -33,20 +33,20 @@ class CardComponent extends Component {
     debugger;
     switch (social.type) {
       case 'facebook':
-        return <a href={social.url} color="secondary" aria-label="edit" target='_blank'>
-                <FacebookIcon fontSize="large" style={{fontSize:"36px", color: "white", fontSize: '50px'}}/>
+        return <a href={social.url} color="secondary" aria-label="edit" target='_blank'rel="noopener noreferrer" >
+                <FacebookIcon fontSize="large" style={{color: "white", fontSize: '50px'}}/>
               </a>
       case 'instagram':
-          return <a href={social.url} color="secondary" aria-label="edit" target='_blank'>
-                  <InstagramIcon style={{fontSize:"36px", color: "white", fontSize: '50px'}}/>
+          return <a href={social.url} color="secondary" aria-label="edit" target='_blank'rel="noopener noreferrer" >
+                  <InstagramIcon style={{color: "white", fontSize: '50px'}}/>
                 </a>
       case 'youtube':
           return <div color="secondary" aria-label="edit" onClick={this.openModal} style={{cursor: 'pointer'}}>
-                  <YouTubeIcon style={{fontSize:"36px", color: "white", fontSize: '50px'}}/>
+                  <YouTubeIcon style={{color: "white", fontSize: '50px'}}/>
                 </div>
       case 'web':
-          return <a href={social.url} color="secondary" aria-label="edit" target='_blank'>
-                  <LanguageIcon style={{fontSize:"36px", color: "white", fontSize: '50px'}}/>
+          return <a href={social.url} color="secondary" aria-label="edit" target='_blank'rel="noopener noreferrer" >
+                  <LanguageIcon style={{color: "white", fontSize: '50px'}}/>
                 </a>
       default:
         break;

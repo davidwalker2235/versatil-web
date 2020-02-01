@@ -779,27 +779,36 @@
         "text": [
           {
             "textKey": "telefonoFijo",
-            "value": ""
+            "value": "934454303"
           },
           {
-            "textKey": "movilXavi",
-            "value": ""
+            "textKey": "produccionTecnica",
+            "value": "665329106"
           },
           {
-            "textKey": "movilJavi",
-            "value": ""
+            "textKey": "depComercial",
+            "value": "615321885"
           }
         ]
       },
       {
         "id": "email",
         "color": "colorThree",
-        "text": ""
+        "text": [
+          {
+            "textKey": "Info",
+            "value": "info@versatilproduccions.com"
+          },
+          {
+            "textKey": "Admin",
+            "value": "admin@versatilproduccions.com"
+          }
+        ]
       },
       {
         "id": "media",
         "color": "colorFour",
-        "text": ""
+        "text": "sdfsdfsdf"
       }
     ]
   }

@@ -97,7 +97,10 @@ const translationData = {
       enviar: "Enviar",
       formText: "Indiqui el seu nom i el seu E-mail i ens posarem en contacte amb vostè el més aviat possible.",
       nombre: 'Nom',
-      mensaje: 'Missatge'
+      mensaje: 'Missatge',
+      telefonoFijo: "Telèfon fixe",
+      produccionTecnica: "Producció tècnica",
+      depComercial: "Dep. comercial"
     },
     snackbar: {
       success: 'Missatge enviat correctament',
@@ -200,7 +203,11 @@ const translationData = {
       enviar: "Enviar",
       formText: "Indique su nombre y su E-mail y nos pondremos en contacto con usted lo antes posible",
       nombre: 'Nombre',
-      mensaje: 'Mensaje'
+      mensaje: 'Mensaje',
+      telefonoFijo: "Teléfono fijo",
+      produccionTecnica: "Producción técnica",
+      depComercial: "Dep. comercial"
+
     },
     snackbar: {
       success: 'Mensaje enviado correctamente',

@@ -29,13 +29,13 @@ class Home extends Component {
     return (
       <div className="home-root">
         <div className="social-root">
-          <a href="http://www.facebook.com/versatilproduccions" target='_blank'>
+          <a href="http://www.facebook.com/versatilproduccions" target='_blank' rel="noopener noreferrer" >
             <FacebookIcon className="social-icon"/>
           </a>
-          <a href="http://www.instagram.com/versatilproduccions" target='_blank'>
+          <a href="http://www.instagram.com/versatilproduccions" target='_blank' rel="noopener noreferrer" >
             <InstagramIcon className="social-icon"/>
           </a>
-          <a href="http://www.youtube.com/channel/UCLkKbPAwTfwwn-p_bkt3jSg" target='_blank'>
+          <a href="http://www.youtube.com/channel/UCLkKbPAwTfwwn-p_bkt3jSg" target='_blank' rel="noopener noreferrer" >
             <YouTubeIcon className="social-icon"/>
           </a>
         </div>

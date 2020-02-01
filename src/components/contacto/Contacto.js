@@ -97,9 +97,10 @@ class Contacto extends React.Component {
                   <Grid
                     key={index}
                     item
-                    xs={6}
+                    xs={12}
                     sm={3}
                     lg={3}
+                    className="flippingCardItemRoot"
                   >
                     <FlippingCardComp colorClass={contactoElem.color} icon={contactoElem.id} text={contactoElem.text} />
                   </Grid>

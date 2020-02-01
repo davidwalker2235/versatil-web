@@ -119,7 +119,7 @@ class ServicesDetails extends Component {
                 </Grid>
                 {data.isVersatilStudio && <div>
                   <Translate className="service-text" value="services.text.soundCloudText" />
-                  <a href="https://soundcloud.com/user-888069420-951487892/tracks" target='_blank'>
+                  <a href="https://soundcloud.com/user-888069420-951487892/tracks" target='_blank' rel="noopener noreferrer" >
                     <img
                       src={soundCloudIcon}
                       alt="soundCloud-logo"
@@ -131,7 +131,7 @@ class ServicesDetails extends Component {
                   <div className="social-services-root">
                     {
                       data.socialLinks.map((social) => (
-                        <a href={social.url} target='_blank'>
+                        <a href={social.url} target='_blank' rel="noopener noreferrer" >
                           {this.getSocialIcon(social)}
                         </a>
                       ))

@@ -6,7 +6,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from "@material-ui/styles";
 import { Translate } from "react-redux-i18n";
-import CardMedia from '@material-ui/core/CardMedia';
 import Styles from "./styles";
 import "./QuienesSomos.scss";
 
@@ -53,7 +52,7 @@ class QuienesSomos extends React.Component {
                   <Translate value="quienesSomos.text" />
                 </Typography>
               </CardContent>
-              <img src={quienesSomos.image} style={{width: '67vw'}}/>
+              <img alt="quienes somos" src={quienesSomos.image} style={{width: '67vw'}}/>
             </CardActionArea>
           </Card>
           </Grid>
