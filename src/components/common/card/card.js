@@ -30,7 +30,6 @@ class CardComponent extends Component {
   }
 
   getSocialIcon = (social) => {
-    debugger;
     switch (social.type) {
       case 'facebook':
         return <a href={social.url} color="secondary" aria-label="edit" target='_blank'rel="noopener noreferrer" >

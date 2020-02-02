@@ -38,7 +38,6 @@ class FlippingCardComp extends React.Component {
         return (
           <div style={{display: 'flex', flexDirection: 'column'}}>
             {text.map((elem, index) => {
-              debugger;
               return (
               <div key={index}>
                 <Translate value={`contacto.${elem.textKey}`} />
@@ -51,7 +50,6 @@ class FlippingCardComp extends React.Component {
         return (
           <div style={{display: 'flex', flexDirection: 'column'}}>
             {text.map((elem, index) => {
-              debugger;
               return (
               <div key={index}>
             <a href={`mailto:${elem.value}`}>{elem.textKey}</a>

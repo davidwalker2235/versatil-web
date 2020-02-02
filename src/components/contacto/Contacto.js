@@ -98,7 +98,7 @@ class Contacto extends React.Component {
                     key={index}
                     item
                     xs={12}
-                    sm={3}
+                    md={6}
                     lg={3}
                     className="flippingCardItemRoot"
                   >
