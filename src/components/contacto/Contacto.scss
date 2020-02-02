@@ -135,3 +135,14 @@
 .colorFour{
   background: rgba(226,188,3,0.3);
 }
+
+.social-services-root {
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  & > a {
+    color: lightgray;
+    display: flex;
+  }
+}

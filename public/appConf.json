@@ -796,11 +796,11 @@
         "color": "colorThree",
         "text": [
           {
-            "textKey": "Info",
+            "textKey": "info",
             "value": "info@versatilproduccions.com"
           },
           {
-            "textKey": "Admin",
+            "textKey": "admin",
             "value": "admin@versatilproduccions.com"
           }
         ]
@@ -808,7 +808,20 @@
       {
         "id": "media",
         "color": "colorFour",
-        "text": "sdfsdfsdf"
+        "text": [
+          {
+            "type": "facebook",
+            "url": "https://www.facebook.com/bucsassaigcornella/"
+          },
+          {
+            "type": "instagram",
+            "url": "https://www.instagram.com/lafactoriamusical.oficial/"
+          },
+          {
+            "type": "youtube",
+            "url": "http://www.youtube.com/channel/UCLkKbPAwTfwwn-p_bkt3jSg"
+          }
+        ]
       }
     ]
   }

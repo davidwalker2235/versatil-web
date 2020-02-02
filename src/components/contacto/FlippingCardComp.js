@@ -8,6 +8,10 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
 import GroupIcon from '@material-ui/icons/Group';
 import { Translate } from "react-redux-i18n";
+import EmailIcon from '@material-ui/icons/Email';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import Styles from "./styles";
 import "./Contacto.scss";
 
@@ -29,6 +33,19 @@ class FlippingCardComp extends React.Component {
         break;
     }
   }
+
+  getSocialIcon = (social) => {
+    switch (social.type) {
+      case 'facebook':
+        return <FacebookIcon style={{marginRight: '15px'}} className="social-icon"/>;
+      case 'instagram':
+        return <InstagramIcon style={{marginRight: '15px'}} className="social-icon"/>;
+      case 'youtube':
+        return <YouTubeIcon style={{marginRight: '15px'}} className="social-icon"/>;
+      default:
+        break;
+    }
+  }
   
   getText = (text, icon) => {
     switch (icon) {
@@ -40,7 +57,7 @@ class FlippingCardComp extends React.Component {
             {text.map((elem, index) => {
               return (
               <div key={index}>
-                <Translate value={`contacto.${elem.textKey}`} />
+                <Translate style={{textDecoration: 'underline'}} value={`contacto.${elem.textKey}`} />
                 <div>{elem.value}</div>
               </div>
             )})}
@@ -48,17 +65,32 @@ class FlippingCardComp extends React.Component {
         );
       case "email":
         return (
-          <div style={{display: 'flex', flexDirection: 'column'}}>
+          <div style={{display: 'flex', flexDirection: 'column', width: '100%'}}>
             {text.map((elem, index) => {
               return (
               <div key={index}>
-            <a href={`mailto:${elem.value}`}>{elem.textKey}</a>
+            <a href={`mailto:${elem.value}`}>
+              <div style={{display: 'flex', alignItems: 'center'}}>
+                <EmailIcon style={{fontSize: '50px', color: 'white', paddingRight: '10px'}}/>
+                <Translate style={{textDecoration: 'underline'}} value={`contacto.${elem.textKey}`} />
+              </div>
+            </a>
               </div>
             )})}
           </div>
         );
       case "media":
-        return text
+        return (
+          <div className="social-services-root">
+            {
+              text.map((social) => (
+                <a href={social.url} target='_blank' rel="noopener noreferrer" >
+                  {this.getSocialIcon(social)}
+                </a>
+              ))
+            }
+          </div>
+        )
       default:
         return null
     }

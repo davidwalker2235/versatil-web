@@ -100,7 +100,9 @@ const translationData = {
       mensaje: 'Missatge',
       telefonoFijo: "Telèfon fixe",
       produccionTecnica: "Producció tècnica",
-      depComercial: "Dep. comercial"
+      depComercial: "Dep. comercial",
+      info: "Informació",
+      admin: "Administració"
     },
     snackbar: {
       success: 'Missatge enviat correctament',
@@ -206,7 +208,9 @@ const translationData = {
       mensaje: 'Mensaje',
       telefonoFijo: "Teléfono fijo",
       produccionTecnica: "Producción técnica",
-      depComercial: "Dep. comercial"
+      depComercial: "Dep. comercial",
+      info: "Información",
+      admin: "Administración"
 
     },
     snackbar: {
