@@ -2,7 +2,7 @@
 
 ### [Versatil Produccions](http://versatilproduccions.com)
 
-Veb de la empresa Versatil Produccions
+Web de la empresa Versatil Produccions
 
 ## Getting started
 
