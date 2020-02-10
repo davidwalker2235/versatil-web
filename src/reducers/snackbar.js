@@ -1,4 +1,4 @@
-import { OPEN_SNACKBAR_SUCCESS, OPEN_SNACKBAR_ERROR } from "../constants/actionTypes";
+import { OPEN_SNACKBAR_SUCCESS, OPEN_SNACKBAR_ERROR, CLOSE_SNACKBAR } from "../constants/actionTypes";
 
 const initialState = {
   isSnackbarOpen: false,
@@ -18,6 +18,12 @@ export default (state = initialState, action) => {
             ...state,
             isOpen: true,
             isError: true
+        };
+      case CLOSE_SNACKBAR:
+        return {
+            ...state,
+            isOpen: false,
+            isError: false
         };
     default:
       return state;

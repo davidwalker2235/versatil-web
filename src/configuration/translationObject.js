@@ -90,7 +90,7 @@ const translationData = {
     },
     quienesSomos: {
       title: "Qui som",
-      text: "En Xavi Alloza i en Javier Rodríguez vàrem crear Versàtil Produccions l’any 2016 per diseñar, produïr i gestionar espectacles, esdeveniments i activitats lúdiques de qualitat. Actualment, l’EQUIP VERSÀTIL està format per professionals amb més de 10 anys d’experiència en el sector dels esdeveniments. Aquest equip coneix el sector i sap que la clau de l’èxit recau en escoltar el client i duur a terme les seves idees respectant sempre la seva visió inicial. Per aquest motiu, posem els cincs sentits a les necessitats dels nostres clients i les tenim en compte des del primer contacte fins a la culminació de la nostra feina."
+      text: "En Xavi Alloza i en Javier Rodríguez vàrem crear Versàtil Produccions l’any 2016 per diseñar, produïr i gestionar espectacles, esdeveniments i activitats lúdiques de qualitat. Actualment, l’EQUIP VERSÀTIL està format per professionals amb més de 10 anys d’experiència en el sector dels esdeveniments. Aquest equip coneix el sector i sap que la clau de l’èxit recau en escoltar el client i dur a terme les seves idees respectant sempre la seva visió inicial. Per aquest motiu, posem els cincs sentits a les necessitats dels nostres clients i les tenim en compte des del primer contacte fins a la culminació de la nostra feina."
     },
     contacto: {
       title: "Contacte",
