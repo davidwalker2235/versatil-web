@@ -108,7 +108,7 @@ class ServicesDetails extends Component {
               <Grid container>
               < Grid item lg={12} sm={12} xs={12}>
                   <div className="section-title">
-                    {data.title? data.title : null}
+                    {data.title? <Translate value={`services.text.${data.title}`} /> : null}
                   </div>
                   {}
                 </Grid>

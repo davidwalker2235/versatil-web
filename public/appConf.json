@@ -360,7 +360,7 @@
     "title": "gestionEspacios",
     "dataAry":[
       {
-        "title": "Factoría musical",
+        "title": "factoriaMusicalTitle",
         "images": [
           {
             "image": "./images/factoria_musical1.jpg"
@@ -425,7 +425,7 @@
         ]
       },
       {
-        "title": "Sala Ramón Romagosa",
+        "title": "Sala Ramon Romagosa",
         "images": [
           {
             "image": "./images/ramon_romagosa1.jpg"

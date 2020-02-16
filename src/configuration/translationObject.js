@@ -7,7 +7,7 @@ const translationData = {
     navBar: {
       inicio: "Inici",
       servicios: "Serveis",
-      produccionesPropias: "Produccions propies",
+      produccionesPropias: "Produccions pròpies",
       quienesSomos: "Qui som",
       contacto: "Contacte"
     },
@@ -33,26 +33,27 @@ const translationData = {
         alquilerEquipos: "Lloguer d'equips",
         gruposMusicales: "Grups musicals, DJ's i artistes",
         carpas: "Carpes",
-        catering: "Catering",
-        decoraciones: "Decoracions i mobiliari per events",
+        catering: "Càtering",
+        decoraciones: "Decoracions i mobiliari per a esdeveniments",
         gestionEspacios: "Gestió d'espais",
-        versatilRecording: "Versatil Recording Studio",
+        versatilRecording: "Versàtil Recording Studio",
       },
       text: {
+        factoriaMusicalTitle: "Factoria Musical",
         alquilerEquipos: "Oferim servei de lloguer d’equips de so i llums amb personal tècnic. L’alta qualitat del nostre material i l’experiència dels nostres tècnics proporcionen als nostres esdeveniments i espectacles elegància i professionalitat.",
         gruposMusicales: "Disposem d’un gran ventall de bandes de versions, orquestres, grups tribut, grups de cançons pròpies de tots els estils, DJ’s i tot tipus d’artistes relacionats amb el món de l’espectacle.",
         carpas: "El muntatge de carpes per a esdeveniments és una de les nostres especialitats. Disposem d’un gran ventall de models que s’adapten a les necessitats de cada espai. Els nostres professionals li assessoraran sobre el tipus de muntatge i model més adequats pel seu esdeveniment.",
-        catering: "Catering a mida per a empreses, particulars, esdeveniments i rodatges.",
+        catering: "Càtering a mida per a empreses, particulars, esdeveniments i rodatges.",
         decoraciones: "Oferim serveis de decoració d’espais tant per a interiors com per a exteriors. Disposem de mobiliari exclusiu adequat per a tot tipus d’esdeveniments, així com professionals en decoració llumínica per a esdeveniments nocturns.",
-        gestionEspacios1: "La Factoria Musical és un complex municipal de Cornellà. Disposa de locals d'assaig, sala de concerts estudi de gravació. Més info a: http://www.cornella.cat/es/LaFactoriaMusical.asp",
-        gestionEspacios2: "La sala Ramon Romagosa és el teatre del 'Patronat Cultural i Recreatiu de Cornellà'. Ens encarreguem de la producció tècnica, regidories, gestió de personal tècnic i manteniment de la sala. Més info a: https://pcr.cat",
+        gestionEspacios1: "La Factoria Musical és un complex municipal de Cornellà. Disposa de locals d'assaig, sala de concerts i estudi de gravació.",
+        gestionEspacios2: "La sala Ramon Romagosa és el teatre del 'Patronat Cultural i Recreatiu de Cornellà'. Ens encarreguem de la producció tècnica, regidories, gestió de personal tècnic i manteniment de la sala.",
         versatilRecording: {
           estudioGrabacionTitle: "ESTUDI DE GRAVACIÓ",
-          estudioGrabacionText1: "Estudi de so professional ubicat a Cornellà de Llobregat, dedicat a la gravació de grups musicals (en directe o sessions), gravació de locucions, bandes sonores, foleys, diseny de sons, postproducció, edició, mescal i mastering.",
-          estudioGrabacionText2: "Consta de 3 sales perfectament aïllades, acondicionades acústicament I climatitzades per tenir unes condicions de treball idònees.",
+          estudioGrabacionText1: "Estudi de so professional ubicat a Cornellà de Llobregat, dedicat a la gravació de grups musicals (en directe o sessions), gravació de locucions, bandes sonores, foleys, disseny de sons, postproducció, edició, mescla i mastering.",
+          estudioGrabacionText2: "Consta de 3 sales perfectament aïllades, acondicionades acústicament i climatitzades per tenir unes condicions de treball idònees.",
           personalTitle: "PERSONAL",
           personalText: "Personal format per l’American World University i amb certificat Protools Operator, amb anys d’experiència en el sector.",
-          trabajosRealizadosTitle: "TREBALLS REALITZATS:",
+          trabajosRealizadosTitle: "TREBALLS REALITZATS",
           gruposRegistradosTitle: "Grups enregistrats:",
           gruposRegistradosText: "Bunker, Suspiria, Impostores, David Yepes, Bisonte vs Bufalo, Döria, Ferranea, Daeria, Deceleratrix, Sense nom, V&B, 'flamenc'.",
           postProduccionTitle: "Postproducció de so:",
@@ -60,7 +61,7 @@ const translationData = {
           bandasSonorasTitle: "Bandes sonores:",
           bandasSonorasText: "A Little taste, Tenemos visita, diferentes jingles para publicidad (oreo, mastercard, león)"
         },
-        soundCloudText: "Escolta les nostres grabacions en"
+        soundCloudText: "Escolta les nostres gravacions a"
       },
       pidaPresupuesto: "Demani pressupost",
       actividadesFactoria: "Activitats 2019",
@@ -76,7 +77,7 @@ const translationData = {
         },
         feriaVinos: {
           title: "Fira de vins",
-          text: "La producció i muntatge de fires gastronòmiques és una de les nostres especialitats. Oferim serveis d’il·luminació arquitectònica, instal·lació de sistemas de so per fil musical, muntatge de carpes i garlandes, així com shows musicals que s’adapten a les necessitats de l’espai creant un ambient festiu i vanguardista."
+          text: "La producció i muntatge de fires gastronòmiques és una de les nostres especialitats. Oferim serveis d’il·luminació arquitectònica, instal·lació de sistemas de so per fil musical, muntatge de carpes i garlandes, així com shows musicals que s’adapten a les necessitats de l’espai creant un ambient festiu i avantguardista."
         },
         fiestaFluor: {
           title: "Festa Fluor",
@@ -90,7 +91,7 @@ const translationData = {
     },
     quienesSomos: {
       title: "Qui som",
-      text: "En Xavi Alloza i en Javier Rodríguez vàrem crear Versàtil Produccions l’any 2016 per diseñar, produïr i gestionar espectacles, esdeveniments i activitats lúdiques de qualitat. Actualment, l’EQUIP VERSÀTIL està format per professionals amb més de 10 anys d’experiència en el sector dels esdeveniments. Aquest equip coneix el sector i sap que la clau de l’èxit recau en escoltar el client i dur a terme les seves idees respectant sempre la seva visió inicial. Per aquest motiu, posem els cincs sentits a les necessitats dels nostres clients i les tenim en compte des del primer contacte fins a la culminació de la nostra feina."
+      text: "En Xavi Alloza i en Javier Rodríguez vàrem crear Versàtil Produccions l’any 2016 per disenyar, produir i gestionar espectacles, esdeveniments i activitats lúdiques de qualitat. Actualment, l’EQUIP VERSÀTIL està format per professionals amb més de 10 anys d’experiència en el sector dels esdeveniments. Aquest equip coneix el sector i sap que la clau de l’èxit recau en escoltar el client i dur a terme les seves idees respectant sempre la seva visió inicial. Per aquest motiu, posem els cincs sentits a les necessitats dels nostres clients i les tenim en compte des del primer contacte fins a la culminació de la nostra feina."
     },
     contacto: {
       title: "Contacte",
@@ -144,16 +145,17 @@ const translationData = {
         catering: "Catering",
         decoraciones: "Decoraciones y mobiliario para eventos",
         gestionEspacios: "Gestión de espacios",
-        versatilRecording: "Versatil Recording Studio"
+        versatilRecording: "Versátil Recording Studio"
       },
       text: {
+        factoriaMusicalTitle: "Factoría Musical",
         alquilerEquipos: "Ofrecemos servicio de alquiler de equipos de sonido y luces con personal técnico. La alta calidad de nuestro material y la experiencia de nuestros técnicos proporcionan a nuestros eventos y espectáculos elegancia y profesionalidad.",
         gruposMusicales: "Disponemos de un gran abanico de bandas de versiones, orquestas, grupos tributo, grupos de canciones propias de todos los estilos, DJ’s y todo tipo de artistas relacionados con el mundo del espectáculo.",
         carpas: "El montaje de carpas para eventos es una de nuestras especialidades. Disponemos de una gran variedad de modelos que se adaptan a las necesidades de cada espacio. Nuestros profesionales le asesorarán sobre el tipo de montaje y los modelos más adecuados para su evento.",
         catering: "Catering a medida para empresas, particulares, eventos y rodajes.",
-        decoraciones: "Ofrecemos servicios de decoración de espacios tanto en interior como en exterior. Disponemos de mobiliario exclusivo adecuado para todo tipo de eventos, así como profesionales en decoración lumínica para eventos nocturnos.",
-        gestionEspacios1: "La Factoria Musical  es un complejo municipal de Cornellá. Dispone de locales de ensayo, sala de conciertos estudio de grabación. Mas info en: http://www.cornella.cat/es/LaFactoriaMusical.asp",
-        gestionEspacios2: "La sala Ramon Romagosa es el teatro del “Patronat Cultural i Recreatiu de Cornellà”. Nos encargamos de la producción técnica, regidurías, gestión del personal técnico y mantenimiento de la sala. Mas info en: https://pcr.cat",
+        decoraciones: "Ofrecemos servicios de decoración de espacios tanto para interiores como para exteriores. Disponemos de mobiliario exclusivo adecuado para todo tipo de eventos, así como profesionales en decoración lumínica para eventos nocturnos.",
+        gestionEspacios1: "La Factoria Musical  es un complejo municipal de Cornellá. Dispone de locales de ensayo, sala de conciertos y estudio de grabación.",
+        gestionEspacios2: "La sala Ramon Romagosa es el teatro del “Patronat Cultural i Recreatiu de Cornellà”. Nos encargamos de la producción técnica, regidurías, gestión del personal técnico y mantenimiento de la sala.",
         versatilRecording: {
           estudioGrabacionTitle: "ESTUDIO DE GRAVACIÓN",
           estudioGrabacionText1: "Estudio de sonido profesional ubicado en Cornellà de Llobregat, dedicado a la grabación de bandas musicales (en directo o sesiones), grabación de locuciones, bandas sonoras, foleys, diseño de sonidos, postproducción, edición, mezcla y mástering.",
@@ -187,7 +189,7 @@ const translationData = {
           text: "La producción y montaje de ferias gastronómicas es una de nuestras especialidades. Ofrecemos servicios de iluminación arquitectónica, instalación de sistemas de sonido para hilo musical, montaje de carpas y guirnaldas, así como shows musicales que se adaptan a las necesidades del espacio creando un ambiente festivo y vanguardista."
         },
         fiestaFluor: {
-          title: "Fiesta Fluor",
+          title: "Fiesta Flúor",
           text: "La combinación de música, pinturas fluorescentes y objetos luminosos unido a la luz negra son el resultado de una fiesta flúor. En VERSÁTIL proporcionamos todos los elementos artísticos, técnicos y decorativos que el cliente pueda imaginar para hacer de su Fiesta Flúor un espectáculo que marque tendencia."
         },
         randomKieb: {
@@ -197,8 +199,8 @@ const translationData = {
       }
     },
     quienesSomos: {
-      title: "Quienes somos",
-      text: "Xavi Alloza y Javier Rodríguez creamos Versàtil Produccions en el año 2016 para diseñar, producir y gestionar espectáculos, eventos y actividades lúdicas de calidad. Actualmente el EQUIPO VERSÁTIL está formado por profesionales con más de 10 años de experiencia en el sector de los eventos. Este equipo conoce el sector y sabe que la clave del éxito recae en escuchar al cliente y ejecutar sus ideas sin perder su enfoque. Por este motivo, ponemos los cinco sentidos en las necesidades del cliente y las tenemos en cuenta desde el primer contacto hasta la culminación de nuestro trabajo."
+      title: "Quiénes somos",
+      text: "Xavi Alloza y Javier Rodríguez creamos Versàtil Produccions en el año 2016 para diseñar, producir y gestionar espectáculos, eventos y actividades lúdicas de calidad. Actualmente, el EQUIPO VERSÁTIL está formado por profesionales con más de 10 años de experiencia en el sector de los eventos. Este equipo conoce el sector y sabe que la clave del éxito recae en escuchar al cliente y ejecutar sus ideas sin perder su enfoque. Por este motivo, ponemos los cinco sentidos en las necesidades del cliente y las tenemos en cuenta desde el primer contacto hasta la culminación de nuestro trabajo."
     },
     contacto: {
       title: "Contacto",
