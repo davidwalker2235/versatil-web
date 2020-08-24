@@ -12,15 +12,17 @@ import {closeDialog} from '../../../actions/dialog/dialogActions';
 import {sendEmail} from "../../../actions/emailServiceActions/emailService";
 import { Translate } from "react-redux-i18n";
 import Styles from "./styles";
-import "./dialog.scss"  
+import "./dialog.scss"
+import Checkbox from "@material-ui/core/Checkbox";
 
 class DialogComponent extends Component {
   constructor() {
       super();
       this.state = {
-          name: '',
-          email: '',
-          mensaje: ''
+        name: '',
+        email: '',
+        mensaje: '',
+        acceptIsChecked: false
       }
   }
 
@@ -51,8 +53,15 @@ class DialogComponent extends Component {
     this.setState({...this.state, mensaje: event.target.value})
   }
 
+  handleOnClickAccept = () => {
+    this.setState({...this.state, acceptIsChecked: !this.state.acceptIsChecked})
+  }
+
   isDisabled = () => {
-    return this.state.name === '' || this.state.email === '' || this.state.mensaje === '' ;
+    return this.state.name === '' ||
+       this.state.email === '' ||
+       this.state.mensaje === '' ||
+      !this.state.acceptIsChecked;
   };
 
   render() {
@@ -95,6 +104,16 @@ class DialogComponent extends Component {
                   value={this.state.mensaje}  
                 />
               </form>
+              <div>
+                <Checkbox
+                  defaultChecked
+                  color="primary"
+                  checked={this.state.acceptIsChecked}
+                  onChange={this.handleOnClickAccept}
+                  inputProps={{ 'aria-label': 'secondary checkbox' }}
+                />
+                <span><Translate value={'contacto.privacyPolicy'} /></span>
+              </div>
             </DialogContent>
             <DialogActions>
                 <Button

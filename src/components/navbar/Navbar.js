@@ -102,7 +102,7 @@ const Navbar = props => {
   };
 
   const handleClose = event => {
-    props.changeLanguaje(event.target.alt);
+    props.changeLanguaje(event.target.alt || props.languaje || 'ca');
     setAnchorEl(null);
   };
 

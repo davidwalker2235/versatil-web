@@ -25,6 +25,11 @@ const Styles = () => ({
   },
   subtitle: {
     fontSize: "14px"
+  },
+  privacy: {
+    padding: '24px',
+    height: '140px',
+    textAlign: 'center'
   }
 });
 

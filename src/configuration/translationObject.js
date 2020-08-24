@@ -14,6 +14,8 @@ const translationData = {
     main: {
       subtitle: "Els nostres serveis",
       videoButton: "Veure video promo",
+      accept: 'Entès',
+      cancel: 'Rebutjar',
       pasion: "Pasió",
       hoverCard: {
         play: "Reproduir",
@@ -26,7 +28,8 @@ const translationData = {
           titleKey: "Can Mercader Festival"
 
         }
-      }
+      },
+      privacy: 'Utilitzem cookies pròpies i de tercers per millorar els nostres serveis, elaborar informació estadística i analitzar els seus hàbits de navegació. Això ens permet personalitzar el contingut que oferim i mostrar publicitat relacionada amb les seves preferències. En clicar a "Entès" ACCEPTA EL SEU ÚS. També pot REBUTJAR la instal·lació de cookies clicant a "Rebutjar".'
     },
     services: {
       serviceCards: {
@@ -103,7 +106,8 @@ const translationData = {
       produccionTecnica: "Producció tècnica",
       depComercial: "Dep. comercial",
       info: "Informació",
-      admin: "Administració"
+      admin: "Administració",
+      privacyPolicy: 'Estic d\'acord amb l\'Avís Legal i la Política de privacitat'
     },
     snackbar: {
       success: 'Missatge enviat correctament',
@@ -124,6 +128,8 @@ const translationData = {
     main: {
       subtitle: "Nuestros servicios",
       videoButton: "ver video promo",
+      accept: 'Aceptar',
+      cancel: 'Rechazar',
       pasion: "Pasión",
       hoverCard: {
         play: "Reproducir",
@@ -135,7 +141,8 @@ const translationData = {
           backText: "Festival de Rock de carácter gratuito que se celebra el segundo sábado del mes Julio en el parque de Can Mercader de Cornellá de Llobregat.",
           titleKey: "Festival Can Mercader"
         }
-      }
+      },
+      privacy: 'Utilizamos cookies propias y de terceros para mejorar nuestros servicios, elaborar información estadística y analizar su hábitos de navegación. Esto nos permite personalizar el contenido que ofrecemos y mostrar publicidad relacioada con sus preferencias. Presionando en "Aceptar" ACEPTA SU USO. También puede RECHAZAR la instalación de cookies presionando en "Rechazar".'
     },
     services: {
       serviceCards: {
@@ -212,8 +219,8 @@ const translationData = {
       produccionTecnica: "Producción técnica",
       depComercial: "Dep. comercial",
       info: "Información",
-      admin: "Administración"
-
+      admin: "Administración",
+      privacyPolicy: 'Acepto el Aviso Legal y la Política de privacidad'
     },
     snackbar: {
       success: 'Mensaje enviado correctamente',

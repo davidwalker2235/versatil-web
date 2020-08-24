@@ -6,6 +6,7 @@ import FlippingCardComp from "./FlippingCardComp";
 import Styles from "./styles";
 import MapComponent from "../common/mapComponent/mapComponent";
 import TextField from '@material-ui/core/TextField';
+import Checkbox from '@material-ui/core/Checkbox';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -18,9 +19,10 @@ class Contacto extends React.Component {
   constructor() {
     super();
     this.state = {
-        name: '',
-        email: '',
-        mensaje: ''
+      name: '',
+      email: '',
+      mensaje: '',
+      acceptIsChecked: false
     }
   }
 
@@ -44,8 +46,15 @@ class Contacto extends React.Component {
     }
   }
 
+  handleOnClickAccept = () => {
+    this.setState({...this.state, acceptIsChecked: !this.state.acceptIsChecked})
+  }
+
   isDisabled = () => {
-    return this.state.name === '' || this.state.email === '' || this.state.mensaje === '' ;
+    return this.state.name === '' ||
+           this.state.email === '' ||
+           this.state.mensaje === '' ||
+           !this.state.acceptIsChecked;
   };
 
   render() {
@@ -175,6 +184,16 @@ class Contacto extends React.Component {
                       value={this.state.mensaje}  
                     />
                   </form>
+                  <div>
+                    <Checkbox
+                    defaultChecked
+                    color="primary"
+                    checked={this.state.acceptIsChecked}
+                    onChange={this.handleOnClickAccept}
+                    inputProps={{ 'aria-label': 'secondary checkbox' }}
+                    />
+                    <span><Translate value={'contacto.privacyPolicy'} /></span>
+                  </div>
                 </CardContent>
                 <CardActions>
                   <Button size="small" onClick={this.handleSendEmail} disabled={this.isDisabled()}>

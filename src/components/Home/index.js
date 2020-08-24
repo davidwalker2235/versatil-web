@@ -8,6 +8,7 @@ import { Translate } from "react-redux-i18n";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import Privacy from "../Privacy/Privacy";
 import Slide from '@material-ui/core/Slide';
 import Styles from "./styles";
 import "./index.scss";
@@ -74,6 +75,7 @@ class Home extends Component {
             </Grid>
           </Grid>
         </div>
+        <Privacy />
       </div>
     );
   }
