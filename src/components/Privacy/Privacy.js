@@ -26,14 +26,20 @@ class Privacy extends React.Component {
     this.setState({...this.state, currentLanguaje: elem.target.alt})
   }
 
+  isPrivacyHidden = () => {
+    const isVisible = window.sessionStorage.getItem("privacy");
+    return isVisible === 'true';
+  }
+
   handlePrivacyButtons = () => {
+    window.sessionStorage.setItem("privacy", "true");
     this.setState({...this.state, visible: false})
   }
 
   render() {
     const { classes } = this.props;
     return (
-      <Drawer anchor={'bottom'} open={this.state.visible} onClose={() => null}>
+      <Drawer anchor={'bottom'} open={!this.isPrivacyHidden()} onClose={() => null}>
         <div className={classes.flagRoot}>
           <img className={classes.flag} src={cataloniaFlag} alt="ca" onClick={this.changeLanguaje} />
           <img className={classes.flag} src={spanishFlag} alt="es" onClick={this.changeLanguaje} />

@@ -69,8 +69,10 @@ class DialogComponent extends Component {
     return (
         <Dialog open={this.props.isOpen} onClose={this.handleClose}>
             <DialogTitle className={classes.root} id="form-dialog-title">
-              <Translate value={'services.pidaPresupuesto'} />
+              <Translate value={`${this.props.isPolicy ? 'policy.title' : 'services.pidaPresupuesto'}`} />
             </DialogTitle>
+          {this.props.isPolicy ?
+            <DialogContent><Translate value={'policy.text'} /></DialogContent> :
             <DialogContent >
               <DialogContentText className={classes.root} >
                 <Translate value={'contacto.formText'} />
@@ -101,7 +103,7 @@ class DialogComponent extends Component {
                   multiline
                   rowsMax="15"
                   inputProps={{ 'fontSize': '24px' }}
-                  value={this.state.mensaje}  
+                  value={this.state.mensaje}
                 />
               </form>
               <div>
@@ -115,14 +117,32 @@ class DialogComponent extends Component {
                 <span><Translate value={'contacto.privacyPolicy'} /></span>
               </div>
             </DialogContent>
+          }
             <DialogActions>
-                <Button
+              {
+                this.props.isPolicy ?
+                  <Button
+                    className={classes.root}
+                    onClick={this.props.closeDialog}
+                    color="primary">
+                    {
+                      this.props.isPolicy ?
+                        <p>Cerrar</p> :
+                        <Translate value={'contacto.cerrar'} />
+                    }
+                  </Button> :
+                  <Button
                     className={classes.root}
                     disabled={this.isDisabled()}
                     onClick={this.handleSendEmail}
                     color="primary">
-                    <Translate value={'contacto.enviar'} />
-                </Button>
+                    {
+                      this.props.isPolicy ?
+                        <p>Cerrar</p> :
+                        <Translate value={'contacto.enviar'} />
+                    }
+                  </Button>
+              }
             </DialogActions>
         </Dialog>
     )
@@ -130,7 +150,8 @@ class DialogComponent extends Component {
 }
 
 const mapStateToProps = (store) => ({
-    isOpen: store.dialog.isOpen
+  isOpen: store.dialog.isOpen,
+  isPolicy: store.dialog.isPolicy
 })
 
 const mapDispatchToProps = (dispatch) => ({

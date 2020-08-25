@@ -4,7 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import { Translate } from "react-redux-i18n";
 import FlippingCardComp from "./FlippingCardComp";
 import Styles from "./styles";
-import MapComponent from "../common/mapComponent/mapComponent";
 import TextField from '@material-ui/core/TextField';
 import Checkbox from '@material-ui/core/Checkbox';
 import Card from '@material-ui/core/Card';
@@ -16,6 +15,7 @@ import "./Contacto.scss";
 
 class Contacto extends React.Component {
 
+  CLAVE_API = 'AIzaSyCRiAwIX8Rdp_yACzWyKCP1eoknKDogxeA';
   constructor() {
     super();
     this.state = {
@@ -50,6 +50,11 @@ class Contacto extends React.Component {
     this.setState({...this.state, acceptIsChecked: !this.state.acceptIsChecked})
   }
 
+  handleOnClickPolicy = () => {
+    const {openDialog} = this.props;
+    if (typeof openDialog === 'function') openDialog(true);
+  }
+
   isDisabled = () => {
     return this.state.name === '' ||
            this.state.email === '' ||
@@ -59,7 +64,7 @@ class Contacto extends React.Component {
 
   render() {
     const {contacto, classes} = this.props;
-    const {contactoData} = contacto;
+    const {contactoData, mapImage} = contacto;
 
     return (
       <div className="contactoRoot">
@@ -128,16 +133,9 @@ class Contacto extends React.Component {
               xs={10}
               sm={10}
               lg={7}
-              style={{height: "400px"}}
             >
               <div style={{width: "100%", height: "100%"}}>
-                <MapComponent
-                  width="400px"
-                  googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv7hTkfNIjSZ36H1H0giYugj4MdiYjaks&v=3.exp&libraries=geometry,drawing,places"
-                  loadingElement={<div style={{ height: `100%` }} />}
-                  containerElement={<div style={{ position: "relative", height: "100%", width: "100%" }} />}
-                  mapElement={<div style={{ height: `100%` }} />}
-                />
+                <img alt="map" src={mapImage} style={{width: 'inherit', height: 'inherit'}}/>
               </div>
             </Grid>
             <Grid
@@ -192,7 +190,7 @@ class Contacto extends React.Component {
                     onChange={this.handleOnClickAccept}
                     inputProps={{ 'aria-label': 'secondary checkbox' }}
                     />
-                    <span><Translate value={'contacto.privacyPolicy'} /></span>
+                    <span style={{textDecoration: 'underline', cursor: 'pointer'}} onClick={this.handleOnClickPolicy}><Translate value={'contacto.privacyPolicy'} /></span>
                   </div>
                 </CardContent>
                 <CardActions>

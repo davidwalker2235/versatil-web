@@ -99,6 +99,7 @@ const translationData = {
     contacto: {
       title: "Contacte",
       enviar: "Enviar",
+      cerrar: "Tancar",
       formText: "Indiqui el seu nom i el seu E-mail i ens posarem en contacte amb vostè el més aviat possible.",
       nombre: 'Nom',
       mensaje: 'Missatge',
@@ -112,6 +113,19 @@ const translationData = {
     snackbar: {
       success: 'Missatge enviat correctament',
       error: 'Error enviant missatge. Intenteu-ho de nou'
+    },
+    policy: {
+      title: 'Politica de privacitat',
+      text: 'Les presents condicions d’ús regulen l’accés a aquesta web per part dels clients de  VERSATIL PRODUCCIONS i altres usuaris d’Internet. Per navegar a aquesta web, l’usuari manifesta la seva acceptació sense excepcions de les presents condicions d’ús.\n' +
+        '\n' +
+        'VERSATIL PRODUCCIONS es reserva el dret unilateral de modificar les presents condicions d’accés a la web, així com els continguts inclosos.\n' +
+        '\n' +
+        'Limitació i exclusió de responsabilitat\n' +
+        'El contingut d’aquesta web és de caràcter general i té una finalitat i efectes exclusivament informatius.  VERSATIL PRODUCCIONS no accepta responsabilitat sobre qualsevol informació no elaborada per ella o publicada al seu nom sense la seva autorització, així com responsabilitat derivada de la mala utilització per tercers dels continguts.\n' +
+        '\n' +
+        'L’usuari eximeix VERSATIL PRODUCCIONS de qualsevol responsabilitat que pogués derivar-se de les interrupcions de disponibilitat de la pàgina web, ja sigui per mal funcionament del servidor web o de les aplicacions, de les infraestructures de comunicacions o del software i hardware utilitzats per a la navegació.\n' +
+        '\n' +
+        'En cas d’incloure enllaços a d’altres pàgines web, VERSATIL PRODUCCIONS declina qualsevol responsabilitat relacionada amb els accessos als mateixos.'
     }
   },
   es: {
@@ -212,6 +226,7 @@ const translationData = {
     contacto: {
       title: "Contacto",
       enviar: "Enviar",
+      cerrar: "Cerrar",
       formText: "Indique su nombre y su E-mail y nos pondremos en contacto con usted lo antes posible",
       nombre: 'Nombre',
       mensaje: 'Mensaje',
@@ -225,6 +240,19 @@ const translationData = {
     snackbar: {
       success: 'Mensaje enviado correctamente',
       error: 'Error enviando mensaje. Inténtelo de nuevo'
+    },
+    policy: {
+      title: 'Politica de privacidad',
+      text: 'Les presents condicions d’ús regulen l’accés a aquesta web per part dels clients de  VERSATIL PRODUCCIONS i altres usuaris d’Internet. Per navegar a aquesta web, l’usuari manifesta la seva acceptació sense excepcions de les presents condicions d’ús.\n' +
+        '\n' +
+        'VERSATIL PRODUCCIONS es reserva el dret unilateral de modificar les presents condicions d’accés a la web, així com els continguts inclosos.\n' +
+        '\n' +
+        'Limitació i exclusió de responsabilitat\n' +
+        'El contingut d’aquesta web és de caràcter general i té una finalitat i efectes exclusivament informatius.  VERSATIL PRODUCCIONS no accepta responsabilitat sobre qualsevol informació no elaborada per ella o publicada al seu nom sense la seva autorització, així com responsabilitat derivada de la mala utilització per tercers dels continguts.\n' +
+        '\n' +
+        'L’usuari eximeix VERSATIL PRODUCCIONS de qualsevol responsabilitat que pogués derivar-se de les interrupcions de disponibilitat de la pàgina web, ja sigui per mal funcionament del servidor web o de les aplicacions, de les infraestructures de comunicacions o del software i hardware utilitzats per a la navegació.\n' +
+        '\n' +
+        'En cas d’incloure enllaços a d’altres pàgines web, VERSATIL PRODUCCIONS declina qualsevol responsabilitat relacionada amb els accessos als mateixos.'
     }
   }
 };

@@ -7,7 +7,6 @@ const Styles = () => ({
   },
   textRoot: {
     padding: '24px',
-    height: '160px',
     textAlign: 'center'
   },
   flagRoot: {

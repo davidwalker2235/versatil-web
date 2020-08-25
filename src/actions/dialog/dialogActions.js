@@ -1,10 +1,10 @@
 import { OPEN_DIALOG, CLOSE_DIALOG } from "../../constants/actionTypes";
 
-export const openDialog = (title, content) => {
+export const openDialog = (isPolicy) => {
+  debugger;
     return {
         type: OPEN_DIALOG,
-        title,
-        content
+        value: isPolicy
       }
 };
 

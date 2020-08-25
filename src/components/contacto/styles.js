@@ -5,8 +5,7 @@ const Styles = () => ({
     },
   },
   root: {
-    marginBottom: '100px',
-    height: '400px'
+    marginBottom: '100px'
   },
   icon: {
     color: 'white',
