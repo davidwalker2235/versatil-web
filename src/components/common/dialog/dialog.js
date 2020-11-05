@@ -8,7 +8,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import {closeDialog} from '../../../actions/dialog/dialogActions';
+import {closeDialog, openDialog} from '../../../actions/dialog/dialogActions';
 import {sendEmail} from "../../../actions/emailServiceActions/emailService";
 import { Translate } from "react-redux-i18n";
 import Styles from "./styles";
@@ -24,6 +24,12 @@ class DialogComponent extends Component {
         mensaje: '',
         acceptIsChecked: false
       }
+  }
+
+  handleOnClickPolicy = () => {
+    debugger;
+    const {openDialog} = this.props;
+    if (typeof openDialog === 'function') openDialog(true);
   }
 
   handleSendEmail = () => {
@@ -114,7 +120,7 @@ class DialogComponent extends Component {
                   onChange={this.handleOnClickAccept}
                   inputProps={{ 'aria-label': 'secondary checkbox' }}
                 />
-                <span><Translate value={'contacto.privacyPolicy'} /></span>
+                <span style={{textDecoration: 'underline', cursor: 'pointer'}} onClick={this.handleOnClickPolicy}><Translate value={'contacto.privacyPolicy'} /></span>
               </div>
             </DialogContent>
           }
@@ -125,22 +131,14 @@ class DialogComponent extends Component {
                     className={classes.root}
                     onClick={this.props.closeDialog}
                     color="primary">
-                    {
-                      this.props.isPolicy ?
-                        <p>Cerrar</p> :
-                        <Translate value={'contacto.cerrar'} />
-                    }
+                    <Translate value={'contacto.cerrar'} />
                   </Button> :
                   <Button
                     className={classes.root}
                     disabled={this.isDisabled()}
                     onClick={this.handleSendEmail}
                     color="primary">
-                    {
-                      this.props.isPolicy ?
-                        <p>Cerrar</p> :
-                        <Translate value={'contacto.enviar'} />
-                    }
+                    <Translate value={'contacto.enviar'} />
                   </Button>
               }
             </DialogActions>
@@ -155,8 +153,9 @@ const mapStateToProps = (store) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    closeDialog: () => dispatch(closeDialog()),
-    sendEmail: (data) => dispatch(sendEmail(data))
+  openDialog: (isPolicy) => dispatch(openDialog(isPolicy)),
+  closeDialog: () => dispatch(closeDialog()),
+  sendEmail: (data) => dispatch(sendEmail(data))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(withStyles(Styles)(DialogComponent));

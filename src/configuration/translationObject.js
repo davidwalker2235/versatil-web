@@ -115,17 +115,8 @@ const translationData = {
       error: 'Error enviant missatge. Intenteu-ho de nou'
     },
     policy: {
-      title: 'Politica de privacitat',
-      text: 'Les presents condicions d’ús regulen l’accés a aquesta web per part dels clients de  VERSATIL PRODUCCIONS i altres usuaris d’Internet. Per navegar a aquesta web, l’usuari manifesta la seva acceptació sense excepcions de les presents condicions d’ús.\n' +
-        '\n' +
-        'VERSATIL PRODUCCIONS es reserva el dret unilateral de modificar les presents condicions d’accés a la web, així com els continguts inclosos.\n' +
-        '\n' +
-        'Limitació i exclusió de responsabilitat\n' +
-        'El contingut d’aquesta web és de caràcter general i té una finalitat i efectes exclusivament informatius.  VERSATIL PRODUCCIONS no accepta responsabilitat sobre qualsevol informació no elaborada per ella o publicada al seu nom sense la seva autorització, així com responsabilitat derivada de la mala utilització per tercers dels continguts.\n' +
-        '\n' +
-        'L’usuari eximeix VERSATIL PRODUCCIONS de qualsevol responsabilitat que pogués derivar-se de les interrupcions de disponibilitat de la pàgina web, ja sigui per mal funcionament del servidor web o de les aplicacions, de les infraestructures de comunicacions o del software i hardware utilitzats per a la navegació.\n' +
-        '\n' +
-        'En cas d’incloure enllaços a d’altres pàgines web, VERSATIL PRODUCCIONS declina qualsevol responsabilitat relacionada amb els accessos als mateixos.'
+      title: 'Polítiques de Privacitat i Avís legal',
+      text: "Les presents condicions d'ús regulen l’accés a aquesta web per part dels clients de VERSÀTIL PRODUCCIONS i altres usuaris d’Internet. Per navegar a aquesta web, l’usuari manifesta la seva acceptació sense excepcions de les presents condicions d’ús. VERSÀTIL PRODUCCIONS es reserva el dret unilateral de modificar les presents condicions d'accés a la web, així com els continguts inclosos. Limitació i exclusió de responsabilitat El contingut d'aquesta web és de caràcter general i té una finalitat i efectes exclusivament informatius. VERSÀTIL PRODUCCIONS no accepta responsabilitat sobre qualsevol informació no elaborada per ella o publicada al seu nom sense la seva autorització, així com responsabilitat derivada de la mala utilització per tercers dels continguts. L’usuari eximeix VERSÀTIL PRODUCCIONS de qualsevol responsabilitat que pogués derivar-se de les interrupcions de disponibilitat de la pàgina web, ja sigui per mal funcionament del servidor web o de les aplicacions, de les infraestructures de comunicacions o del software i hardware utilitzats per a la navegació. En cas d’incloure enllaços a d’altres pàgines web, VERSÀTIL PRODUCCIONS declina qualsevol responsabilitat relacionada amb els accessos als mateixos."
     }
   },
   es: {
@@ -242,17 +233,8 @@ const translationData = {
       error: 'Error enviando mensaje. Inténtelo de nuevo'
     },
     policy: {
-      title: 'Politica de privacidad',
-      text: 'Les presents condicions d’ús regulen l’accés a aquesta web per part dels clients de  VERSATIL PRODUCCIONS i altres usuaris d’Internet. Per navegar a aquesta web, l’usuari manifesta la seva acceptació sense excepcions de les presents condicions d’ús.\n' +
-        '\n' +
-        'VERSATIL PRODUCCIONS es reserva el dret unilateral de modificar les presents condicions d’accés a la web, així com els continguts inclosos.\n' +
-        '\n' +
-        'Limitació i exclusió de responsabilitat\n' +
-        'El contingut d’aquesta web és de caràcter general i té una finalitat i efectes exclusivament informatius.  VERSATIL PRODUCCIONS no accepta responsabilitat sobre qualsevol informació no elaborada per ella o publicada al seu nom sense la seva autorització, així com responsabilitat derivada de la mala utilització per tercers dels continguts.\n' +
-        '\n' +
-        'L’usuari eximeix VERSATIL PRODUCCIONS de qualsevol responsabilitat que pogués derivar-se de les interrupcions de disponibilitat de la pàgina web, ja sigui per mal funcionament del servidor web o de les aplicacions, de les infraestructures de comunicacions o del software i hardware utilitzats per a la navegació.\n' +
-        '\n' +
-        'En cas d’incloure enllaços a d’altres pàgines web, VERSATIL PRODUCCIONS declina qualsevol responsabilitat relacionada amb els accessos als mateixos.'
+      title: 'Política de Privacidad y Aviso Legal',
+      text: "Las presentes condiciones de uso regulan el acceso a esta web por parte de los clientes de VERSÀTIL PRODUCCIONS y de otros usuarios de internet. Para navegar en esta web, el usuario manifiesta su aceptación sin excepciones de las presentes condiciones de uso. VERSÀTIL PRODUCCIONS se reserva el derecho unilateral de modificar las presentes condiciones de acceso a la web, así como los contenidos que se incluyen. Limitación y exclusión de responsabilidad. El contenido de esta web es de carácter general y tiene una finalidad y efectos exclusivamente informativos. VERSÀTIL PRODUCCIONS rechaza la responsabilidad sobre cualquier información no elaborada por ella o publicada en su nombre sin previa autorización, así como la responsabilidad derivada del mal uso por terceros de los contenidos. El usuario exime a VERSÀTIL PRODUCCIONS de cualquier responsabilidad que pudiera derivarse de las interrupciones de disponibilidad de la página web, ya sea por mal funcionamiento del servidor web o de las aplicaciones, de las infraestructuras de comunicaciones o del software y hardware utilizados en la navegación. En el caso de que se incluyan enlaces a otras páginas web, VERSÀTIL PRODUCCIONS rechaza cualquier responsabilidad relacionada con los accesos a estos."
     }
   }
 };
