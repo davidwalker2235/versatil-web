@@ -16,7 +16,7 @@
     "antd": "^3.25.3",
     "emailjs-com": "^2.4.1",
     "history": "^4.6.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "marked": "^0.3.6",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
