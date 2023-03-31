@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from "@material-ui/styles";
 import { Translate } from "react-redux-i18n";
 import Styles from "./styles";
-import "./QuienesSomos.scss";
+import "./QuienesSomos.css";
 
 class QuienesSomos extends React.Component {
 

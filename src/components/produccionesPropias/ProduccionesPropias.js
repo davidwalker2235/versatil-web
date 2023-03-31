@@ -2,7 +2,7 @@ import React from "react";
 import CardComponent from "../common/card/card";
 import Grid from "@material-ui/core/Grid";
 import { Translate } from "react-redux-i18n";
-import "./ProduccionesPropias.scss";
+import "./ProduccionesPropias.css";
 
 class ProduccionesPropias extends React.Component {
   constructor() {

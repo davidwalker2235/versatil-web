@@ -12,7 +12,7 @@ import {closeDialog, openDialog} from '../../../actions/dialog/dialogActions';
 import {sendEmail} from "../../../actions/emailServiceActions/emailService";
 import { Translate } from "react-redux-i18n";
 import Styles from "./styles";
-import "./dialog.scss"
+import "./dialog.css"
 import Checkbox from "@material-ui/core/Checkbox";
 
 class DialogComponent extends Component {

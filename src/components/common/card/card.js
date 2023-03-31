@@ -13,7 +13,7 @@ import LanguageIcon from '@material-ui/icons/Language';
 import { Translate } from "react-redux-i18n";
 import Styles from "./styles";
 import CarouselSlider from "../../common/carouselSlider/carouselSlider";
-import "./card.scss"
+import "./card.css"
 
 class CardComponent extends Component {
 

@@ -1,5 +1,3 @@
-@import '../../../node_modules/react-modal-video/scss/modal-video.scss';
-
 .contactoRoot {
   padding: 36px;
 }
@@ -141,8 +139,9 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  & > a {
-    color: lightgray;
-    display: flex;
-  }
+}
+
+.social-services-root a {
+  color: lightgray;
+  display: flex;
 }

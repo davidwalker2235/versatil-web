@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/styles";
 import Snackbar from '@material-ui/core/Snackbar';
 import { Translate } from "react-redux-i18n";
 import Styles from "./styles";
-import "./snackbar.scss";
+import "./snackbar.css";
 
 class SnackbarComponent extends Component {
 

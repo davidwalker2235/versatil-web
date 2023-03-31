@@ -774,7 +774,7 @@
       {
         "id": "direccion",
         "color": "colorOne",
-        "text": "Calle Tirso de Molina 36 Nave 3B, 08940 Cornellá de Llobregat"
+        "text": "Cami del Acumuladors, 4, 08940 Cornellá de Llobregat"
       },
       {
         "id": "telefono",
@@ -782,7 +782,7 @@
         "text": [
           {
             "textKey": "telefonoFijo",
-            "value": "934454303"
+            "value": "932465211"
           },
           {
             "textKey": "produccionTecnica",

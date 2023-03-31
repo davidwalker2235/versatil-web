@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import Backdrop from '@material-ui/core/Backdrop';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Styles from "./styles";
-import "./loading.scss"  
+import "./loading.css"
 
 class LoadingComponent extends Component {
 

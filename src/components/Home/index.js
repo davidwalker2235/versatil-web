@@ -11,7 +11,7 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import Privacy from "../Privacy/Privacy";
 import Slide from '@material-ui/core/Slide';
 import Styles from "./styles";
-import "./index.scss";
+import "./index.css";
 
 class Home extends Component {
 

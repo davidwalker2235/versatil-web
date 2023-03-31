@@ -1,7 +1,7 @@
 import React from "react";
 import { withStyles } from "@material-ui/styles";
 import Styles from "./styles";
-import "./Privacy.scss";
+import "./Privacy.css";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 import cataloniaFlag from "../../configuration/images/cataloniaFlag.png";

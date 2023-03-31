@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { Translate } from "react-redux-i18n";
 import CarouselSlider from "../carouselSlider/carouselSlider";
 import Button from '@material-ui/core/Button';
-import "./servicesDetails.scss";
+import "./servicesDetails.css";
 import Styles from "./styles";
 import ReactPlayer from 'react-player';
 import FacebookIcon from '@material-ui/icons/Facebook';

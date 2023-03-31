@@ -13,7 +13,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import Styles from "./styles";
-import "./Contacto.scss";
+import "./Contacto.css";
 
 class FlippingCardComp extends React.Component {
 

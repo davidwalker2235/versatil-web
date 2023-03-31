@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./player.scss";
+import "./player.css";
 import { PlayButton, Timer } from 'react-soundplayer/components';
 import { withSoundCloudAudio } from 'react-soundplayer/addons';
 

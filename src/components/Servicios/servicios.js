@@ -8,7 +8,7 @@ import HomeWorkIcon from '@material-ui/icons/HomeWork';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 import { withStyles } from "@material-ui/styles";
 import Grid from "@material-ui/core/Grid";
-import "./servicios.scss";
+import "./servicios.css";
 import Styles from "./styles";
 import {NewsHeaderCard} from "react-ui-cards";
 import {I18n} from 'react-redux-i18n';

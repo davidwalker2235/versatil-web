@@ -18,7 +18,7 @@ import ModalVideo from 'react-modal-video';
 import DialogComponent from '../components/common/dialog/dialog';
 import LoadingComponent from '../components/common/loading/loading';
 import SnackbarComponent from '../components/common/snackbar/snackbar';
-import "./App.scss";
+import "./App.css";
 
 const rootStyle = {
   backgroundColor: "black",

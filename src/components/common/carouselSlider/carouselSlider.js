@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Carousel from 'react-material-ui-carousel';
 import Paper from '@material-ui/core/Paper';
-import "./carouselSlider.scss";
+import "./carouselSlider.css";
 
 class CarouselSlider extends Component {
   render() {
